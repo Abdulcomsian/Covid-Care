@@ -1,0 +1,633 @@
+@font-face {
+    font-family: helvetica-bold;
+    src: url("../font/Helvetica-Font/Helvetica-Bold.ttf");
+}
+@font-face {
+    font-family: helvetica-boldOblique;
+    src: url("../font/Helvetica-Font/Helvetica-BoldOblique.ttf");
+}
+@font-face {
+    font-family: helvetica-light;
+    src: url("../font/Helvetica-Font/helvetica-light-587ebe5a59211.ttf");
+}
+@font-face {
+    font-family: helvetica-Oblique;
+    src: url("../font/Helvetica-Font/Helvetica-Oblique.ttf");
+}
+@font-face {
+    font-family: helvetica-regular;
+    src: url("../font/Helvetica-Font/Helvetica.ttf");
+}
+@font-face {
+    font-family: helvari-regular;
+    src: url("../font/helvari/helvari.ttf");
+}
+@font-face {
+    font-family: helvari-bolf;
+    src: url("../font/helvari/helvaribold.ttf");
+}
+@font-face {
+    font-family: helvari-medium;
+    src: url("../font/helvari/helvariMedium.ttf");
+}
+a:hover,a{
+    text-decoration: none !important;
+}
+body,p,h1,h2,h3,h4,h5,h6,span,a,button{
+    font-family: helvetica-regular;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+button:focus,
+input:focus,
+select:focus{
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+.commonBtn{
+    background-color: transparent;
+    width: 150px;
+    border: none;
+    padding: 8px !important;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+    padding: 5px;
+}
+ul.navbar-nav.m-auto li {
+    margin: 0px 20px;
+}
+.navbar-light .navbar-nav .nav-link,
+.navbar-expand-lg .navbar-nav .dropdown-menu a{
+    color: rgba(39, 45, 78, 1) !important;
+    font-size: 18px;
+    font-weight: 500 !important;
+    font-family: helvari-medium !important;
+}
+.justifyContent{
+    justify-content: space-between;
+}
+.justifyContentEnd{
+    justify-content: end;
+}
+.alignitem{
+    align-items: center;
+}
+#topHeader{
+    background-color: rgba(255, 193, 7, 1);
+    padding: 5px 50px;
+}
+#topHeader p{
+    color: rgba(33, 37, 41, 1);
+    font-size: 16px;
+    font-weight: 400;
+}
+#topHeader .socialLink a{
+    margin: 0px 4px !important;
+}
+#header{
+    padding: 18px 30px;
+}
+#header .navbar-collapse .commonBtn{
+    margin: 0px 5px !important;
+}
+#header .navbar-collapse .transparent{
+    border: 1px solid #482369;
+}
+#header .navbar-collapse .transparent a{
+    color: #482369;
+    font-family: helvetica-bold;
+}
+#header .navbar-collapse .loginBtn{
+    background-color: #482369;
+    border: 1px solid #482369;
+}
+#header .navbar-collapse .loginBtn a{
+    color: #fff;
+    font-family: helvetica-bold;
+}
+#mainBanner{
+    background-color: rgba(72, 35, 105, 1);
+    padding: 150px 50px;
+    background-image: url("../img/Group\ 62.png");
+    background-position: 100% 115%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#mainBanner h3{
+    color: rgba(255, 193, 7, 1);
+    font-size: 60px;
+    font-weight: 700;
+    font-family: helvari-regular;
+    margin-bottom: 15px !important;
+}
+#mainBanner p{
+    font-family: helvari-regular;
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 35px;
+}
+#mainBanner .formDiv{
+    width: 100%;
+    max-width: 60%;
+    margin-top: 20px;
+}
+#mainBanner .formDiv .inputDiv input{
+    width: 55%;
+    height: 100%;
+    padding: 24px 70px;
+    border-radius: 6px 0px 0px 6px;
+    font-family: helvari-regular;
+    font-weight: 400;
+    border: none;
+    font-size: 20px;
+}
+#mainBanner .formDiv .inputDiv input ::placeholder{
+    color: rgba(81, 81, 81, 1);
+}
+#mainBanner .formDiv .inputDiv .selectDiv{
+    width: 30%;
+    height: 100%;
+    border-left: 0.3px solid rgba(81, 81, 81, 1);
+}
+#mainBanner .formDiv .inputDiv .selectDiv select{
+    width: 100%;
+    height: 100%;
+    padding: 24px 50px;
+    border: none;
+    font-family: helvari-regular;
+    font-weight: 400;
+    color: rgba(81, 81, 81, 1);
+    font-size: 20px;
+}
+#mainBanner .formDiv .inputDiv button{
+    width: 15%;
+    height: 100%;
+    padding: 22px 0px !important;
+    border-radius: 0px 6px 6px 0px;
+    background-color: rgba(255, 193, 7, 1);
+    border: none;
+    font-family: helvari-regular;
+    font-weight: 500;
+    font-size: 20px;
+}
+#mainBanner .multiDiv ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+#mainBanner .multiDiv{
+    position: absolute;
+    bottom: -57px;
+    left: 65px;
+    background-color: rgba(255, 193, 7, 1);
+    padding: 12px;
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+}
+#mainBanner .multiDiv ul li h3{
+    color: rgba(48, 34, 41, 1);
+    font-size: 36px;
+    margin-bottom: 0px !important;
+}
+#mainBanner .multiDiv ul li{
+    margin: 0px 50px;
+    text-align: center;
+}
+#mainBanner .multiDiv ul li p{
+    font-size: 20px;
+    color: rgba(48, 34, 41, 1);
+}
+#findDoctor{
+    padding: 100px 0px;
+    background-color: #E5E5E5;;
+}
+#findDoctor h3,
+#bookAppointment h3{
+    font-family: helvari-regular;
+    font-weight: 700;
+    font-size: 30px;
+}
+#findDoctor p,
+#bookAppointment p{
+    font-family: helvari-regular;
+    font-weight: 400;
+    font-size: 26px;
+}
+#findDoctor .multiDiv{
+    margin-top: 50px;
+}
+#findDoctor .commonDiv{
+    text-align: center;
+}
+#findDoctor .commonDiv .imgDiv{
+    width: 137px;
+    background: rgba(77, 77, 77, 1);
+    text-align: center;
+    height: 137px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin: auto;
+}
+#findDoctor .commonDiv p{
+    font-family: helvari-regular;
+    font-weight: 700;
+    margin-top: 15px !important;
+    font-size: 20px;
+}
+#findDoctor .d-grid{
+    grid-template-columns: repeat(5,1fr);
+    display: grid !important;
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+}
+#findDoctor .d-4-grid{
+    grid-template-columns: repeat(4,1fr);
+    display: grid !important;
+    width: 100%;
+    max-width: 65%;
+    margin: auto;
+    margin-top: 50px;
+}
+#findDoctor .viewAllBtn{
+    margin: 80px 0px 0px !important;
+    background: rgba(255, 193, 7, 1);
+    border: none;
+    border-radius: 6px;
+    padding: 12px !important;
+    position: relative;
+    cursor: pointer;
+}
+#findDoctor .viewAllBtn span{
+    font-family: helvari-regular;
+    font-size: 18px;
+    font-weight: 500;
+}
+#findDoctor .viewAllBtn span:nth-child(1){
+    padding: 0px 50px  !important;
+    position: relative;
+}
+#findDoctor .viewAllBtn i{
+    font-size: 23px;
+    position: relative;
+    top: 2px;
+}
+#findDoctor .viewAllBtn span:nth-child(1):after{
+    content: "";
+    height: 50px;
+    width: 1px;
+    background-color: rgba(48, 34, 41, 1);
+    position: absolute;
+    top: -12px;
+    right: 23px;
+}
+#covidDoctor{
+    padding: 0px 50px;
+}
+#covidDoctor .imgleftBg{
+    background-image: url("../img/Group 728.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+#covidDoctor .imgrightBg{
+    background-image: url("../img/Group 729.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+#covidDoctor .imgrightBg img{
+    position: relative;
+    top: 90px;
+    right: 80px;
+}
+#covidDoctor .imgleftBg img{
+    position: relative;
+    top: -90px;
+    left: 130px;
+}
+#covidDoctor .contentLeftDiv{
+    margin-left: 200px;
+    margin-top: 120px;
+}
+.contentRightDiv{
+    margin-right: 200px;
+    margin-top: 200px;
+}
+#covidDoctor .contentLeftDiv h3,
+#covidDoctor .contentRightDiv h3{
+    font-weight: 700;
+    font-family: helvari-regular;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+#covidDoctor .contentLeftDiv p,
+#covidDoctor .contentRightDiv p{
+    font-size: 18px;
+    font-family: helvari-regular;
+}
+#covidDoctor .contentLeftDiv button{
+    background-color: rgba(72, 35, 105, 1);
+    color: #fff;
+    margin-top: 33px !important;
+    padding: 13px 31px !important;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+}
+#covidDoctor .contentRightDiv button{
+    background-color: rgba(255, 193, 7, 1);
+    color: #fff;
+    margin-top: 33px !important;
+    padding: 13px 31px !important;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+}
+#coronaVirus{
+    background-color: #E5E5E5;
+    padding: 100px 50px;
+}
+#coronaVirus .contentDiv .title{
+    color: rgba(255, 193, 7, 1);
+    font-family: helvari-regular;
+    font-weight: 700;
+    font-size: 22px;
+}
+#coronaVirus .contentDiv h3,
+#usersSay h3,
+#ourPatners h3,
+#findSpecialists h3{
+    font-family: helvari-regular;
+    font-weight: 700;
+    font-size: 30px;
+}
+#coronaVirus .contentDiv p{
+    font-family: helvari-regular;
+    font-weight: 400;
+    font-size: 18px;
+}
+#coronaVirus .contentDiv .listDiv ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    margin-top: 30px !important;
+}
+#coronaVirus .contentDiv .listDiv ul li{
+    padding: 10px 30px !important;
+    font-family: helvari-regular;
+    font-weight: 400;
+
+}
+#coronaVirus .contentDiv .listDiv ul li:before{
+    content: "";
+    background-image: url("../img/check.png");
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#bookAppointment{
+    padding: 100px 0px;
+}
+#bookAppointment .imgLeftImg{
+    background-image: url("../img/Group 731.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+#bookAppointment .imgLeftImg img{
+    position: relative;
+    left: 230px;
+}
+#bookAppointment .listDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#bookAppointment .listDiv ul{
+    padding: 0px;
+    list-style: none;
+}
+#bookAppointment .listDiv ul li{
+    padding: 10px 0px;
+    font-family: helvari-regular;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(16, 32, 71, 1);
+}
+#bookAppointment .listDiv ul li img{
+    margin-right: 34px;
+}
+.searchDctr,
+.joinBtn{
+    background-color: rgba(255, 193, 7, 1);
+    color: rgba(48, 34, 41, 1);
+    padding: 15px 49px !important;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-top: 60px !important;
+}
+#moveOn{
+    background-image: url("../img/Group 734.png");
+    padding: 0px 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.justifyContentSpaceAround{
+    justify-content: space-around;
+}
+#moveOn .commonDiv{
+    text-align: center;
+    margin: 26px 0px;
+}
+#moveOn .commonDiv p{
+    color: #fff;
+    font-family: helvari-regular;
+    font-weight: 700;
+    font-size: 18px;
+}
+#moveOn h3{
+    color: #fff;
+    font-family: helvari-regular;
+    font-weight: 700;
+    font-size: 30px;
+}
+.joinDoctor{
+    padding-bottom: 0px !important;
+    position: relative;
+}
+.joinDoctor .contentDiv{
+    padding-bottom: 100px;
+}
+.joinDoctor img{
+    position: absolute;
+    bottom: 0px;
+}
+#usersSay,
+#findSpecialists{
+    padding: 100px 50px;
+}
+#usersSay .sliderDiv{
+    margin-top: 70px;
+}
+#usersSay .commonDiv{
+    width: 500px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    margin: 0px 20px;
+}
+.commonDiv .icon p{
+    padding: 0px !important;
+}
+#usersSay .commonDiv p{
+    padding: 0px 30px 80px !important;
+    font-family: helvari-regular;
+    font-size: 18px;
+    font-weight: 400;
+}
+#usersSay .commonDiv .infoDiv{
+    background: rgba(72, 35, 105, 1);
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 50px 0px 0px;
+}
+#usersSay .commonDiv .infoDiv p{
+    padding: 0px !important;
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+}
+#usersSay .commonDiv .infoDiv i{
+    color: rgba(255, 193, 7, 1);
+}
+#usersSay .commonDiv .infoDiv .imgDiv{
+    position: absolute;
+    top: -50px;
+}
+#usersSay .commonDiv .icon{
+    position: relative;
+    left: 30px;
+}
+#usersSay .commonDiv .icon span{
+    font-size: 60px;
+    color: #000;
+}
+.slick-slide{
+    height: auto !important;
+}
+#ourPatners{
+    padding: 100px 50px;
+    background-color: #E5E5E5;
+}
+#ourPatners .logoDiv{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+#findSpecialists .listDiv{
+    margin-top: 50px;
+}
+#findSpecialists .listDiv ul{
+    list-style: none;
+    padding-left: 10px;
+    padding-top: 15px;
+
+}
+#findSpecialists .listDiv span{
+    font-family: helvari-regular;
+    font-size: 18px;
+    font-weight: 700;
+}
+#findSpecialists .listDiv ul li{
+    position: relative;
+    padding-left: 20px;
+    font-family: helvari-regular;
+    font-size: 18px;
+    font-weight: 400;
+}
+#findSpecialists .listDiv ul li:before{
+    content: "\f105";
+    position: absolute;
+    font-family: 'FontAwesome';
+    left: 0;
+    font-weight: 700;
+}
+#footer{
+    background-color: rgba(34, 34, 34, 1);
+    padding: 100px 50px;
+}
+#footer .imgTextDiv{
+    display: flex;
+    align-items: center;
+}
+#footer .imgTextDiv p{
+    font-family: helvari-regular;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    margin-left: 15px !important;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background: rgba(255, 255, 255, 1);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#footer .footerContent p{
+    color: #fff;
+    font-family: helvari-regular;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 20px 0px !important;
+}
+#footer .footerContent .socialLinks ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    list-style: none;
+}
+#footer .footerContent ul{
+    padding: 0px;
+    list-style: none;
+    margin-top: 20px;
+}
+#footer .footerContent span{
+    color: #fff;
+    font-family: helvari-regular;
+    font-size: 18px;
+    font-weight: 700;
+}
+#footer .footerContent ul li{
+    color: #fff;
+    font-family: helvari-regular;
+    font-size: 18px;
+    font-weight: 400;
+}
+#footer .footerContent ul li img.googleImg{
+    position: relative;
+    left: -9px;
+}

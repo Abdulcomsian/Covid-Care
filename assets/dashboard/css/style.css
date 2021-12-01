@@ -1,0 +1,112 @@
+@font-face {
+    font-family: helvetica-bold;
+    src: url("../../font/Helvetica-Font/Helvetica-Bold.ttf");
+}
+@font-face {
+    font-family: helvetica-boldOblique;
+    src: url("../../font/Helvetica-Font/Helvetica-BoldOblique.ttf");
+}
+@font-face {
+    font-family: helvetica-light;
+    src: url("../../font/Helvetica-Font/helvetica-light-587ebe5a59211.ttf");
+}
+@font-face {
+    font-family: helvetica-Oblique;
+    src: url("../../font/Helvetica-Font/Helvetica-Oblique.ttf");
+}
+@font-face {
+    font-family: helvetica-regular;
+    src: url("../../font/Helvetica-Font/Helvetica.ttf");
+}
+@font-face {
+    font-family: helvari-regular;
+    src: url("../../font/helvari/helvari.ttf");
+}
+@font-face {
+    font-family: helvari-bolf;
+    src: url("../../font/helvari/helvaribold.ttf");
+}
+@font-face {
+    font-family: helvari-medium;
+    src: url("../../font/helvari/helvariMedium.ttf");
+}
+a:hover,a{
+    text-decoration: none !important;
+}
+body,p,h1,h2,h3,h4,h5,h6,span,a,button{
+    font-family: helvetica-regular;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+button:focus,
+input:focus,
+select:focus{
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+}
+ul{
+    padding: 0px;
+    list-style: none;
+}
+#mainDashboard .contentDiv .sideBar{
+    width: 20%;
+    background: rgba(72, 35, 105, 1);
+    position: relative;
+}
+#mainDashboard .contentDiv .sideBar .logoDiv{
+    background: rgba(54, 16, 88, 1);
+    padding: 30px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 270px;
+}
+#mainDashboard .contentDiv .sideBar ul{
+    margin-top: 50px;
+}
+#mainDashboard .contentDiv .sideBar ul li{
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+}
+#mainDashboard .contentDiv .sideBar ul li img{
+    width: 18px;
+    margin-right: 30px;
+}
+#mainDashboard .contentDiv .sideBar ul li a{
+    color: #fff;
+    font-family: helvari-regular;
+    font-weight: 500;
+    font-size: 16px;
+}
+#mainDashboard .contentDiv .sideBar ul li:hover a,
+#mainDashboard .contentDiv .sideBar ul li.active a{
+    color: rgba(253, 190, 16, 1);
+}
+#mainDashboard .contentDiv .sideBar .authdiv{
+    border-top: 0.5px solid #fff;
+    margin-top: 100px;
+}
+#mainDashboard .contentDiv .sideBar .authdiv ul{
+    margin: 0px;
+}
+#mainDashboard .contentDiv .sideBar .sideBarBtn{
+    position: absolute;
+    right: -22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#mainDashboard .contentDiv .sideBar .sideBarBtn button{
+    background-color: transparent;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+#mainDashboard .contentDiv .sideBar .sideBarBtn .leftIconImg{
+    position: absolute;
+    left: 0;
+    top: 37px;
+}
