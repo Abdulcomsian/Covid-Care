@@ -1,0 +1,275 @@
+<html>
+<title>Dashboard</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+    <link rel="stylesheet" href="../../assets/dashboard/css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css" />
+</head>
+
+<body>
+    <section id="mainDashboard">
+        <div class="contentDiv">
+            <div class="sideBar">
+                <div class="sideBarBtn">
+                    <button>
+                        <img src="../../assets/dashboard/img/sideBarBtn.png" alt="" class="img-fluid" />
+                        <img src="../../assets/dashboard/img/leftIcon.png" alt="" class="img-fluid leftIconImg" />
+                    </button>
+                </div>
+                <div class="logoDiv">
+                    <img src="../../assets/img/footer-logo.png" alt="" class="img-fluid" />
+                </div>
+                <div class="menuDiv">
+                    <ul>
+                        <li class="active">
+                            <img src="../../assets/dashboard/img/Vector (2).png" alt="" class="img-fluid" />
+                            <a href="">Dashboard</a>
+                        </li>
+                        <li>
+                            <img src="../../assets/dashboard/img/Group 560.png" alt="" class="img-fluid" />
+                            <a href="">Patients</a>
+                        </li>
+                        <li>
+                            <img src="../../assets/dashboard/img/maki_doctor.png" alt="" class="img-fluid" />
+                            <a href="">Doctors</a>
+                        </li>
+                        <li>
+                            <img src="../../assets/dashboard/img/Vector-1 (2).png" alt="" class="img-fluid" />
+                            <a href="">Hospitals</a>
+                        </li>
+                        <li>
+                            <img src="../../assets/dashboard/img/Vector-2.png" alt="" class="img-fluid" />
+                            <a href="">Lab & Diagnostics</a>
+                        </li>
+                        <li>
+                            <img src="../../assets/dashboard/img/Group 655.png" alt="" class="img-fluid" />
+                            <a href="">Suppliers</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="authdiv">
+                    <ul>
+                        <li>
+                            <img src="../../assets/dashboard/img/Group.png" alt="" class="img-fluid" />
+                            <a href="">Settings</a>
+                        </li>
+                        <li>
+                            <img src="../../assets/dashboard/img/Vector-3.png" alt="" class="img-fluid" />
+                            <a href="">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="viewDiv">
+                <div class="topBar">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="dashboardTitle">
+                                    <h3>Patients</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="topRight">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="inputDiv">
+                                                <input type="text" name="" placeholder="Search" id="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="iconDiv">
+                                                <p>
+                                                    <a href="">
+                                                        <i class="fa fa-bell-o" aria-hidden="true"></i>
+                                                    </a>
+                                                </p>
+                                                <p>
+                                                    <a href="">
+                                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                                    </a>
+                                                </p>
+                                                <p>
+                                                    <a href="">
+                                                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentViewDiv">
+                    <div class="patientTable">
+                        <div class="tableBar">
+                            <div class="sortingDiv">
+                                <h4>Sort by:</h4>
+                                <div class="multiSort">
+                                    <button class="active">All</button>
+                                    <button>Recent</button>
+                                    <button>Last Week</button>
+                                    <button>Last Month</button>
+                                    <button>Last Year</button>
+                                </div>
+                            </div>
+                            <div class="addPatients">
+                                <button data-toggle="modal" data-target="#addPatients">
+                                    + Add Patient
+                                </button>
+                            </div>
+                        </div>
+                        <div class="tableDiv">
+                            <table id="patientTable" class="display">
+                                <thead>
+                                    <tr>
+                                        <th>Patient ID</th>
+                                        <th>Patient Name</th>
+                                        <th>Phone Number</th>
+                                        <th>Last Appointment Date</th>
+                                        <th>Doctor</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>122334221</td>
+                                        <td>John Doe</td>
+                                        <td>+92 312 3456789</td>
+                                        <td>1-1-2021</td>
+                                        <td>Dr. John Doe</td>
+                                        <td><p href="" class="confirm">Confirmed</p></td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                            <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>122334221</td>
+                                        <td>John Doe</td>
+                                        <td>+92 312 3456709</td>
+                                        <td>1-1-2021</td>
+                                        <td>Dr. John Doe</td>
+                                        <td><p href="" class="visited">Visited</p></td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                            <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>122334221</td>
+                                        <td>John Doe</td>
+                                        <td>+92 312 3456709</td>
+                                        <td>1-1-2021</td>
+                                        <td>Dr. John Doe</td>
+                                        <td><p href="" class="pending">Pending</p></td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                            <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>122334221</td>
+                                        <td>John Doe</td>
+                                        <td>+92 312 3456789</td>
+                                        <td>1-1-2021</td>
+                                        <td>Dr. John Doe</td>
+                                        <td><p href="" class="confirm">Confirmed</p></td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                            <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>122334221</td>
+                                        <td>John Doe</td>
+                                        <td>+92 312 3456709</td>
+                                        <td>1-1-2021</td>
+                                        <td>Dr. John Doe</td>
+                                        <td><p href="" class="visited">Visited</p></td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                            <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>122334221</td>
+                                        <td>John Doe</td>
+                                        <td>+92 312 3456709</td>
+                                        <td>1-1-2021</td>
+                                        <td>Dr. John Doe</td>
+                                        <td><p href="" class="pending">Pending</p></td>
+                                        <td>
+                                            <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                            <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.1/chart.js"
+        integrity="sha512-9fQaGKKJO2zXOYXpPTEEyzIdx7r3ou0nZgvxS9VICh70AGvdangg7lUVonofpBYrNWd6h2e/FQHoWSCRZkwOUQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../../assets/dashboard/js/main.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Add Patients -->
+    <div class="modal fade" id="addPatients" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add Patients</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="inputDiv">
+                            <input class="form-control" type="text" name="" id="" placeholder="Patient Name" />
+                        </div>
+                        <div class="inputDiv">
+                            <input class="form-control" type="text" name="" id="" placeholder="Patient Email" />
+                        </div>
+                        <div class="inputDiv">
+                            <input class="form-control" type="text" name="" id="" placeholder="Patient Address" />
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Cancel
+                    </button>
+                    <button type="button" class="btn btn-primary">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

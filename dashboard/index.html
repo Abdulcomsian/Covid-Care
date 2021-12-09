@@ -1,68 +1,274 @@
 <html>
-    <title>Dashboard</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <head>
-        <link rel="stylesheet" href="../assets/dashboard/css/style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <section id="mainDashboard">
-            <div class="contentDiv">
-                <div class="sideBar">
-                    <div class="sideBarBtn">
-                        <button>
-                            <img src="../assets/dashboard/img/sideBarBtn.png" alt="" class="img-fluid">
-                            <img src="../assets/dashboard/img/leftIcon.png" alt="" class="img-fluid leftIconImg">
-                        </button>
-                    </div>
-                    <div class="logoDiv">
-                        <img src="../assets/img/footer-logo.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="menuDiv">
-                        <ul>
-                            <li class="active">
-                                <img src="../assets/dashboard/img/Vector (2).png" alt="" class="img-fluid">
-                                <a href="">Dashboard</a>
-                            </li>
-                            <li>
-                                <img src="../assets/dashboard/img/Group 560.png" alt="" class="img-fluid">
-                                <a href="">Patients</a>
-                            </li>
-                            <li>
-                                <img src="../assets/dashboard/img/maki_doctor.png" alt="" class="img-fluid">
-                                <a href="">Doctors</a>
-                            </li>
-                            <li>
-                                <img src="../assets/dashboard/img/Vector-1 (2).png" alt="" class="img-fluid">
-                                <a href="">Hospitals</a>
-                            </li>
-                            <li>
-                                <img src="../assets/dashboard/img/Vector-2.png" alt="" class="img-fluid">
-                                <a href="">Lab & Diagnostics</a>
-                            </li>
-                            <li>
-                                <img src="../assets/dashboard/img/Group 655.png" alt="" class="img-fluid">
-                                <a href="">Suppliers</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="authdiv">
-                        <ul>
-                            <li>
-                                <img src="../assets/dashboard/img/Group.png" alt="" class="img-fluid">
-                                <a href="">Settings</a>
-                            </li>
-                            <li>
-                                <img src="../assets/dashboard/img/Vector-3.png" alt="" class="img-fluid">
-                                <a href="">Logout</a>
-                            </li>
-                        </ul>
-                    </div>
+  <title>Dashboard</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <head>
+    <link rel="stylesheet" href="../assets/dashboard/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <section id="mainDashboard">
+      <div class="contentDiv">
+        <div class="sideBar">
+          <div class="sideBarBtn">
+            <button>
+              <img
+                src="../assets/dashboard/img/sideBarBtn.png"
+                alt=""
+                class="img-fluid"
+              />
+              <img
+                src="../assets/dashboard/img/leftIcon.png"
+                alt=""
+                class="img-fluid leftIconImg"
+              />
+            </button>
+          </div>
+          <div class="logoDiv">
+            <img src="../assets/img/footer-logo.png" alt="" class="img-fluid" />
+          </div>
+          <div class="menuDiv">
+            <ul>
+              <li class="active">
+                <img
+                  src="../assets/dashboard/img/Vector (2).png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <a href="">Dashboard</a>
+              </li>
+              <li>
+                <img
+                  src="../assets/dashboard/img/Group 560.png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <a href="">Patients</a>
+              </li>
+              <li>
+                <img
+                  src="../assets/dashboard/img/maki_doctor.png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <a href="">Doctors</a>
+              </li>
+              <li>
+                <img
+                  src="../assets/dashboard/img/Vector-1 (2).png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <a href="">Hospitals</a>
+              </li>
+              <li>
+                <img
+                  src="../assets/dashboard/img/Vector-2.png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <a href="">Lab & Diagnostics</a>
+              </li>
+              <li>
+                <img
+                  src="../assets/dashboard/img/Group 655.png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <a href="">Suppliers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="authdiv">
+            <ul>
+              <li>
+                <img
+                  src="../assets/dashboard/img/Group.png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <a href="">Settings</a>
+              </li>
+              <li>
+                <img
+                  src="../assets/dashboard/img/Vector-3.png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <a href="">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="viewDiv">
+          <div class="topBar">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="dashboardTitle">
+                    <h3>Dashboard</h3>
+                  </div>
                 </div>
-                <div class="viewDiv"></div>
+                <div class="col-md-5">
+                  <div class="topRight">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="inputDiv">
+                          <input
+                            type="text"
+                            name=""
+                            placeholder="Search"
+                            id=""
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="iconDiv">
+                          <p>
+                            <a href="">
+                              <i class="fa fa-bell-o" aria-hidden="true"></i>
+                            </a>
+                          </p>
+                          <p>
+                            <a href="">
+                              <i
+                                class="fa fa-envelope-o"
+                                aria-hidden="true"
+                              ></i>
+                            </a>
+                          </p>
+                          <p>
+                            <a href="">
+                              <i
+                                class="fa fa-user-circle"
+                                aria-hidden="true"
+                              ></i>
+                            </a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-    </body>
+          </div>
+          <div class="contentViewDiv">
+            <div class="badgeDiv">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="badgeBox">
+                      <div class="textDiv">
+                        <h3>00</h3>
+                        <p>Total Doctors</p>
+                      </div>
+                      <div class="imageDiv">
+                        <img
+                          src="../assets/dashboard/img/Group 735.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="badgeBox">
+                      <div class="textDiv">
+                        <h3>00</h3>
+                        <p>Total Hospitals/Clinics</p>
+                      </div>
+                      <div class="imageDiv">
+                        <img
+                          src="../assets/dashboard/img/Group 736.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="badgeBox">
+                      <div class="textDiv">
+                        <h3>00</h3>
+                        <p>Total Laboratories</p>
+                      </div>
+                      <div class="imageDiv">
+                        <img
+                          src="../assets/dashboard/img/Group 737.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="badgeBox">
+                      <div class="textDiv">
+                        <h3>00</h3>
+                        <p>Total Suppliers</p>
+                      </div>
+                      <div class="imageDiv">
+                        <img
+                          src="../assets/dashboard/img/Group 738.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chartView">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-7">
+                    <div class="lineChart">
+                      <canvas id="lineChart" width="400" height="400"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.1/chart.js"
+      integrity="sha512-9fQaGKKJO2zXOYXpPTEEyzIdx7r3ou0nZgvxS9VICh70AGvdangg7lUVonofpBYrNWd6h2e/FQHoWSCRZkwOUQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../assets/dashboard/js/main.js"></script>
+    
+  </body>
 </html>

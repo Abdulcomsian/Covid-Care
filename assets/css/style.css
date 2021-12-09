@@ -151,6 +151,8 @@ ul.navbar-nav.m-auto li {
     width: 30%;
     height: 100%;
     border-left: 0.3px solid rgba(81, 81, 81, 1);
+    background-color: #fff;
+    padding: 25px;
 }
 #mainBanner .formDiv .inputDiv .selectDiv select{
     width: 100%;
@@ -165,7 +167,7 @@ ul.navbar-nav.m-auto li {
 #mainBanner .formDiv .inputDiv button{
     width: 15%;
     height: 100%;
-    padding: 22px 0px !important;
+    padding: 24px 0px !important;
     border-radius: 0px 6px 6px 0px;
     background-color: rgba(255, 193, 7, 1);
     border: none;
