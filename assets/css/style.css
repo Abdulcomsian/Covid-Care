@@ -837,9 +837,324 @@ input#file {
     padding: 15px;
     box-shadow: 0px 0px 13px 3px rgba(0, 0, 0, 0.07);
 }
+.doctor-reviews-content{
+    background:#FFFFFF;
+    padding: 15px;
+    box-shadow: 0px 0px 13px 3px rgba(0, 0, 0, 0.07);
+}
+
+/* ****************  Specialist ********************* */
 
 
-/* ****************  login ********************* */
+#specialist_mainBanner{
+    background-color: rgba(72, 35, 105, 1);
+    padding: 85px 50px;
+    background-image: url("../img/Group");
+    background-position: 100% 115%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#specialist_mainBanner h3{
+    color: rgba(255, 193, 7, 1);
+    font-size: 60px;
+    font-weight: 700;
+    font-family: helvari-regular;
+    margin-bottom: 15px !important;
+}
+#specialist_mainBanner p{
+    font-family: helvari-regular;
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 35px;
+}
+#specialist_mainBanner .formDiv{
+    width: 100%;
+    max-width: 100%;
+    margin-top: 15px;
+}
+#specialist_mainBanner .formDiv .inputDiv input{
+    width: 55%;
+    height: 100%;
+    padding: 23px 70px;
+    border-radius: 6px 0px 0px 6px;
+    font-family: helvari-regular;
+    font-weight: 400;
+    border: none;
+    font-size: 20px;
+}
+#specialist_mainBanner .formDiv .inputDiv input ::placeholder{
+    color: rgba(81, 81, 81, 1);
+}
+#specialist_mainBanner .formDiv .inputDiv .selectDiv{
+    width: 30%;
+    height: 100%;
+    border-left: 0.3px solid rgba(81, 81, 81, 1);
+    background-color: #fff;
+    /* padding: 25px; */
+}
+#specialist_mainBanner .formDiv .inputDiv .selectDiv select{
+    width: 100%;
+    height: 100%;
+    padding: 23px 50px;
+    border: none;
+    font-family: helvari-regular;
+    font-weight: 400;
+    color: rgba(81, 81, 81, 1);
+    font-size: 20px;
+}
+#specialist_mainBanner .formDiv .inputDiv button{
+    width: 15%;
+    height: 100%;
+    padding: 21px 0px !important;
+    border-radius: 0px 6px 6px 0px;
+    background-color: rgba(255, 193, 7, 1);
+    border: none;
+    font-family: helvari-regular;
+    font-weight: 500;
+    font-size: 20px;
+}
+#specialist_mainBanner .multiDiv ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+#specialist_mainBanner .multiDiv{
+    bottom: -57px;
+    left: 0;
+    padding: 12px;
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+}
+#specialist_mainBanner .multiDiv ul li h3{
+    color: rgba(48, 34, 41, 1);
+    font-size: 36px;
+    margin-bottom: 0px !important;
+}
+#specialist_mainBanner .multiDiv ul li{
+    margin: 0px 50px;
+    text-align: center;
+}
+#specialist_mainBanner .multiDiv ul li p{
+    font-size: 20px;
+    color: rgba(48, 34, 41, 1);
+}
+.multiDiv button{
+    background: #683894;
+    border-radius: 10px;
+    color: #FFFFFF;
+    margin-right: 20px !important;
+    border: none;
+    height: 50px;
+    font-weight: 600;
+    width: 17%;
+}
+.multiDiv select{
+    background: #ECECEC;
+    border-radius: 10px;
+    margin-right: 20px;
+    border: none;
+    height: 50px;
+    width: 15%;
+    padding: 10px;
+}
+
+/* section 2 */
+
+#specialist_mainBanner .formDiv .inputDivv input{
+    width: 55%;
+    height: 100%;
+    padding: 24px 70px;
+    border-radius: 6px 0px 0px 6px;
+    font-family: helvari-regular;
+    font-weight: 400;
+    border: none;
+    font-size: 20px;
+}
+#specialist_mainBanner .formDiv .inputDivv input ::placeholder{
+    color: rgba(81, 81, 81, 1);
+}
+#specialist_mainBanner .formDiv .inputDivv .selectDiv{
+    width: 30%;
+    height: 100%;
+    border-left: 0.3px solid rgba(81, 81, 81, 1);
+    background-color: #fff;
+    /* padding: 25px; */
+}
+#specialist_mainBanner .formDiv .inputDivv .selectDiv select{
+    width: 100%;
+    height: 100%;
+    padding: 24px 50px;
+    border: none;
+    font-family: helvari-regular;
+    font-weight: 400;
+    color: rgba(81, 81, 81, 1);
+    font-size: 20px;
+}
+#specialist_mainBanner .formDiv .inputDivv button{
+    width: 15%;
+    height: 100%;
+    padding: 15px 0px !important;
+    border-radius: 4px;
+    background-color: #683894;
+    border: none;
+    color: #fff;
+    font-family: helvari-regular;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+ol.breadcrumb {
+    padding: 10px 5px 11px;
+}
+
+
+#docter-blog {
+    padding: 0px 50px !important;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+
+}
+
+/* ************ list of specialists ************ */
+section.specialist {
+    padding: 50px 50px;
+}
+
+section#searched_specialists {
+    padding: 35px 0px 35px 50px;
+}
+
+.online-consultant button{
+    background: #683894;
+    border-radius: 10px;
+    color: #FFFFFF;
+    margin-right: 20px !important;
+    border: none;
+    height: 50px;
+    font-weight: 600;
+    width: 100%;
+}
+.book-appointment button{
+    background: #f2c010;
+    border-radius: 10px;
+    color: #FFFFFF;
+    margin-right: 20px !important;
+    border: none;
+    height: 50px;
+    font-weight: 600;
+    width: 100%;
+}
+a.card-link,
+a.card-link:hover {
+    color: #FDBE10;
+}
+p.card-text {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* Doctor Profile page */
+
+.tabbable-panel {
+    padding: 10px;
+  }
+  
+  .tabbable-line > .nav-tabs {
+    border: none;
+    margin: 0px;
+  }
+  .tabbable-line > .nav-tabs > li {
+    margin-right: 80px;
+    font-size: 22px; 
+}
+  .tabbable-line > .nav-tabs > li > a {
+    border: 0;
+    margin-right: 0;
+    color: #737373;
+  }
+  .tabbable-line > .nav-tabs > li > a > i {
+    color: #a6a6a6;
+  }
+  
+  .tabbable-line > .nav-tabs > li.open > a,
+  .tabbable-line > .nav-tabs > li:hover > a {
+    border: 0;
+    background: none !important;
+    color: #333333;
+  }
+  .tabbable-line > .nav-tabs > li.open > a > i,
+  .tabbable-line > .nav-tabs > li:hover > a > i {
+    color: #a6a6a6;
+  }
+  .tabbable-line > .nav-tabs > li.open .dropdown-menu,
+  .tabbable-line > .nav-tabs > li:hover .dropdown-menu {
+    margin-top: 0px;
+  }
+  .tabbable-line > .nav-tabs > li.active {
+    border-bottom: 2px solid #32465B;
+    position: relative;
+  }
+  .tabbable-line > .nav-tabs > li.active > a {
+    border: 0;
+    color: #333333;
+  }
+  .tabbable-line > .nav-tabs > li.active > a > i {
+    color: #404040;
+  }
+  .tabbable-line > .tab-content {
+    margin-top: 10px;
+    background-color: #fff;
+    border: 0;
+    border-top: 1px solid #eee;
+    padding: 15px 0;
+  }
+  .portlet .tabbable-line > .tab-content {
+    padding-bottom: 0;
+  }
+  .summary h2,
+  .education h2,
+  .specialization h2,
+  .about h2,
+  .fees h2,
+  .appointment-details h2{
+      font-size: 22px;
+      font-weight: 500;
+  }
+  .summary p,
+  .education p,
+  .specialization li,
+  .about p,
+  .fees p,
+  .appointment-details p{
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .icons-title {
+    align-items: baseline;
+    padding: 20px;
+    width: 100%;
+    border-bottom:  1px solid grey;
+}
+.icons-title p{
+    font-size: 25px;
+}
+
+.books-appointment button{
+    background: #f2c010;
+    border-radius: 4px;
+    color: #FFFFFF;
+    margin-right: 20px !important;
+    border: none;
+    height: 50px;
+    font-weight: 600;
+    width: 279px;
+    float: right;
+}
 
 /* brack points */
 
@@ -884,4 +1199,155 @@ input#file {
     #Reviews .reviews-content .icons-content p{
         font-size: 12px;
     }
+    .multiDiv select {
+        background: #ECECEC;
+        border-radius: 10px;
+        margin-right: 20px;
+        border: none;
+        height: 50px;
+        width: 100%;
+        padding: 10px;
+    }
+    .multiDiv button {
+        background: #683894;
+        border-radius: 10px;
+        color: #FFFFFF;
+        margin-right: 20px !important;
+        border: none;
+        height: 50px;
+        font-weight: 600;
+        width: 100%;
+    }
+    #specialist_mainBanner .multiDiv {
+        bottom: -57px;
+        left: 0;
+        padding: 12px;
+        width: 100%;
+        max-width: 90%;
+        margin: auto;
+    }
+    .inputDiv.d-flex.alignitem{
+        display: block !important;
+    }
+    #specialist_mainBanner .formDiv .inputDiv input {
+        width: 100% !important;
+        height: 25% !important;
+        padding: 23px 70px !important;
+        border-radius: 6px 6px 0px 0px !important;
+        font-family: helvari-regular !important;
+        font-weight: 400 !important;
+        border: none !important;
+        font-size: 20px !important;
+    }
+    #specialist_mainBanner .formDiv .inputDiv button {
+        width: 100% !important;
+        height: 25% !important;
+        padding: 21px 0px !important;
+        border-radius: 0px 0px 6px 6px !important;
+        background-color: rgba(255, 193, 7, 1) !important;
+        border: none !important;
+        font-family: helvari-regular !important;
+        font-weight: 500 !important;
+        font-size: 20px !important;
+    }
+    #specialist_mainBanner {
+        background-color: rgba(72, 35, 105, 1) !important;
+        padding: 85px 10px !important;
+        background-position: 100% 115% !important;
+        background-repeat: no-repeat !important;
+        position: relative !important; 
+    }
+    .tabbable-line > .nav-tabs > li {
+        margin-right: 15px !important;
+        font-size: 16px !important;
+    }
+    section.specialist {
+        padding: 50px 0px !important;
+    }
+    .icons-title p {
+        font-size: 23px !important;
+    }
+    #step_to_order {
+        padding: 0px 5px !important;
+    }
+    #orderMedicines {
+        background: #E5E5E5 !important;
+        padding: 0px 25px !important;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    .multiDiv button {
+        background: #683894 !important;
+        border-radius: 10px !important;
+        color: #FFFFFF !important;
+        margin-right: 20px !important;
+        border: none !important;
+        height: 50px !important;
+        font-weight: 600 !important;
+        width: 100% !important;
+    }
+    .multiDiv select {
+        background: #ECECEC !important;
+        border-radius: 10px !important;
+        margin-right: 20px !important;
+        border: none !important;
+        height: 50px !important;
+        width: 100% !important;
+        padding: 15px !important;
+        margin-top: 9px !important;
+    }
+} 
+
+@media only screen and (max-width: 992px) {
+    #specialist_mainBanner .formDiv .inputDiv button {
+        width: 100%;
+        height: 25%;
+        padding: 21px 0px !important;
+        border-radius: 0px 6px 6px 0px;
+        background-color: rgba(255, 193, 7, 1);
+        border: none;
+        font-family: helvari-regular;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    select {
+        width: 100%;
+        height: 100%;
+        padding: 23px 50px;
+        border: none;
+        font-family: helvari-regular;
+        font-weight: 400;
+        color: rgba(81, 81, 81, 1);
+        font-size: 20px;
+    }
+    #specialist_mainBanner .formDiv .inputDiv input {
+        width: 100%;
+        height: 25%;
+        padding: 23px 70px;
+        border-radius: 6px 0px 0px 6px;
+        font-family: helvari-regular;
+        font-weight: 400;
+        border: none;
+        font-size: 20px;
+    }
+       
+    #specialist_mainBanner .formDiv .inputDiv .selectDiv {
+        width: 100%;
+        height: 25%;
+        border-left: 0.3px solid rgba(81, 81, 81, 1);
+        background-color: #fff;
+        padding: 23px;
+    }
+    #specialist_mainBanner .formDiv .inputDiv .selectDiv select {
+        width: 100%;
+        height: 25% !important;
+        padding: 0px 0px;
+        border: none;
+        font-family: helvari-regular;
+        font-weight: 400;
+        color: rgba(81, 81, 81, 1);
+        font-size: 20px;
+    }
+    
 }
