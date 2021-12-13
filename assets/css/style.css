@@ -769,7 +769,7 @@ ul.navbar-nav.m-auto li {
 
 #orderMedicines {
     background: #E5E5E5;
-    padding:  0px 50px;
+    padding:  70px 50px;
 }
 #orderMedicines .orderMedicines_content h3{
     font-weight: 700;
@@ -849,7 +849,6 @@ input#file {
 #specialist_mainBanner{
     background-color: rgba(72, 35, 105, 1);
     padding: 85px 50px;
-    background-image: url("../img/Group");
     background-position: 100% 115%;
     background-repeat: no-repeat;
     position: relative;
@@ -1025,7 +1024,7 @@ section.specialist {
 }
 
 section#searched_specialists {
-    padding: 35px 0px 35px 50px;
+    padding: 0px 50px;
 }
 
 .online-consultant button{
@@ -1156,9 +1155,274 @@ p.card-text {
     float: right;
 }
 
+.commonDiv.text-center {
+    box-shadow: 0px 0px 15px 1px rgb(0 0 0 / 9%);
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+#searched_specialists h6.commonDiv-header{
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+#searched_specialists p.commonDiv-subheader{
+    font-size: 18px;
+    font-weight: 400;
+    color: #6C6C6C;
+}
+
+.book-an-appointment {
+    box-shadow: 0px 0px 4px 3px rgb(0 0 0 / 12%);
+    height: 500px;
+    background: #FFFFFF;
+    border-radius: 6px;
+}
+.book-an-appointment-header {
+    background: #FDBE10;
+    padding: 0px 50px;
+    line-height: 35px;
+
+}
+.book-an-appointment-header h2 {
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 500;
+    color: #262626;
+    font-style: normal;
+    font-family: 'helvari-regular';
+}
+#bookAppointment .professor-Dr .appointment-content h4 {
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 500;
+    font-style: normal;
+    font-family: 'helvari-regular';
+    color: #222222;
+}
+#bookAppointment .professor-Dr .appointment-content h6 {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'helvari-regular';
+    color: #6C6C6C;
+}
+#bookAppointment .professor-Dr .appointment-content p {
+    font-size: 21px;
+    line-height: 27px;
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'helvari-regular';
+    color: #000000;
+}
+
+h6.doctors-header {
+    color: #474747;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'helvari-regular';
+    line-height: 30px;
+}
+.shaukat-blurb {
+    text-align: center;
+}
+
+.rating-address {
+    color: #6C6C6C !important;
+    font-size: 18px !important;
+    line-height: 35px !important;
+    font-weight: 400 !important;
+    font-family: 'helvari-regular' !important;
+    font-style: normal !important;
+}
+
+/* ******************  Blog section ****************** */
+
+#blogs{
+    background-image: url('../img/Group 742.png');
+    background-position: center center;
+    width: 100%;
+    height: 246.32px;
+}
+#blogs .blog-content{
+    padding: 65px 50px;
+}
+#blogs .blog-content span{
+    color: #FFC107;
+    font-family: 'helvari-regular';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 35px;
+}
+#blogs .blog-content p{
+    font-family: 'helvari-regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+#section#blogImg-ads {
+    padding: 0px 50;
+}
+
+.card{
+    box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+.card-img {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  
+  .card-title {
+    font-family: 'helvari-regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .card-text:last-child {
+    font-family: 'helvari-regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+  .cat {
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  .fa-users {
+    margin-left: 1rem;
+  }
+  
+  .card-footer {
+    font-size: 0.8rem;
+  }
+#blogImg-ads{
+    padding: 50px 50px;
+}
+
+.serach-column {
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+    padding: 25px 50px;
+}
+.serach-column label {
+    border-left: 3px solid #000000;
+    padding-left: 10px;
+}
+
+.serach-column .more-topics_text p{
+    font-family: 'helvari-regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 29px;
+}
+
+ /* Pagination */
+
+.pagination .page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem !important;
+    margin-left: -1px !important;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 0px solid #dee2e6;
+}
+
+.pagination .page-item.active .page-link {
+    z-index: 1;
+    border-radius: 100px;
+    color: #000;
+    background-color: #FDBE10;
+    border-color: #FDBE10;
+    height: 38px;
+    width: 40px;
+    text-align: center;
+}
+.fa-chevron-left:before {
+    content: "\f053";
+    color: #000;
+}
+.page-item:last-child .page-link {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    color: #000000;
+}
+.page-link:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    color: #000;
+}
+ul.pagination{
+    justify-content: center;
+    padding-top: 4%;
+}
+
+/* Labs */
+#labs {
+    padding: 50px 50px;
+}
+#labs h2.sp_name {
+    font-family: 'helvari-regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 35px;
+}
+#labs .status {
+    font-family: helvari;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 42px;
+    color: #6B6B6B;
+}
+#labs .shaukat-blurb {
+    text-align: left !important;
+}
+#labs .card-title {
+    font-family: 'helvari-regular';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 25px;
+  }
+  #labs .card-body {
+    padding: 15px 10px 5px 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px 1px rgb(0 0 0 / 15%);
+    border-radius: 6px;
+}
 /* brack points */
 
 @media only screen and (max-width: 600px) {
+    #labs {
+        padding: 50px 15px;
+    }
+    #labs h2.sp_name {
+        font-family: 'helvari-regular';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 35px;
+    }
+    #labs .card-title {
+        font-family: 'helvari-regular';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 25px;
+    }
     #Order_mainBanner p {
         font-family: helvari-regular;
         color: #ffffff;
@@ -1223,7 +1487,7 @@ p.card-text {
         left: 0;
         padding: 12px;
         width: 100%;
-        max-width: 90%;
+        max-width: 100%;
         margin: auto;
     }
     .inputDiv.d-flex.alignitem{
@@ -1274,6 +1538,13 @@ p.card-text {
         background: #E5E5E5 !important;
         padding: 0px 25px !important;
     }
+    #blogImg-ads {
+        padding: 50px 15px;
+    }
+
+    /* pagination */
+
+    
     
 }
 @media only screen and (max-width: 768px) {
@@ -1297,6 +1568,13 @@ p.card-text {
         padding: 15px !important;
         margin-top: 9px !important;
     }
+    .shaukat-blurb {
+        text-align: left ;
+    }
+    #labs .shaukat-blurb {
+        text-align: left ;
+    }
+   
 } 
 
 @media only screen and (max-width: 992px) {
@@ -1338,10 +1616,10 @@ p.card-text {
         border-left: 0.3px solid rgba(81, 81, 81, 1);
         background-color: #fff;
         padding: 23px;
+        margin: 10px 0px;
     }
     #specialist_mainBanner .formDiv .inputDiv .selectDiv select {
         width: 100%;
-        height: 25% !important;
         padding: 0px 0px;
         border: none;
         font-family: helvari-regular;
