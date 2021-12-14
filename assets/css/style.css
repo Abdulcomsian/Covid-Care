@@ -1068,8 +1068,8 @@ p.card-text {
     margin: 0px;
   }
   .tabbable-line > .nav-tabs > li {
-    margin-right: 80px;
-    font-size: 22px; 
+    margin-right: 50px;
+    font-size: 20px;
 }
   .tabbable-line > .nav-tabs > li > a {
     border: 0;
@@ -1147,7 +1147,6 @@ p.card-text {
     background: #f2c010;
     border-radius: 4px;
     color: #FFFFFF;
-    margin-right: 20px !important;
     border: none;
     height: 50px;
     font-weight: 600;
@@ -1403,9 +1402,629 @@ ul.pagination{
     box-shadow: 0px 0px 10px 1px rgb(0 0 0 / 15%);
     border-radius: 6px;
 }
+
+.blog2-card-body h4{
+    font-family: 'helvari-regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 48px;
+    color: #482369;
+}
+
+.blog2-card-body p{
+    font-family: 'helvari-regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2E2E2E;
+}
+.blog2-card img {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 0px !important;
+}
+.related-card-title{
+    padding: 5px 10px;
+}
+.related-card-title h5 {
+    font-family: 'helvari-regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #482369;
+}
+
+/* labs 2  */
+#islamabad-diagnostic{
+    padding: 50px 50px;
+}
+#islamabad-diagnostic .online-consultant button{
+    background: #683894;
+    border-radius: 4px;
+    color: #FFFFFF;
+    margin-right: 20px !important;
+    border: none;
+    float: left;
+    font-weight: 600;
+    width: 323.52px;
+    height: 54.34px;
+}
+#islamabad-diagnostic .icons-title p{
+    font-size: 20px !important;
+}
+
+#labs-in-karachi{
+    padding: 45px 50px;
+    background: #E5E5E5;
+}
+#labs-in-karachi .related-lab-content h2{
+    font-family: 'helvari-regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 35px;
+    color: #131313;
+}
+#labs-in-karachi .related-lab-content .rating .fa-star{
+    
+    font-size: 14px;
+    color: #f2c010;
+}
+#labs-in-karachi .related-lab-content .rating span{
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+}
+#labs-in-karachi .related-lab-content .status span{
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #6B6B6B;
+}
+#labs-in-karachi .view-profile button {
+    background: white;
+    border-radius: 10px;
+    color: #f2c010;
+    height: 50px;
+    font-weight: 600;
+    width: 100%;
+    border: 1px solid #f2c010;
+}
+#labs-in-karachi .view-profile button:hover{
+    background: #f2c010;
+    border-radius: 10px;
+    color: #fff;
+    height: 50px;
+    font-weight: 600;
+    width: 100%;
+    border: 1px solid #f2c010;
+}
+#labs-in-karachi .mblediv{
+    padding: 10px 4px;
+}
+#labs-in-karachi .lab-related-col{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+    padding: 10px 10px;
+}
+.tab-pane .covid {
+    padding: 9px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+    width: 157.93px;
+    height: 38.44px;
+}
+.tab-pane  .color-vision{
+    padding: 9px;
+    width: 157.93px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+
+}
+.tab-pane .dexa-scan {
+    padding: 9px;
+    width: 151.95px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+
+}
+.tab-pane .doppler {
+    padding: 9px;
+    width: 93.47px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+}
+.tab-pane .cardiac {
+    padding: 9px;
+    width: 187.76px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+}
+.tab-pane .ambulatory {
+    padding: 9px;
+    width: 416px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+
+}
+.tab-pane .ct-scan {
+    padding: 9px;
+    width: 119px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+    
+}
+.tab-pane .dental {
+    padding: 9px;
+    width: 222.48px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+    
+}
+.tab-pane .covid p,
+.tab-pane  .color-vision p,
+.tab-pane .dexa-scan p,
+.tab-pane  .doppler p,
+.tab-pane .cardiac p,
+.tab-pane .ambulatory p,
+.tab-pane .ct-scan p,
+.tab-pane .dental p{
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.review-head h2{
+    font-family:'Helvetica';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 52px;
+    color: #000000;
+}
+.write-review{
+    float: right;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 52px;
+    color: #38B4B9;
+}
+
+.date {
+    float: right;
+}
+.commentdiv {
+    display: flex;
+}
+.seemore h3{
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #555555;
+}
+.jhondiv h3 {
+    font-family: 'helvetica-regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 33px;
+    color: #000000;
+}   
+.ratings {
+    color: #f2c010;
+}
+.jhondiv .rating {
+    color: #f2c010;
+}
+
+#main {
+    margin: 50px 0;
+  }
+  
+  #main #faq .card {
+    margin-bottom: 30px;
+    border: 0;
+  }
+  
+  #main #faq .card .card-header {
+    border: 0;
+    -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+            box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+    border-radius: 2px;
+    padding: 0;
+  }
+  
+  #main #faq .card .card-header .btn-header-link {
+    color: #fff;
+    display: block;
+    text-align: left;
+    background: #FFE472;
+    color: #222;
+    padding: 20px;
+  }
+  
+  #main #faq .card .card-header .btn-header-link:after {
+    content: "\f107";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    float: right;
+  }
+  
+  #main #faq .card .card-header .btn-header-link.collapsed {
+    background: #A541BB;
+    color: #fff;
+  }
+  
+  #main #faq .card .card-header .btn-header-link.collapsed:after {
+    content: "\f106";
+  }
+  
+  #main #faq .card .collapsing {
+    background: #FFE472;
+    line-height: 30px;
+  }
+  
+  #main #faq .card .collapse {
+    border: 0;
+  }
+  
+  #main #faq .card .collapse.show {
+    background: #FFE472;
+    line-height: 30px;
+    color: #222;
+  }
+
+  .card-header {
+    border-left: 3px solid #000;
+}
+.card-header button,
+.card-header  button:hover{
+    font-family: 'helvari-regular';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: none;
+} 
+.card-body p{
+    font-family: helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    
+}
+.specialists-15 {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: #000000;
+    line-height: 40px;
+}
+#Specialist_mainBanner .formDiv .Shaukat-inputDiv{
+    text-align: center;
+}
+#Specialist_mainBanner .formDiv .Shaukat-inputDiv h2{
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 52px;
+    color: #FFFFFF;
+}
+#Specialist_mainBanner .formDiv .icon-address.text-center {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 52px;
+    color: #F2F1EE;
+}
+.multiDiv .call-now{
+    background: #FDBE10;
+    border-radius: 6px;
+    color: #000000;
+    margin-right: 20px !important;
+    border: none;
+    width: 222px;
+    height: 42px;
+    font-weight: 600;
+}
+.multiDiv .get-direction{
+    background: #FFFFFF;
+    border-radius: 6px;
+    color: #000000;
+    margin-right: 20px !important;
+    border: none;
+    font-weight: 600;
+    width: 222px;
+    height: 42px;
+}
+.gynecologists {
+    padding:10px;
+    background: rgba(72, 35, 105, 0.15);
+    border-radius: 6px;
+    width: 145px;
+    font-size: 15px;
+    height: 42px;
+}
+.tab-pane .ultherapy{
+    width: 119px;
+    padding: 10px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+}
+.tab-pane .ultherapy-1{
+    width: 157.93px;
+    padding: 10px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+}
+.tab-pane .ultherapy-2{
+    padding: 10px;
+    width: 151.95px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+}
+.tab-pane .ultherapy-3{
+    width: 306.35px;
+    padding: 10px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+}
+.tab-pane .ultherapy-4{
+    padding: 10px;
+    width: 255.65px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+    
+}
+.tab-pane .ultherapy-5{
+    padding: 10px;
+    width: 151.95px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+}
+.tab-pane .ultherapy-6{
+    padding: 10px;
+    width: 151.95px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px
+}
+.tab-pane .ultherapy-7{
+    width: 151.95px;
+    height: 38.44px;
+    padding: 10px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+}
+.tab-pane .ultherapy-8{
+    padding: 10px;
+    width: 222.48px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+}
+.tab-pane .menopause-{
+    padding: 10px;
+    width: 119px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+}
+.tab-pane .menopause-1{
+    padding: 10px;
+    width: 157.93px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+}
+.tab-pane .menopause-2{
+    padding: 10px;
+    width: 134.53px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+}
+.tab-pane .menopause-3{
+    padding: 10px;
+    width: 257.14px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+}
+.tab-pane .menopause-4{
+    padding: 10px;
+    width: 255.65px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+}
+.tab-pane .menopause-5{
+    padding: 10px;
+    width: 151.95px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+}
+.tab-pane .menopause-6{
+    padding: 10px;
+    width: 151.95px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+}
+.tab-pane .menopause-7{
+    padding: 10px;
+    width: 125.83px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+}
+.tab-pane .menopause-8{
+    padding: 10px;
+    width: 222.48px;
+    height: 38.44px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 6px;
+}
+#login-section {
+    padding: 70px 50px;
+}
+#login-section input#name ,
+#login-section input#number {
+    background: #fff;
+}
+#login-section .input-label {
+    font-family: helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: -0.33px;
+    color: #262626;
+    opacity: 0.6;
+}
+
+#login-section h2{
+    font-family: 'helvetica';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 82px;
+    color: #000000;
+}
+#login-section .sign-in button{
+    width: 166;
+    float: right;
+    border: none;
+    height: 64px;
+    background: #FFC107;
+    border-radius: 6px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: -0.33px;
+    color: #302229;
+}
 /* brack points */
 
 @media only screen and (max-width: 600px) {
+    #login-section .sign-in button {
+        width: 100%;
+        float: right;
+        border: none;
+        height: 64px;
+        background: #FFC107;
+        border-radius: 6px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 34px;
+        letter-spacing: -0.33px;
+        color: #302229;
+    }
+    #login-section {
+        padding: 70px 30px;
+
+    }
+    .gynecologists {
+    padding: 10px;
+    background: rgba(72, 35, 105, 0.15);
+    border-radius: 6px;
+    width: 100%;
+    font-size: 15px;
+    height: auto;
+}
+    .review-head h2{
+        font-family:'Helvetica';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 52px;
+        color: #000000;
+        text-align: left;
+    }
+    .write-review{
+        float: left !important;
+        font-family: helvari;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 52px;
+        color: #38B4B9;
+    }
+    .books-appointment button {
+        background: #f2c010;
+        border-radius: 4px;
+        color: #FFFFFF;
+        border: none;
+        height: 50px;
+        font-weight: 600;
+        width: 100%;
+    }
+    #labs-in-karachi {
+        padding: 45px 10px;
+        background: #E5E5E5;
+    }
+    #labs-in-karachi .mblediv{
+        padding: 10px 4px;
+        text-align: center;
+    }
+    #islamabad-diagnostic{
+        padding: 50px 25px;
+    }
+    .blog2-card-body h4 {
+        font-family: 'helvari-regular';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 45px;
+        color: #482369;
+    }
+    .related-card-title h5 {
+        font-family: 'helvari-regular';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        color: #482369;
+    }
     #labs {
         padding: 50px 15px;
     }
@@ -1496,7 +2115,7 @@ ul.pagination{
     #specialist_mainBanner .formDiv .inputDiv input {
         width: 100% !important;
         height: 25% !important;
-        padding: 23px 70px !important;
+        padding: 23px 20px !important;
         border-radius: 6px 6px 0px 0px !important;
         font-family: helvari-regular !important;
         font-weight: 400 !important;
@@ -1522,8 +2141,8 @@ ul.pagination{
         position: relative !important; 
     }
     .tabbable-line > .nav-tabs > li {
-        margin-right: 15px !important;
-        font-size: 16px !important;
+        margin-right: 13px !important;
+        font-size: 15px !important;
     }
     section.specialist {
         padding: 50px 0px !important;
@@ -1542,12 +2161,16 @@ ul.pagination{
         padding: 50px 15px;
     }
 
-    /* pagination */
-
+    
+    
     
     
 }
 @media only screen and (max-width: 768px) {
+    .tabbable-line > .nav-tabs > li {
+        margin-right: 30px;
+        font-size: 15px;
+    }
     .multiDiv button {
         background: #683894 !important;
         border-radius: 10px !important;
@@ -1578,6 +2201,10 @@ ul.pagination{
 } 
 
 @media only screen and (max-width: 992px) {
+    .tabbable-line > .nav-tabs > li {
+        margin-right: 30px;
+        font-size: 15px;
+    }
     #specialist_mainBanner .formDiv .inputDiv button {
         width: 100%;
         height: 25%;
