@@ -1,0 +1,500 @@
+
+#myc-container {
+    width: inherit;
+}
+.datetimes button{
+    width: 256px;
+    height: 57.09px;
+    background: rgba(72, 35, 105, 0.1);
+    border-radius: 6px;
+    border: none;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 35px;
+    color: #000000;
+
+}
+.datetimes {
+    text-align: center;
+}
+
+#myc-nav-container {
+    margin-bottom: 15px;
+    width: inherit;
+}
+
+#myc-current-month-year-container {
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: lighter;
+    text-align: center;
+    text-transform: capitalize;
+    vertical-align: top;
+    width: 68%;
+}
+
+#myc-prev-week-container {
+    display: inline-block;
+    width: 12%;
+}
+
+#myc-next-week-container {
+    display: inline-block;
+    width: 15%;
+}
+
+#myc-prev-week {
+    border: 1px solid #e0e0e0;
+    border-radius: 80px;
+    color: #e0e0e0;
+    cursor: pointer;
+    float: left;
+    font-size: 1.6em;
+    font-weight: lighter;
+    height: 40px;
+    text-align: center;
+    width: 40px;
+}
+
+#myc-next-week {
+    border: 1px solid #e0e0e0;
+    border-radius: 80px;
+    color: #e0e0e0;
+    cursor: pointer;
+    float: right;
+    font-size: 1.6em;
+    font-weight: lighter;
+    height: 40px;
+    text-align: center;
+    width: 40px;
+}
+
+#myc-prev-week:hover, #myc-next-week:hover {
+    border: 1px solid #bdbdbd;
+    color: #bdbdbd;
+}
+
+#myc-dates-container {
+    background-color: #fafafa;
+}
+
+.myc-date-header {
+    border-right: 1px solid #e0e0e0;
+    display: inline-block;
+    min-height: 50px;
+    padding: 15px 0px 15px 15px;
+    vertical-align: top;
+    width: 25%;
+    text-align: center;
+}
+
+.myc-date-header:first-of-type {
+    /* padding-left: 15px; */
+    text-align: cente;
+}
+
+.myc-date-header:last-of-type {
+    border-right: none;
+    width: 13%;
+}
+
+#myc-available-time-container {
+    border-top: 1px solid #e0e0e0;
+    min-height: 150px;
+}
+
+.myc-day-time-container {
+    display: inline-block;
+    /* height: 100%; */
+    padding: 15px 0px 15px 15px;
+    vertical-align: top;
+    width: 24%;
+}
+
+.myc-day-time-container:first-of-type {
+    padding: 15px 0px 15px 15px;
+    width: 24%;
+}
+
+.myc-day-time-container:last-of-type {
+    border-right: none;
+    width: 13%;
+}
+
+.myc-date-number {
+    font-size: 1.8em;
+    font-weight: lighter;
+}
+
+.myc-available-time {
+    background-color: rgba(72, 35, 105, 0.1) !important;
+    border-radius: 6px !important;
+    color: #000000 !important;
+    display: block !important;
+    margin-bottom: 15px !important;
+    padding: 10px 0px 10px 0px !important;
+    text-align: center !important;
+}
+
+.myc-available-time.selected, .myc-available-time:hover {
+    background-color: #222;
+}
+
+.myc-date-display {
+    font-weight: lighter;
+}
+.continue button{
+    width: 330.95px;
+    height: 45.56px;
+    background: #FDBE10;
+    border-radius: 6px;
+    border: none;
+}
+.professor-Dr.d-flex {
+    padding: 29px 15px;
+}
+
+.submit-appointment {
+    box-shadow: 0px 0px 4px 3px rgb(0 0 0 / 12%);
+    height: 500px;
+    background: #FFFFFF;
+    border-radius: 6px;
+}
+.ok{
+    padding-top: 12%;
+}
+.verify{
+    padding-top: 24%;
+}
+.ok button{
+    width: 150.13px;
+    height: 50.58px;
+    background: #0EA61D;
+    border: none;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.verify button{
+    width: 171.42px;
+    height: 40px;
+    background: #482369;
+    border-radius: 6px;
+    font-family: Helvetica;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1200){
+    #myc-prev-week-container {
+        display: inline-block;
+        width: 12%;
+    }
+    #bookAppointment .professor-Dr .appointment-content h4 {
+        font-size: 14px;
+        line-height: 35px;
+        font-weight: bold;
+        font-style: normal;
+        font-family: 'helvari-regular';
+        color: #222222;
+    }
+    #bookAppointment .professor-Dr .appointment-content h6 {
+        font-size: 16px;
+        line-height: 27px;
+        font-weight: 400;
+        font-style: normal;
+        font-family: 'helvari-regular';
+        color: #6C6C6C;
+    }
+    .professor-Dr .appointment-content p {
+        font-size: 18px !important;
+        line-height: 27px !important;
+        font-weight: normal !important;
+        font-style: normal !important;
+        font-family: 'helvari-regular' !important;
+        color: #000000 !important;
+    }
+    #myc-current-month-year-container {
+        display: inline-block;
+        font-size: 1.5em;
+        font-weight: lighter;
+        text-align: center;
+        text-transform: capitalize;
+        vertical-align: top;
+        width: 60%;
+    }
+    
+    .continue button {
+        width: 100% ;
+        height: 45.56px;
+        background: #FDBE10;
+        border-radius: 6px;
+        border: none;
+    }
+    myc-date-header:first-of-type {
+        text-align: center !important;
+    }
+    myc-date-header, .myc-day-time-container {
+        width: 22%;
+        padding: 15px 0px 15px 8px !important;
+
+    }
+    .myc-available-time {
+        background-color: rgba(72, 35, 105, 0.1) !important;
+        font-size: 13px !important;
+        border-radius: 6px !important;
+        color: #000000 !important;
+        display: block !important;
+        margin-bottom: 15px !important;
+        padding: 10px 0px 10px 0px !important;
+        text-align: center !important;
+    }
+    .myc-date-header {
+        border-right: 1px solid #e0e0e0;
+        display: inline-block;
+        min-height: 50px;
+        padding: 15px 0px 15px 15px;
+        vertical-align: top;
+        width: 25%;
+        text-align: left;
+    }
+    .myc-day-time-container:first-of-type {
+        padding: 15px 0px 15px 8px !important;
+        width: 24% !important;
+    }
+    .myc-date-header {
+        border-right: 1px solid #e0e0e0 !important;
+        display: inline-block !important;
+        min-height: 50px !important;
+        padding: 15px 0px 15px 15px !important;
+        vertical-align: top !important;
+        width: 23% !important;
+    }
+    .myc-date-header:last-of-type {
+        border-right: none !important;
+        width: 13% !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #bookAppointment .professor-Dr .appointment-content h4 {
+        font-size: 16px;
+        line-height: 35px;
+        font-weight: bold;
+        font-style: normal;
+        font-family: 'helvari-regular';
+        color: #222222;
+    }
+    #bookAppointment .professor-Dr .appointment-content h6 {
+        font-size: 16px;
+        line-height: 27px;
+        font-weight: 400;
+        font-style: normal;
+        font-family: 'helvari-regular';
+        color: #6C6C6C;
+    }
+    .professor-Dr .appointment-content p {
+        font-size: 18px !important;
+        line-height: 27px !important;
+        font-weight: normal !important;
+        font-style: normal !important;
+        font-family: 'helvari-regular' !important;
+        color: #000000 !important;
+    }
+    #myc-current-month-year-container {
+        display: inline-block;
+        font-size: 1.5em;
+        font-weight: lighter;
+        text-align: center;
+        text-transform: capitalize;
+        vertical-align: top;
+        width: 60%;
+    }
+    
+    .continue button {
+        width: 100% ;
+        height: 45.56px;
+        background: #FDBE10;
+        border-radius: 6px;
+        border: none;
+    }
+    myc-date-header:first-of-type {
+        text-align: center !important;
+    }
+    myc-date-header, .myc-day-time-container {
+        width: 22%;
+        padding: 15px 0px 15px 8px !important;
+
+    }
+    .myc-available-time {
+        background-color: rgba(72, 35, 105, 0.1) !important;
+        font-size: 13px !important;
+        border-radius: 6px !important;
+        color: #000000 !important;
+        display: block !important;
+        margin-bottom: 15px !important;
+        padding: 10px 0px 10px 0px !important;
+        text-align: center !important;
+    }
+    .myc-date-header {
+        border-right: 1px solid #e0e0e0;
+        display: inline-block;
+        min-height: 50px;
+        padding: 15px 0px 15px 15px;
+        vertical-align: top;
+        width: 25%;
+        text-align: left;
+    }
+    .myc-day-time-container:first-of-type {
+        padding: 15px 0px 15px 8px !important;
+        width: 24% !important;
+    }
+    .myc-date-header {
+        border-right: 1px solid #e0e0e0 !important;
+        display: inline-block !important;
+        min-height: 50px !important;
+        padding: 15px 0px 15px 15px !important;
+        vertical-align: top !important;
+        width: 23% !important;
+    }
+    .myc-date-header:last-of-type {
+        border-right: none !important;
+        width: 13% !important;
+    }
+
+
+}
+@media only screen and (max-width: 600px) {
+    .book-an-appointment-header h2 {
+        font-size: 25px;
+        line-height: 50px;
+        font-weight: 500;
+        color: #262626;
+        font-style: normal;
+        font-family: 'helvari-regular';
+    }
+    .verify{
+        padding-top: 7%;
+    }
+    .ok {
+        padding-top: 15%;
+    }
+    .verify button{
+        width: 100%;
+        height: 40px;
+        background: #482369;
+        border-radius: 6px;
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 35px;
+        border: none;
+        color: #FFFFFF;
+    }
+    #bookAppointment .professor-Dr .appointment-content h4 {
+        font-size: 15px;
+        line-height: 35px;
+        font-weight: bold;
+        font-style: normal;
+        font-family: 'helvari-regular';
+        color: #222222;
+    }
+    #bookAppointment .professor-Dr .appointment-content h6 {
+        font-size: 16px;
+        line-height: 27px;
+        font-weight: 400;
+        font-style: normal;
+        font-family: 'helvari-regular';
+        color: #6C6C6C;
+    }
+    .professor-Dr .appointment-content p {
+        font-size: 18px !important;
+        line-height: 27px !important;
+        font-weight: normal !important;
+        font-style: normal !important;
+        font-family: 'helvari-regular' !important;
+        color: #000000 !important;
+    }
+    #myc-current-month-year-container {
+        display: inline-block;
+        font-size: 1.5em;
+        font-weight: lighter;
+        text-align: center;
+        text-transform: capitalize;
+        vertical-align: top;
+        width: 60%;
+    }
+    
+    .continue button {
+        width: 100% ;
+        height: 45.56px;
+        background: #FDBE10;
+        border-radius: 6px;
+        border: none;
+    }
+    myc-date-header:first-of-type {
+        text-align: center !important;
+    }
+    myc-date-header, .myc-day-time-container {
+        width: 22%;
+        padding: 15px 0px 15px 8px !important;
+
+    }
+    .myc-available-time {
+        background-color: rgba(72, 35, 105, 0.1) !important;
+        font-size: 13px !important;
+        border-radius: 6px !important;
+        color: #000000 !important;
+        display: block !important;
+        margin-bottom: 15px !important;
+        padding: 10px 0px 10px 0px !important;
+        text-align: center !important;
+    }
+    .myc-date-header {
+        border-right: 1px solid #e0e0e0;
+        display: inline-block;
+        min-height: 50px;
+        padding: 15px 0px 15px 15px;
+        vertical-align: top;
+        width: 25%;
+        text-align: left;
+    }
+    .myc-day-time-container:first-of-type {
+        padding: 15px 0px 15px 8px !important;
+        width: 24% !important;
+    }
+    .myc-date-header {
+        border-right: 1px solid #e0e0e0 !important;
+        display: inline-block !important;
+        min-height: 50px !important;
+        padding: 15px 0px 15px 15px !important;
+        vertical-align: top !important;
+        width: 23% !important;
+    }
+    .myc-date-header:last-of-type {
+        border-right: none !important;
+        width: 13% !important;
+    }
+}
+
+
+
+/* @media only screen and (max-width: 768px) {
+    .myc-date-header, .myc-day-time-container {
+        width: 22%;
+    } */
+    /*.myc-date-header:last-of-type, .myc-day-time-container:last-of-type {
+        width: 12%;
+    }*/
+

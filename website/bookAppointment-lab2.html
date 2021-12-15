@@ -1,5 +1,6 @@
+
 <html>
-    <title>Book Appointment</title>
+    <title>Book Appointment Lab 2</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <head>
@@ -128,10 +129,7 @@
             <nav aria-label="breadcrumb ">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item active" aria-current="page">Home </li>
-                  <li class="breadcrumb-item " aria-current="page">Doctors</li>
-                  <li class="breadcrumb-item " aria-current="page">Covid 19</li>
-                  <li class="breadcrumb-item " aria-current="page">Dr. Imtiaz Aslam</li>
-                  <li class="breadcrumb-item " aria-current="page">Book Appointment</li>
+                  <li class="breadcrumb-item " aria-current="page">Specialists in Pakistan</li>
                 </ol>
             </nav>
         </div>
@@ -147,22 +145,85 @@
 
                             <div class="professor-Dr d-flex">
                                 <div class="appointment-img">
-                                    <img src="../assets/img/Ellipse.png" alt="" class="" style="max-width: 85%;">
+                                    <img src="../assets/img/islamabad-diagnostic.png" alt="" class="" style="max-width: 85%;">
                                 </div>
-                                <div class="appointment-content">
-                                    <h4 class="">Professor Dr. Imtiaz Aslam</h4>
-                                    <h6 class="">Zia Hospital (Karachi)</h6>
-                                    <p class="pt-2">Fee: Rs 1000</p>
+                                <div class="appointment-content pb-5">
+                                    <h4 class="">Islamabad Diagnostic Center</h4>
+                                    <h6 class="">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+
+                                        Address
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class=" pb-5  datetimes">
+                                        <button>Sep, 21 - 9:30amt</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="appointment-form" style="padding: 0px 50px;">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <label for="Patient-name"><b>I am registering for</b></label>
+
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-control">
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="a" checked>
+                                                            <label class="form-check-label" for="exampleRadios1">
+                                                                Myself
+                                                                </label>
+                                                          </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-control">
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="b">
+                                                            <label class="form-check-label" for="exampleRadios2">
+                                                                Other People
+                                                                </label>
+                                                          </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="form-group">
+                                                <label for="Patient-name"><b>Patient’s Full Name</b></label>
+                                                <input type="text" id="Patient-name" class="form-control" aria-describedby="Patient-name" placeholder="Full Name">
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class="form-group">
+                                                        <label for="mobile-number"><b>Mobile Number</b></label>
+                                                        <input type="number" id="mobile-number" class="form-control" aria-describedby="mobile-number" placeholder="Enter Number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="text-center verify">
+                                                        <button>Verify</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row" style="padding: 0px 30px;">
                                 <div class="col-md-12">
-                                    <div id="picker"></div>
-                                    <div class="pb-3 text-center continue">
-                                        <button>Continue</button>
+                                    <div class="pb-4 pt-4 text-center continue">
+                                        <button>Book Appointment</button>
                                     </div>
                                 </div>
                             </div>
+                            
                             
 
                            
@@ -318,7 +379,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
        
         <script src="../assets/js/slick.min.js"></script>
-        <script src="../assets/js/mark-your-calender.js"></script>
         
         <script>
             $('.sliderDiv').slick({
@@ -328,110 +388,5 @@
                 slidesToScroll: 3
             });
         </script>
-        <script type="text/javascript">
-            (function($) {
-              $('#picker').markyourcalendar({
-                availability: [
-                  ['9:30am', '11:30am', '12:30pm', '1:30pm', '4:30pm'],
-                  ['9:30am', '10:30am', '1:30am', ' -- ', ' -- '],
-                  ['9:30am', '1:30am', '2:30pm', '3:30pm', '4:30pm'],
-                  ['9:00am', '5:30am', ' -- ', ' -- ', ' -- ']
-                ],
-                isMultiple: true,
-                onClick: function(ev, data) {
-                  // data is a list of datetimes
-                  console.log(data);
-                  var html = ``;
-                  $.each(data, function() {
-                    var d = this.split(' ')[0];
-                    var t = this.split(' ')[1];
-                    html += `<p>` + d + ` ` + t + `</p>`;
-                  });
-                  $('#selected-dates').html(html);
-                },
-                onClickNavigator: function(ev, instance) {
-                  var arr = [
-                  [
-                  ['9:30am', '11:30am', '12:30pm', '1:30pm', '4:30pm'],
-                  ['9:30am', '10:30am', '1:30am', ' -- ', ' -- '],
-                  ['9:30am', '1:30am', '2:30pm', '3:30pm', '4:30pm'],
-                  ['9:00am', '5:30am', ' -- ', ' -- ', ' -- ']
-                ],
-
-                [
-                  ['9:30am', '11:30am', '12:30pm', '1:30pm', '4:30pm'],
-                  ['9:30am', '10:30am', '1:30am', ' -- ', ' -- '],
-                  ['9:30am', '1:30am', '2:30pm', '3:30pm', '4:30pm'],
-                  ['9:00am', '5:30am', ' -- ', ' -- ', ' -- ']
-                ],
-                    
-                [
-                  ['9:30am', '11:30am', '12:30pm', '1:30pm', '4:30pm'],
-                  ['9:30am', '10:30am', '1:30am', ' -- ', ' -- '],
-                  ['9:30am', '1:30am', '2:30pm', '3:30pm', '4:30pm'],
-                  ['9:00am', '5:30am', ' -- ', ' -- ', ' -- ']
-                ],
-                  
-                [
-                  ['9:30am', '11:30am', '12:30pm', '1:30pm', '4:30pm'],
-                  ['9:30am', '10:30am', '1:30am', ' -- ', ' -- '],
-                  ['9:30am', '1:30am', '2:30pm', '3:30pm', '4:30pm'],
-                  ['9:00am', '5:30am', ' -- ', ' -- ', ' -- ']
-                ],
-                    
-                [
-                  ['9:30am', '11:30am', '12:30pm', '1:30pm', '4:30pm'],
-                  ['9:30am', '10:30am', '1:30am', ' -- ', ' -- '],
-                  ['9:30am', '1:30am', '2:30pm', '3:30pm', '4:30pm'],
-                  ['9:00am', '5:30am', ' -- ', ' -- ', ' -- ']
-                ],
-                [
-                  ['9:30am', '11:30am', '12:30pm', '1:30pm', '4:30pm'],
-                  ['9:30am', '10:30am', '1:30am', ' -- ', ' -- '],
-                  ['9:30am', '1:30am', '2:30pm', '3:30pm', '4:30pm'],
-                  ['9:00am', '5:30am', ' -- ', ' -- ', ' -- ']
-                ],
-
-                [
-                  ['9:30am', '11:30am', '12:30pm', '1:30pm', '4:30pm'],
-                  ['9:30am', '10:30am', '1:30am', ' -- ', ' -- '],
-                  ['9:30am', '1:30am', '2:30pm', '3:30pm', '4:30pm'],
-                  ['9:00am', '5:30am', ' -- ', ' -- ', ' -- ']
-                ],
-                  ]
-                  var rn = Math.floor(Math.random() * 10) % 7;
-                  instance.setAvailability(arr[rn]);
-                }
-              });
-            })(jQuery);
-        </script>
-        <script type="text/javascript">
-    
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-36251023-1']);
-      _gaq.push(['_setDomainName', 'jqueryscript.net']);
-      _gaq.push(['_trackPageview']);
-    
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    
-    </script>
-    <script>
-    try {
-      fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
-        return true;
-      }).catch(function(e) {
-        var carbonScript = document.createElement("script");
-        carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
-        carbonScript.id = "_carbonads_js";
-        document.getElementById("carbon-block").appendChild(carbonScript);
-      });
-    } catch (error) {
-      console.log(error);
-    }
-    </script>
     </body>
 </html>

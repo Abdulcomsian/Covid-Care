@@ -1,5 +1,6 @@
+
 <html>
-    <title>Book Appointment</title>
+    <title>Book Appointment 3</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <head>
@@ -128,10 +129,7 @@
             <nav aria-label="breadcrumb ">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item active" aria-current="page">Home </li>
-                  <li class="breadcrumb-item " aria-current="page">Doctors</li>
-                  <li class="breadcrumb-item " aria-current="page">Covid 19</li>
-                  <li class="breadcrumb-item " aria-current="page">Dr. Imtiaz Aslam</li>
-                  <li class="breadcrumb-item " aria-current="page">Book Appointment</li>
+                  <li class="breadcrumb-item " aria-current="page">Specialists in Pakistan</li>
                 </ol>
             </nav>
         </div>
@@ -139,33 +137,29 @@
         <section id="bookAppointment">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 offset-md-3">
-                        <div class="book-an-appointment">
-                            <div class="book-an-appointment-header">
-                                <h2>Book an Appointment</h2>
-                            </div>
-
-                            <div class="professor-Dr d-flex">
-                                <div class="appointment-img">
-                                    <img src="../assets/img/Ellipse.png" alt="" class="" style="max-width: 85%;">
+                    <div class="col-md-12 offset-md-0">
+                        <div class="submit-appointment">
+                            <fieldset style="opacity: 1;">
+                                <div class="form-card pt-5">
+                                    <div class="row">
+                                        <div class="col-md-12 text-center">
+                                            <img src="https://img.icons8.com/color/96/000000/ok--v2.png" class="fit-image">
+                                        </div>
+                                        <div class="col-md-12 pt-4 text-center">
+                                            <h2 class="fs-title">Appointment Successfully Booked</h2> <br><br>
+                                        </div>
+                                        <div class="col-md-12 text-center">
+                                            <h5>Your appointment with Doctor Name is booked on dd/mm/yyy - Time at 
+                                                Hospital Name </h5>
+                                        </div>
+                                        <div class="col-md-12  text-center">
+                                            <div class="ok">
+                                                <button class="">OK</button>
+                                            </div>
+                                        </div>
+                                    </div> 
                                 </div>
-                                <div class="appointment-content">
-                                    <h4 class="">Professor Dr. Imtiaz Aslam</h4>
-                                    <h6 class="">Zia Hospital (Karachi)</h6>
-                                    <p class="pt-2">Fee: Rs 1000</p>
-                                </div>
-                            </div>
-                            <div class="row" style="padding: 0px 30px;">
-                                <div class="col-md-12">
-                                    <div id="picker"></div>
-                                    <div class="pb-3 text-center continue">
-                                        <button>Continue</button>
-                                    </div>
-                                </div>
-                            </div>
-                            
-
-                           
+                            </fieldset>
                         </div>
                     </div>
                 </div>
@@ -318,7 +312,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
        
         <script src="../assets/js/slick.min.js"></script>
-        <script src="../assets/js/mark-your-calender.js"></script>
         
         <script>
             $('.sliderDiv').slick({
@@ -328,110 +321,5 @@
                 slidesToScroll: 3
             });
         </script>
-        <script type="text/javascript">
-            (function($) {
-              $('#picker').markyourcalendar({
-                availability: [
-                  ['9:30am', '11:30am', '12:30pm', '1:30pm', '4:30pm'],
-                  ['9:30am', '10:30am', '1:30am', ' -- ', ' -- '],
-                  ['9:30am', '1:30am', '2:30pm', '3:30pm', '4:30pm'],
-                  ['9:00am', '5:30am', ' -- ', ' -- ', ' -- ']
-                ],
-                isMultiple: true,
-                onClick: function(ev, data) {
-                  // data is a list of datetimes
-                  console.log(data);
-                  var html = ``;
-                  $.each(data, function() {
-                    var d = this.split(' ')[0];
-                    var t = this.split(' ')[1];
-                    html += `<p>` + d + ` ` + t + `</p>`;
-                  });
-                  $('#selected-dates').html(html);
-                },
-                onClickNavigator: function(ev, instance) {
-                  var arr = [
-                  [
-                  ['9:30am', '11:30am', '12:30pm', '1:30pm', '4:30pm'],
-                  ['9:30am', '10:30am', '1:30am', ' -- ', ' -- '],
-                  ['9:30am', '1:30am', '2:30pm', '3:30pm', '4:30pm'],
-                  ['9:00am', '5:30am', ' -- ', ' -- ', ' -- ']
-                ],
-
-                [
-                  ['9:30am', '11:30am', '12:30pm', '1:30pm', '4:30pm'],
-                  ['9:30am', '10:30am', '1:30am', ' -- ', ' -- '],
-                  ['9:30am', '1:30am', '2:30pm', '3:30pm', '4:30pm'],
-                  ['9:00am', '5:30am', ' -- ', ' -- ', ' -- ']
-                ],
-                    
-                [
-                  ['9:30am', '11:30am', '12:30pm', '1:30pm', '4:30pm'],
-                  ['9:30am', '10:30am', '1:30am', ' -- ', ' -- '],
-                  ['9:30am', '1:30am', '2:30pm', '3:30pm', '4:30pm'],
-                  ['9:00am', '5:30am', ' -- ', ' -- ', ' -- ']
-                ],
-                  
-                [
-                  ['9:30am', '11:30am', '12:30pm', '1:30pm', '4:30pm'],
-                  ['9:30am', '10:30am', '1:30am', ' -- ', ' -- '],
-                  ['9:30am', '1:30am', '2:30pm', '3:30pm', '4:30pm'],
-                  ['9:00am', '5:30am', ' -- ', ' -- ', ' -- ']
-                ],
-                    
-                [
-                  ['9:30am', '11:30am', '12:30pm', '1:30pm', '4:30pm'],
-                  ['9:30am', '10:30am', '1:30am', ' -- ', ' -- '],
-                  ['9:30am', '1:30am', '2:30pm', '3:30pm', '4:30pm'],
-                  ['9:00am', '5:30am', ' -- ', ' -- ', ' -- ']
-                ],
-                [
-                  ['9:30am', '11:30am', '12:30pm', '1:30pm', '4:30pm'],
-                  ['9:30am', '10:30am', '1:30am', ' -- ', ' -- '],
-                  ['9:30am', '1:30am', '2:30pm', '3:30pm', '4:30pm'],
-                  ['9:00am', '5:30am', ' -- ', ' -- ', ' -- ']
-                ],
-
-                [
-                  ['9:30am', '11:30am', '12:30pm', '1:30pm', '4:30pm'],
-                  ['9:30am', '10:30am', '1:30am', ' -- ', ' -- '],
-                  ['9:30am', '1:30am', '2:30pm', '3:30pm', '4:30pm'],
-                  ['9:00am', '5:30am', ' -- ', ' -- ', ' -- ']
-                ],
-                  ]
-                  var rn = Math.floor(Math.random() * 10) % 7;
-                  instance.setAvailability(arr[rn]);
-                }
-              });
-            })(jQuery);
-        </script>
-        <script type="text/javascript">
-    
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-36251023-1']);
-      _gaq.push(['_setDomainName', 'jqueryscript.net']);
-      _gaq.push(['_trackPageview']);
-    
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    
-    </script>
-    <script>
-    try {
-      fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
-        return true;
-      }).catch(function(e) {
-        var carbonScript = document.createElement("script");
-        carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
-        carbonScript.id = "_carbonads_js";
-        document.getElementById("carbon-block").appendChild(carbonScript);
-      });
-    } catch (error) {
-      console.log(error);
-    }
-    </script>
     </body>
 </html>
