@@ -1,5 +1,5 @@
 <html>
-<title>Dashboard</title>
+<title>Dashboard - Request</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -9,6 +9,21 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css" />
+    <style>
+        .accept {
+            background: #37B060;
+            border-radius: 6px;
+        }
+
+        .ignore {
+            background: #D84F43;
+            border-radius: 6px;
+        }
+        .tableDiv table tbody td p:nth-child(2) {
+            color: #888888;
+            font-size: 12px;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,27 +43,15 @@
                     <ul>
                         <li>
                             <img src="../../assets/dashboard/img/Vector (2).png" alt="" class="img-fluid" />
-                            <a href="../index.html">Dashboard</a>
+                            <a href="">Dashboard</a>
+                        </li>
+                        <li>
+                            <img src="../../assets/dashboard/img/calender.png" alt="" class="img-fluid" />
+                            <a href="./order.html">Orders</a>
                         </li>
                         <li class="active">
-                            <img src="../../assets/dashboard/img/Group 560.png" alt="" class="img-fluid" />
-                            <a href="#">Patients</a>
-                        </li>
-                        <li>
-                            <img src="../../assets/dashboard/img/maki_doctor.png" alt="" class="img-fluid" />
-                            <a href="../doctor/index.html">Doctors</a>
-                        </li>
-                        <li>
-                            <img src="../../assets/dashboard/img/Vector-1 (2).png" alt="" class="img-fluid" />
-                            <a href="../hospital/index.html">Hospitals</a>
-                        </li>
-                        <li>
-                            <img src="../../assets/dashboard/img/Vector-2.png" alt="" class="img-fluid" />
-                            <a href="../lab/index.html">Lab & Diagnostics</a>
-                        </li>
-                        <li>
-                            <img src="../../assets/dashboard/img/Group 655.png" alt="" class="img-fluid" />
-                            <a href="../supplier/index.html">Suppliers</a>
+                            <img src="../../assets/dashboard/img/calender.png" alt="" class="img-fluid" />
+                            <a href="#">Requests</a>
                         </li>
                     </ul>
                 </div>
@@ -71,7 +74,7 @@
                         <div class="row">
                             <div class="col-md-7">
                                 <div class="dashboardTitle">
-                                    <h3>Patients</h3>
+                                    <h3>Requests</h3>
                                 </div>
                             </div>
                             <div class="col-md-5">
@@ -79,8 +82,7 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="inputDiv">
-                                                <img src="../../assets/dashboard/img/search.png" alt="" class="img-fluid" />
-                                                <input style="padding-left: 40px;" type="text" name="" placeholder="Search" id="" />
+                                                <input type="text" name="" placeholder="Search" id="" />
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -112,112 +114,79 @@
                     <div class="patientTable">
                         <div class="tableBar">
                             <div class="sortingDiv">
-                                <h4>Sort by:</h4>
-                                <div class="multiSort">
-                                    <button class="active">All</button>
-                                    <button>Recent</button>
-                                    <button>Last Week</button>
-                                    <button>Last Month</button>
-                                    <button>Last Year</button>
-                                </div>
-                            </div>
-                            <div class="addPatients">
-                                <button data-toggle="modal" data-target="#addPatients">
-                                    + Add Patient
-                                </button>
+                                <p class="todayDate">2 New Orders</p>
                             </div>
                         </div>
                         <div class="tableDiv">
                             <table id="patientTable" class="display">
                                 <thead>
                                     <tr>
-                                        <th>Patient ID</th>
-                                        <th>Patient Name</th>
-                                        <th>Phone Number</th>
-                                        <th>Last Appointment Date</th>
-                                        <th>Doctor</th>
-                                        <th>Status</th>
+                                        <th>Name</th>
+                                        <th>Date/Time</th>
+                                        <th>Address</th>
+                                        <th>City</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>122334221</td>
-                                        <td>John Doe</td>
-                                        <td>+92 312 3456789</td>
-                                        <td>1-1-2021</td>
-                                        <td>Dr. John Doe</td>
-                                        <td><p href="" class="confirm">Confirmed</p></td>
                                         <td>
-                                            
-                                            <a href="./profile.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                            <a href="./profile.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                            <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                            <div>
+                                                <p>John Doe</p>
+                                                <p><i class="fa fa-phone" aria-hidden="true"></i> 0312-3456789</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <p>1 Jan</p>
+                                                <p>10:30PM</p>
+                                            </div>
+                                        </td>
+                                        <td>Address Here</td>
+                                        <td>Lahore</td>
+                                        <td>
+                                            <a href="" class="accept">Accept</a>
+                                            <a href="" class="ignore">Ignore</a>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>122334221</td>
-                                        <td>John Doe</td>
-                                        <td>+92 312 3456709</td>
-                                        <td>1-1-2021</td>
-                                        <td>Dr. John Doe</td>
-                                        <td><p href="" class="visited">Visited</p></td>
                                         <td>
-                                            <a href="./profile.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                            <a href="./profile.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                            <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                            <div>
+                                                <p>John Doe</p>
+                                                <p><i class="fa fa-phone" aria-hidden="true"></i> 0312-3456789</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <p>1 Jan</p>
+                                                <p>10:30PM</p>
+                                            </div>
+                                        </td>
+                                        <td>Address Here</td>
+                                        <td>Lahore</td>
+                                        <td>
+                                            <a href="" class="accept">Accept</a>
+                                            <a href="" class="ignore">Ignore</a>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>122334221</td>
-                                        <td>John Doe</td>
-                                        <td>+92 312 3456709</td>
-                                        <td>1-1-2021</td>
-                                        <td>Dr. John Doe</td>
-                                        <td><p href="" class="pending">Pending</p></td>
                                         <td>
-                                            <a href="./profile.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                            <a href="./profile.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                            <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                            <div>
+                                                <p>John Doe</p>
+                                                <p><i class="fa fa-phone" aria-hidden="true"></i> 0312-3456789</p>
+                                            </div>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td>122334221</td>
-                                        <td>John Doe</td>
-                                        <td>+92 312 3456789</td>
-                                        <td>1-1-2021</td>
-                                        <td>Dr. John Doe</td>
-                                        <td><p href="" class="confirm">Confirmed</p></td>
                                         <td>
-                                            <a href="./profile.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                            <a href="./profile.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                            <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                            <div>
+                                                <p>1 Jan</p>
+                                                <p>10:30PM</p>
+                                            </div>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td>122334221</td>
-                                        <td>John Doe</td>
-                                        <td>+92 312 3456709</td>
-                                        <td>1-1-2021</td>
-                                        <td>Dr. John Doe</td>
-                                        <td><p href="" class="visited">Visited</p></td>
+                                        <td>Address Here</td>
+                                        <td>Lahore</td>
                                         <td>
-                                            <a href="./profile.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                            <a href="./profile.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                            <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>122334221</td>
-                                        <td>John Doe</td>
-                                        <td>+92 312 3456709</td>
-                                        <td>1-1-2021</td>
-                                        <td>Dr. John Doe</td>
-                                        <td><p href="" class="pending">Pending</p></td>
-                                        <td>
-                                            <a href="./profile.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                            <a href="./profile.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                            <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                            <a href="" class="accept">Accept</a>
+                                            <a href="" class="ignore">Ignore</a>
                                         </td>
                                     </tr>
                                 </tbody>

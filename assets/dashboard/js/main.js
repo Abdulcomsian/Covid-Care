@@ -6,6 +6,7 @@ $("#mainDashboard .contentDiv .sideBar .sideBarBtn button").click(function () {
 });
 $("#mainDashboard .contentDiv .sideBar").mouseenter(function () {
   $("#mainDashboard .contentDiv .sideBar").css("width", "20%");
+  $("#mainDashboard .contentDiv .viewDiv").css("width", "80%");
   $("#mainDashboard .contentDiv .sideBar ul li").css("padding", "20px 24px");
   $("#mainDashboard .contentDiv .sideBar ul li a").css("display", "block");
 });

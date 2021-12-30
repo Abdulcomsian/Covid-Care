@@ -1,5 +1,5 @@
 <html>
-<title>Dashboard</title>
+<title>Dashboard - Hospital</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -30,15 +30,15 @@
                             <img src="../../assets/dashboard/img/Vector (2).png" alt="" class="img-fluid" />
                             <a href="../index.html">Dashboard</a>
                         </li>
-                        <li class="active">
+                        <li>
                             <img src="../../assets/dashboard/img/Group 560.png" alt="" class="img-fluid" />
-                            <a href="#">Patients</a>
+                            <a href="../patients/index.html">Patients</a>
                         </li>
                         <li>
                             <img src="../../assets/dashboard/img/maki_doctor.png" alt="" class="img-fluid" />
                             <a href="../doctor/index.html">Doctors</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <img src="../../assets/dashboard/img/Vector-1 (2).png" alt="" class="img-fluid" />
                             <a href="../hospital/index.html">Hospitals</a>
                         </li>
@@ -69,21 +69,38 @@
                 <div class="topBar">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-7">
+                            <div class="col-md-3">
                                 <div class="dashboardTitle">
-                                    <h3>Patients</h3>
+                                    <h3>Hospitals</h3>
                                 </div>
                             </div>
-                            <div class="col-md-5">
+                            <div class="col-md-9">
                                 <div class="topRight">
                                     <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="inputDiv">
-                                                <img src="../../assets/dashboard/img/search.png" alt="" class="img-fluid" />
-                                                <input style="padding-left: 40px;" type="text" name="" placeholder="Search" id="" />
+                                        <div class="col-md-9">
+                                            <div class="formDiv">
+                                                <form action="">
+                                                    <div class="multiInput">
+                                                        <div class="inputDiv">
+                                                            <img src="../../assets/dashboard/img/search.png" alt=""
+                                                                class="img-fluid" />
+                                                            <input style="padding-left: 40px !important;" type="text"
+                                                                name="" id=""
+                                                                placeholder="Search doctors by name, specialty" />
+                                                        </div>
+                                                        <div class="selectDiv">
+                                                            <img src="../../assets/dashboard/img/location.png" alt=""
+                                                                class="img-fluid" />
+                                                            <select name="" id="">
+                                                                <option value="Karachi">Karachi</option>
+                                                            </select>
+                                                        </div>
+                                                        <button>Search</button>
+                                                    </div>
+                                                </form>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-3">
                                             <div class="iconDiv">
                                                 <p>
                                                     <a href="">
@@ -122,8 +139,8 @@
                                 </div>
                             </div>
                             <div class="addPatients">
-                                <button data-toggle="modal" data-target="#addPatients">
-                                    + Add Patient
+                                <button data-toggle="modal" data-target="#addHospital">
+                                    + Add Hospital
                                 </button>
                             </div>
                         </div>
@@ -131,37 +148,30 @@
                             <table id="patientTable" class="display">
                                 <thead>
                                     <tr>
-                                        <th>Patient ID</th>
-                                        <th>Patient Name</th>
-                                        <th>Phone Number</th>
-                                        <th>Last Appointment Date</th>
-                                        <th>Doctor</th>
+                                        <th></th>
+                                        <th>Hospital ID</th>
+                                        <th>Hospital Name</th>
+                                        <th>Total Doctors</th>
+                                        <th>Specialists</th>
+                                        <th>City</th>
                                         <th>Status</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>122334221</td>
-                                        <td>John Doe</td>
-                                        <td>+92 312 3456789</td>
-                                        <td>1-1-2021</td>
-                                        <td>Dr. John Doe</td>
-                                        <td><p href="" class="confirm">Confirmed</p></td>
                                         <td>
-                                            
-                                            <a href="./profile.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                            <a href="./profile.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                            <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                            <img src="../../assets/dashboard/img/Ellipse.png" alt=""
+                                                class="img-fluid" />
                                         </td>
-                                    </tr>
-                                    <tr>
                                         <td>122334221</td>
-                                        <td>John Doe</td>
-                                        <td>+92 312 3456709</td>
-                                        <td>1-1-2021</td>
-                                        <td>Dr. John Doe</td>
-                                        <td><p href="" class="visited">Visited</p></td>
+                                        <td>Shaukat Khanam Hospital</td>
+                                        <td>00</td>
+                                        <td>56</td>
+                                        <td>Karachi</td>
+                                        <td>
+                                            <p href="" class="visited">Active</p>
+                                        </td>
                                         <td>
                                             <a href="./profile.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
                                             <a href="./profile.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
@@ -169,12 +179,18 @@
                                         </td>
                                     </tr>
                                     <tr>
+                                        <td>
+                                            <img src="../../assets/dashboard/img/Ellipse-2.png" alt=""
+                                                class="img-fluid" />
+                                        </td>
                                         <td>122334221</td>
-                                        <td>John Doe</td>
-                                        <td>+92 312 3456709</td>
-                                        <td>1-1-2021</td>
-                                        <td>Dr. John Doe</td>
-                                        <td><p href="" class="pending">Pending</p></td>
+                                        <td>Shaukat Khanam Hospital</td>
+                                        <td>34</td>
+                                        <td>56</td>
+                                        <td>Karachi</td>
+                                        <td>
+                                            <p href="" class="visited">Active</p>
+                                        </td>
                                         <td>
                                             <a href="./profile.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
                                             <a href="./profile.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
@@ -182,12 +198,18 @@
                                         </td>
                                     </tr>
                                     <tr>
+                                        <td>
+                                            <img src="../../assets/dashboard/img/Ellipse-3.png" alt=""
+                                                class="img-fluid" />
+                                        </td>
                                         <td>122334221</td>
-                                        <td>John Doe</td>
-                                        <td>+92 312 3456789</td>
-                                        <td>1-1-2021</td>
-                                        <td>Dr. John Doe</td>
-                                        <td><p href="" class="confirm">Confirmed</p></td>
+                                        <td>Shaukat Khanam Hospital</td>
+                                        <td>34</td>
+                                        <td>56</td>
+                                        <td>Karachi</td>
+                                        <td>
+                                            <p href="" class="pending">Deactive</p>
+                                        </td>
                                         <td>
                                             <a href="./profile.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
                                             <a href="./profile.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
@@ -195,12 +217,18 @@
                                         </td>
                                     </tr>
                                     <tr>
+                                        <td>
+                                            <img src="../../assets/dashboard/img/Ellipse-4.png" alt=""
+                                                class="img-fluid" />
+                                        </td>
                                         <td>122334221</td>
-                                        <td>John Doe</td>
-                                        <td>+92 312 3456709</td>
-                                        <td>1-1-2021</td>
-                                        <td>Dr. John Doe</td>
-                                        <td><p href="" class="visited">Visited</p></td>
+                                        <td>Shaukat Khanam Hospital</td>
+                                        <td>00</td>
+                                        <td>56</td>
+                                        <td>Karachi</td>
+                                        <td>
+                                            <p href="" class="visited">Active</p>
+                                        </td>
                                         <td>
                                             <a href="./profile.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
                                             <a href="./profile.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
@@ -208,12 +236,37 @@
                                         </td>
                                     </tr>
                                     <tr>
+                                        <td>
+                                            <img src="../../assets/dashboard/img/Ellipse-5.png" alt=""
+                                                class="img-fluid" />
+                                        </td>
                                         <td>122334221</td>
-                                        <td>John Doe</td>
-                                        <td>+92 312 3456709</td>
-                                        <td>1-1-2021</td>
-                                        <td>Dr. John Doe</td>
-                                        <td><p href="" class="pending">Pending</p></td>
+                                        <td>Shaukat Khanam Hospital</td>
+                                        <td>34</td>
+                                        <td>56</td>
+                                        <td>Karachi</td>
+                                        <td>
+                                            <p href="" class="visited">Active</p>
+                                        </td>
+                                        <td>
+                                            <a href="./profile.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                            <a href="./profile.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                            <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="../../assets/dashboard/img/Ellipse.png" alt=""
+                                                class="img-fluid" />
+                                        </td>
+                                        <td>122334221</td>
+                                        <td>Shaukat Khanam Hospital</td>
+                                        <td>34</td>
+                                        <td>56</td>
+                                        <td>Karachi</td>
+                                        <td>
+                                            <p href="" class="pending">Deactive</p>
+                                        </td>
                                         <td>
                                             <a href="./profile.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
                                             <a href="./profile.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
@@ -246,12 +299,12 @@
     <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap4.min.js"></script>
 
     <!-- Add Patients -->
-    <div class="modal fade" id="addPatients" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <div class="modal fade" id="addHospital" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Add Patients</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Add Hospital</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -259,13 +312,13 @@
                 <div class="modal-body">
                     <form action="">
                         <div class="inputDiv">
-                            <input class="form-control" type="text" name="" id="" placeholder="Patient Name" />
+                            <input class="form-control" type="text" name="" id="" placeholder="Hospital Name" />
                         </div>
                         <div class="inputDiv">
-                            <input class="form-control" type="text" name="" id="" placeholder="Patient Email" />
+                            <input class="form-control" type="text" name="" id="" placeholder="Hospital Email" />
                         </div>
                         <div class="inputDiv">
-                            <input class="form-control" type="text" name="" id="" placeholder="Patient Address" />
+                            <input class="form-control" type="text" name="" id="" placeholder="Hospital Address" />
                         </div>
                     </form>
                 </div>

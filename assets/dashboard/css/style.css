@@ -38,6 +38,11 @@
   src: url("../../font/helvari/helvariMedium.ttf");
 }
 
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  font-family: helvari-regular !important;
+}
+
 a:hover,
 a {
   text-decoration: none !important;
@@ -81,6 +86,7 @@ ul {
   background: rgba(72, 35, 105, 1);
   position: relative;
   transition: all 0.5s ease;
+  height: 100vh;
 }
 
 #mainDashboard .contentDiv .sideBar .logoDiv {
@@ -108,7 +114,7 @@ ul {
   color: #fff;
   font-family: helvari-regular;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 #mainDashboard .contentDiv .sideBar ul li:hover a,
@@ -117,8 +123,9 @@ ul {
 }
 
 #mainDashboard .contentDiv .sideBar .authdiv {
-  border-top: 0.5px solid #fff;
-  margin-top: 150px;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
 }
 
 #mainDashboard .contentDiv .sideBar .authdiv ul {
@@ -155,6 +162,17 @@ ul {
   padding: 17px;
 }
 
+#mainDashboard .contentDiv .viewDiv .topBar .topRight .inputDiv {
+  position: relative;
+}
+
+#mainDashboard .contentDiv .viewDiv .topBar .topRight .inputDiv img {
+  position: absolute;
+  top: 15px;
+  left: 8px;
+  width: 17px;
+}
+
 #mainDashboard .contentDiv .viewDiv .topBar .topRight .inputDiv input {
   background: #ffffff;
   border: 0.5px solid #939598;
@@ -182,7 +200,6 @@ ul {
 #mainDashboard .contentDiv .viewDiv .contentViewDiv {
   padding: 25px;
   background-color: #e5e5e5;
-  height: 100%;
 }
 
 #mainDashboard .contentDiv .viewDiv .contentViewDiv .badgeDiv .badgeBox {
@@ -201,7 +218,7 @@ ul {
 #mainDashboard .contentDiv .viewDiv .contentViewDiv .badgeDiv .badgeBox p {
   font-family: helvari-regular;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 10px;
 }
 
 #mainDashboard .contentDiv .viewDiv .contentViewDiv .patientTable .tableBar .sortingDiv .multiSort {
@@ -287,7 +304,6 @@ table {
 
 .tableDiv table tbody td {
   padding: 20px;
-  font-family: helvari-regular;
   font-size: 14px;
   text-align: center;
 }
@@ -350,4 +366,817 @@ td a:hover {
   border-radius: 4px;
   padding: 5px 12px !important;
   color: #000 !important;
+}
+
+.profileBar .userDiv .contentDiv .initailText {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  background: rgba(253, 190, 16, 0.35);
+  display: grid;
+  align-items: center;
+  border-radius: 100%;
+  font-size: 60;
+}
+
+.profileBar .userDiv .contentDiv .infoDiv {
+  display: grid;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.profileBar .userDiv .contentDiv .infoDiv .userName {
+  font-size: 25px;
+  color: #454545;
+  font-family: helvari-regular;
+}
+
+.profileBar .userDiv .contentDiv .infoDiv p {
+  font-size: 14px;
+  color: #9F9E9E;
+  font-family: helvetica-regular;
+}
+
+.profileBar,
+.profileBar .userMultiDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profileBar,
+.appoinmentBox {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.profileBar .userMultiDiv .commonBox {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  width: 168px;
+  padding: 10px;
+  margin: 0px 10px;
+}
+
+.profileBar .userMultiDiv .commonBox p {
+  font-family: helvari-regular;
+}
+
+.profileBar .userMultiDiv .commonBox .totalText {
+  position: relative;
+  top: 10px;
+  font-size: 25px;
+}
+
+.appointmentBox {
+  background-color: #9DD5E6
+}
+
+.labTest {
+  background-color: #9BCFB9;
+}
+
+.orderDiv {
+  background-color: #DF95AC;
+}
+
+.appoinmentBox .sliderDiv .sliderBoxContent .imgDiv {
+  background-color: #FDBE10;
+  width: 105px;
+  border-radius: 100%;
+  height: 104px;
+  text-align: -webkit-auto;
+  align-items: center;
+  display: grid;
+  justify-content: center;
+  margin: auto;
+}
+
+.appoinmentBox .sliderDiv .sliderBoxContent .imgDiv img {
+  width: 100px;
+}
+
+.appoinmentBox .sliderDiv .sliderBoxContent,
+.labTestView,
+.ordersView {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  margin: 10px 10px;
+}
+
+.appoinmentBox h3,
+.labTestView h3,
+.ordersView h3 {
+  font-family: helvari-regular;
+  font-size: 25px;
+}
+
+.labTestView,
+.ordersView {
+  padding: 20px;
+}
+
+.appoinmentBox .sliderDiv .sliderBoxContent .userInfo {
+  padding: 20px;
+}
+
+.appoinmentBox .sliderDiv .sliderBoxContent .infoDiv {
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.appoinmentBox .sliderDiv .sliderBoxContent .infoDiv h3 {
+  font-size: 20px;
+  font-family: helvari-regular;
+  font-weight: 500;
+}
+
+.appoinmentBox .sliderDiv .sliderBoxContent .infoDiv p {
+  font-size: 16px;
+  font-family: helvari-regular;
+  font-weight: 400;
+}
+
+.appoinmentBox .sliderDiv .sliderBoxContent .contactDiv {
+  padding: 10px 20px;
+}
+
+.appoinmentBox .sliderDiv .sliderBoxContent .contactDiv p {
+  color: #6A6A6A;
+  font-size: 12px;
+}
+
+.appoinmentBox .sliderDiv {
+  margin: 50px 0px;
+}
+
+.slick-prev,
+.slick-next {
+  background-color: #fff;
+  border: 1px solid #8F8F8F !important;
+}
+
+.slick-prev:before {
+  content: "" !important;
+  font-family: fontAwesome !important;
+  color: #000 !important;
+  background-image: url("../img/left.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: 2px;
+  top: 3px;
+}
+
+.slick-next:before {
+  content: "" !important;
+  font-family: fontAwesome !important;
+  color: #000 !important;
+  background-image: url("../img/right.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  right: 2px;
+  top: 3px;
+}
+
+.slick-prev,
+.slick-next {
+  width: 25px !important;
+  height: 25px !important;
+  border-radius: 100%;
+}
+
+.slick-prev {
+  left: -3px !important;
+  z-index: 999;
+}
+
+.slick-next {
+  right: -8px !important;
+}
+
+.ordersView .contentDiv,
+.labTestView .contentDiv {
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.ordersView .contentDiv p,
+.labTestView .contentDiv p {
+  font-size: 24px;
+  color: #9F9E9E;
+}
+
+.topBar .topRight .formDiv {
+  background: #F3F3F3;
+  border-radius: 6px;
+}
+
+.topBar .topRight .formDiv form {
+  margin: 0px;
+}
+
+.topBar .topRight .formDiv .inputDiv input,
+.topBar .topRight .formDiv select {
+  background: transparent !important;
+  border: none !important;
+}
+
+.topBar .topRight .formDiv .inputDiv input {
+  padding: 10px 20px !important;
+}
+
+.topBar .topRight .formDiv .inputDiv input::placeholder {
+  font-size: 14px;
+  color: #515151;
+}
+
+.topBar .topRight .formDiv .inputDiv i {
+  position: relative;
+  left: 10px;
+}
+
+.topBar .topRight .formDiv .inputDiv {
+  border-right: 0.3px solid #515151;
+}
+
+.topBar .topRight .formDiv select {
+  width: 30%;
+  padding: 10px 20px !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: #515151;
+  font-size: 14px;
+}
+
+.topBar .topRight .formDiv button {
+  width: 20%;
+  background-color: #FFC107;
+  border: none;
+  padding: 10px 20px !important;
+  border-radius: 0px 6px 6px 0px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.multiInput {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentViewDiv .hopitalProfile {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.contentViewDiv .hopitalProfile .imgDiv p {
+  color: #482369;
+  font-size: 26px;
+  margin-left: 20px !important;
+  font-family: helvari-regular;
+}
+
+.contentViewDiv .hopitalProfile .imgDiv {
+  display: flex;
+  align-items: center;
+}
+
+.contentViewDiv .hopitalProfile .imgDiv img {
+  border-radius: 100%;
+}
+
+.contentViewDiv .hopitalProfile .editProfile .multiDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contentViewDiv .hopitalProfile .editProfile .multiDiv .commonDiv {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  width: 160px;
+  padding: 20px 20px;
+  margin: 0px 10px;
+  text-align: left;
+}
+
+.contentViewDiv .hopitalProfile .editProfile .multiDiv .commonDiv p:nth-child(2) {
+  position: relative;
+  top: 20px;
+}
+
+.contentViewDiv .hopitalProfile .editProfile {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contentViewDiv .hopitalProfile .editProfile .editBtn {
+  background: #482369;
+  border-radius: 4px;
+  color: #fff;
+  width: 100%;
+  padding: 10px !important;
+  max-width: 95%;
+  margin: auto !important;
+  border: none;
+  margin: 20px 0px !important;
+}
+
+.listOfSpecilist .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listOfSpecilist,
+.topDoctor {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.listOfSpecilist .header h3 {
+  font-size: 20px;
+  color: #000;
+}
+
+.listOfSpecilist .header button {
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: transparent;
+  padding: 7px !important;
+}
+
+.listOfSpecilist .tableDiv thead {
+  border-bottom: 0.5px solid #000;
+}
+
+.listOfSpecilist .tableDiv thead th {
+  background-color: transparent !important;
+  text-align: left !important;
+}
+
+.listOfSpecilist .tableDiv tbody td {
+  text-align: left !important;
+}
+
+.topDoctor .contentDiv {
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.topDoctor h3 {
+  font-size: 20px;
+  color: #482369;
+}
+
+.topDoctor .contentDiv .userInfo {
+  display: flex;
+}
+
+.topDoctor .contentDiv .userInfo .introDiv {
+  margin-left: 20px;
+}
+
+.topDoctor .contentDiv .userInfo .introDiv p:nth-child(1) {
+  font-size: 18px;
+  font-family: helvari-regular;
+}
+
+.topDoctor .contentDiv .userInfo .introDiv p:nth-child(2) {
+  font-size: 14px;
+  font-family: helvari-regular;
+  color: #686868;
+}
+
+.topDoctor .contentDiv .ratingDiv p {
+  font-size: 10px;
+  color: #C4C4C4;
+  text-align: right;
+}
+
+.topDoctor .contentDiv .ratingDiv i {
+  color: #FDBE10;
+}
+
+
+.topDoctor .listDiv li {
+  padding: 10px 20px;
+  color: #482369;
+  position: relative;
+}
+
+.topDoctor .listDiv li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #482369;
+  position: absolute;
+  left: 0px;
+  top: 18px;
+  border-radius: 100%;
+}
+
+.contentViewDiv .orderView .orders,
+.contentViewDiv .orderView .orderStatistics {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.24);
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.contentViewDiv .orderView .orders .orderBar {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.contentViewDiv .orderView .orders .orderBar ul {
+  display: flex;
+}
+
+.contentViewDiv .orderView .orders .orderBar ul li {
+  padding: 0px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contentViewDiv .orderView .orders .orderBar ul li.active {
+  background-color: #482369;
+  color: #fff;
+}
+
+.contentViewDiv .orderView h3 {
+  font-size: 20px;
+}
+
+.contentViewDiv .orderView .tableView {
+  margin: 10px 0px;
+}
+
+.contentViewDiv .orderView .tableView table thead th,
+.contentViewDiv .orderView .tableView table tbody td {
+  text-align: left;
+  padding: 20px 0px;
+  font-family: helvari-regular;
+}
+
+.contentViewDiv .orderView .tableView table tbody td span {
+  font-family: helvari-regular;
+}
+
+.contentViewDiv .orderView .tableView table {
+  border-collapse: collapse;
+}
+
+.contentViewDiv .orderView .tableView tr {
+  border-bottom: 0.5pt solid #E6EAF0;
+}
+
+.completeDiv,
+.partiallyPaidDiv,
+.paidDiv,
+.cancelDiv,
+.pendingDiv,
+.refundDiv {
+  position: relative;
+  width: 134px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.commonOverlay {
+
+  position: absolute;
+  opacity: .1;
+  height: 20px;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.completeDiv .commonOverlay {
+  background: #003AD2;
+}
+
+.completeDiv span {
+  color: #003AD2;
+}
+
+.partiallyPaidDiv .commonOverlay {
+  background: #7000FF1A;
+  opacity: 100%;
+}
+
+.partiallyPaidDiv span {
+  color: #7000FF;
+}
+
+.paidDiv .commonOverlay {
+  background: #16C35B;
+}
+
+.paidDiv span {
+  color: #16C35B;
+}
+
+.cancelDiv .commonOverlay {
+  background: #E80000;
+}
+
+.cancelDiv span {
+  color: #E80000;
+}
+
+.pendingDiv .commonOverlay {
+  background: #FF9900;
+}
+
+.pendingDiv span {
+  color: #FF9900;
+}
+
+.refundDiv .commonOverlay {
+  background: #1F4173;
+}
+
+.refundDiv span {
+  color: #1F4173;
+}
+
+.contentViewDiv .orderView .orderStatistics .progressEqipmentBarDiv,
+.contentViewDiv .orderView .orderStatistics .progressMedicineBarDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.contentViewDiv .orderView .orderStatistics .progressEqipmentBarDiv .progress,
+.contentViewDiv .orderView .orderStatistics .progressMedicineBarDiv .progress {
+  width: 65%;
+}
+
+.contentViewDiv .orderView .orderStatistics .progressEqipmentBarDiv .progress label,
+.contentViewDiv .orderView .orderStatistics .progressMedicineBarDiv .progress label {
+  font-family: helvari-regular;
+}
+
+.contentViewDiv .orderView .orderStatistics .progressEqipmentBarDiv .progress-bar {
+  background-color: #FCAE73 !important;
+}
+
+.contentViewDiv .orderView .orderStatistics .progressMedicineBarDiv .progress-bar {
+  background-color: #24A949 !important;
+}
+
+.contentViewDiv .orderView .orderStatistics .progressEqipmentBarDiv .equipment {
+  padding: 13px 15px;
+  background: #FFEADA;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 3px;
+}
+
+.contentViewDiv .orderView .orderStatistics .progressMedicineBarDiv .medicine {
+  padding: 13px 15px;
+  background: #DDF9E4;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 3px;
+}
+
+.todayDate {
+  background-color: #482369;
+  color: #fff;
+  padding: 5px 15px !important;
+  border-radius: 8px;
+  font-size: 14px;
+
+}
+
+.appointmentDiv {
+  display: flex;
+}
+
+.appointmentDiv p:nth-child(1) {
+  margin-right: 10px !important;
+}
+
+.appointmentDiv p .camera {
+  color: #71C34A;
+}
+
+.appointmentDiv p .user {
+  color: #3396BD;
+}
+
+
+
+
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  right: 24px;
+  top: 15px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  width: 55px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: -2px;
+  bottom: -1px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+}
+
+span.tag {
+  position: absolute;
+  font-size: 10px;
+  top: 3px;
+  left: 6;
+  color: #fff;
+}
+
+input:checked+.slider:before {
+  left: 10px;
+}
+
+input:checked+.slider {
+  background-color: #71C34A;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #71C34A;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.selectDiv {
+  position: relative;
+  width: 100%;
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.selectDiv img {
+  width: 17px;
+  height: 20px;
+}
+
+.topBar .topRight .formDiv select {
+  width: 100%;
+}
+
+.doctorProfile .multiDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.doctorProfile .multiDiv .detailDiv {
+  width: 33.3%;
+}
+
+.detailDiv:nth-child(1),
+.detailDiv:nth-child(2) {
+  border-right: 1px dashed #000000;
+  ;
+}
+
+.detailDiv:nth-child(1) p {
+  text-align: left !important;
+}
+
+.doctorProfile h2 {
+  color: #482369;
+  font-family: helvari-regular;
+}
+
+.doctorProfile .rating {
+  margin: 10px 0px;
+}
+
+.doctorProfile .rating i {
+  color: #FDBE10;
+}
+
+.doctorProfile .rating span {
+  color: #6B6B6B;
+  font-size: 14px;
+}
+
+.doctorProfile .verified {
+  margin: 10px 0px;
+}
+
+.doctorProfile .multiDiv {
+  margin: 20px 0px 0px;
+}
+
+.doctorProfile .multiDiv .detailDiv p {
+  font-size: 14px;
+  font-family: helvari-regular;
+  color: #474747;
+  text-align: center;
+}
+
+.doctorProfile .multiDiv .detailDiv p:nth-child(2) {
+  font-size: 14px;
+  font-family: helvetica-regular;
+  text-align: center;
+}
+
+p.description {
+  color: #6B6B6B;
+  font-size: 14px;
+}
+
+.profileDoctor ul li h2 {
+  color: #482369;
+  font-family: helvari-regular;
+  font-size: 22px;
+}
+
+.profileDoctor ul li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.profileDoctor ul li p {
+  color: #282F39;
+  font-family: helvari-regular;
+  font-size: 12px;
+  margin: 10px 0px !important;
+}
+
+.profileDoctor ul li::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  background: #482369;
+  border-radius: 100%;
+  left: -8px;
+  top: 5px;
 }
