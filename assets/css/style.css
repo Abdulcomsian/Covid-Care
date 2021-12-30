@@ -34,7 +34,7 @@ a:hover,a{
     text-decoration: none !important;
 }
 body,p,h1,h2,h3,h4,h5,h6,span,a,button{
-    font-family: helvetica-regular;
+    font-family: 'helvetica-regular' !important;
     margin: 0px !important;
     padding: 0px !important;
 }
@@ -136,10 +136,15 @@ ul.navbar-nav.m-auto li {
     max-width: 60%;
     margin-top: 20px;
 }
+span.home_searchSpan {
+    position: absolute;
+    left: 5%;
+}
 #mainBanner .formDiv .inputDiv input{
     width: 60%;
     height: 59.2px;
-    padding: 0px 15px;
+    /* padding: 0px 15px; */
+    padding: 0px 15px 0px 50px;
     border-radius: 6px 0px 0px 6px;
     font-family: helvari-regular;
     font-weight: 400;
@@ -156,10 +161,15 @@ ul.navbar-nav.m-auto li {
     background-color: #fff;
     /* padding: 25px; */
 }
+span.home_locationSpan {
+    position: absolute;
+    left: 37.7%;
+}
 #mainBanner .formDiv .inputDiv .selectDiv select{
     width: 95%;
     height: 59.2px;
-    padding: 0px 15px;
+    /* padding: 0px 15px; */
+    padding: 0px 15px 0px 35px;
     border: none;
     font-family: helvari-regular;
     font-weight: 400;
@@ -403,7 +413,16 @@ ul.navbar-nav.m-auto li {
 }
 
 @media only screen and (max-width: 600px){
-    
+    span.locationSpan {
+        position: absolute !important;
+        top: 43% !important;
+        left: 7% !important; 
+    }
+    span.searchSpan {
+        position: absolute !important;
+        left: 7% !important;
+        top: 37px !important;
+    }
 }
 
 
@@ -669,7 +688,7 @@ ul.navbar-nav.m-auto li {
     border-radius: 4px;
     background-color: rgba(255, 193, 7, 1);
     border: none;
-    font-family: helvari;
+    font-family: 'helvetica-regular';
     font-weight: 500;
     position: absolute;
     font-size: 20px;
@@ -712,7 +731,7 @@ ul.navbar-nav.m-auto li {
 #Order_mainBanner p{
     font-family: helvari-regular;
     color: #ffffff;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 52.5px;
     font-weight: 500;
 
@@ -845,8 +864,8 @@ input#file {
     border-radius: 4px;
     background-color: rgba(255, 193, 7, 1);
     border: none;
-    font-family: helvari;
-    font-weight: 700;
+    font-family: 'helvari-regular';
+    font-weight: 500;
     position: absolute;
     font-size: 20px;
     padding-bottom: 20%;
@@ -872,6 +891,70 @@ input#file {
 
 /* ****************  Specialist ********************* */
 
+.search_form .input-group-text{
+    padding:15px !important;
+    background: white !important;
+    }
+    .fa-map-marker:before {
+       content: "\f041";
+       font-size: 27px;
+   }
+   .fa-search:before {
+       content: "\f002";
+       font-size: 25px;
+   }
+    .search_form .location .input-group-text{
+    border-radius: 0px !important;
+    background: white !important;
+    }
+
+    .form_row{
+        padding: 0px 15px !important;
+    }
+    .search_form input{
+    /* width: 801px;
+    height: 59.2px; */
+    padding: 15px 15px;
+    border-radius: 6px 0px 0px 6px;
+    font-family: helvari-regular;
+    font-weight: 400;
+    border: none;
+    font-size: 20px;
+    width: 100%;
+    }
+
+    .search_form select{
+    /* width: 801px;
+    height: 59.2px; */
+    /* / padding: 15px 15px; / */
+    height: 60px !important;
+    border-radius: 6px 0px 0px 6px;
+    font-family: helvari-regular;
+    font-weight: 400;
+    border: none;
+    font-size: 20px;
+    width: 100%;
+    }
+
+
+    .search_form .btn{
+    padding: 15px 15px !important;
+    border-radius: 0px 6px 6px 0px;
+    background-color: rgba(255, 193, 7, 1);
+    border: none;
+    font-family: helvari-regular;
+    font-weight: 500;
+    font-size: 20px;
+    }
+
+    .search_form .gutter{
+        padding: 0px !important;
+    }
+    .search_form button.btn.btn-primary.w-100 {
+        background: #f2c010;
+    }
+
+
 
 #specialist_mainBanner{
     background-color: rgba(72, 35, 105, 1);
@@ -883,12 +966,12 @@ input#file {
 #specialist_mainBanner h3{
     color: rgba(255, 193, 7, 1);
     font-size: 60px;
-    font-weight: 700;
-    font-family: helvari-regular;
+    font-weight: 500;
+    font-family: 'helvari-regular';
     margin-bottom: 15px !important;
 }
 #specialist_mainBanner p{
-    font-family: helvari-regular;
+    font-family: 'helvari-regular';
     color: #ffffff;
     font-size: 28px;
     line-height: 35px;
@@ -901,7 +984,7 @@ input#file {
 #specialist_mainBanner .formDiv .inputDiv input{
     width: 55%;
     height: 100%;
-    padding: 18px 70px;
+    padding: 18px 20px 18px 70px;
     border-radius: 6px 0px 0px 6px;
     font-family: helvari-regular;
     font-weight: 400;
@@ -921,7 +1004,7 @@ input#file {
 #specialist_mainBanner .formDiv .inputDiv .selectDiv select{
     width: 100%;
     height: 100%;
-    padding: 17.5px 50px;
+    padding: 17.5px 0px 17.5px 60px;
     border: none;
     font-family: helvari-regular;
     font-weight: 400;
@@ -951,7 +1034,7 @@ input#file {
     left: 0;
     padding: 12px;
     width: 100%;
-    max-width: 90%;
+    max-width: 100%;
     margin: auto;
 }
 #specialist_mainBanner .multiDiv ul li h3{
@@ -988,7 +1071,15 @@ input#file {
 }
 
 /* section 2 */
-
+span.searchSpan {
+    position: absolute;
+    left: 2%;
+}
+span.locationSpan {
+    position: absolute;
+    top: 32px;
+    left: 56%;
+}
 #specialist_mainBanner .formDiv .inputDivv input{
     width: 55%;
     height: 100%;
@@ -1661,18 +1752,28 @@ ul.pagination{
     color: #555555;
 }
 .jhondiv h3 {
-    font-family: 'helvetica-regular';
+    font-family: 'helvetica-regular' !important;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     line-height: 33px;
     color: #000000;
-}   
+}  
 .ratings {
     color: #f2c010;
 }
 .jhondiv .rating {
     color: #f2c010;
+}
+.vector-img {
+    position: absolute;
+    left: 28px;
+    top: 35px;
+}
+.location-img {
+    position: absolute;
+    top: 35px;
+    left: 56%;
 }
 
 #main {
@@ -1980,7 +2081,39 @@ ul.pagination{
     letter-spacing: -0.33px;
     color: #302229;
 }
+#login-section .login-image {
+    background-image: url('../img/Group 740.png');
+    width: 100%;
+    height: 550px;
+    text-align: center;
+    background-position: center center;
+    background-size: cover;
+}
+#login-section .login-image h5{
+    font-family: 'helvari-regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 15px;
+    color: #FFFFFF;    
+}
+#login-section .login-image h2{
+    font-family: 'helvetica';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 75px;
+    color: #FFFFFF;
+}
 
+#login-section .login-image h2 span {
+    font-family: 'helvetica';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 52px;
+    color: #FFC107;
+}
 .icons-title.d-flex {
     font-family: 'helvetica-bold';
     font-style: normal;
@@ -2041,9 +2174,100 @@ button.btn.btn-success {
     height:50px;
     text-align:center;
   }
+
+  button.btn.btn-outline-secondary {
+    width: 35%;
+    height: 40px;
+}
+.modal .modal-dialog .modal-content .modal-body h3{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 30px;
+    color: #482369;
+}
+.optinput input{
+    display: inline-block;
+    width: 50px;
+    height: 60px;
+    text-align: center;
+    background: #F0F0F0;
+    border: 1px solid #9E9E9E;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 10px;
+  }
+.modal .modal-dialog .modal-content .modal-body p{
+   
+    font-family: 'helvetica-regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 60px;
+    color: #000000;
+
+}
+
+.modal .modal-dialog .modal-content .modal-body h5{
+    font-family: 'helvetica-regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 45px;
+    color: #000000;
+}
+.modal .modal-dialog .modal-content .modal-body .verify a button {
+    width: 330.95px;
+    height: 45.56px;
+    background: #FDBE10;
+    border-radius: 6px;
+    border: none;
+}
+.has-search .form-control {
+    padding-left: 2.375rem;
+  }
+  
+  .has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+  }
 /* brack points */
 
 @media only screen and (max-width: 600px) {
+    .vector-img {
+        position: absolute !important;
+        left: 28px !important;
+        top: 35px !important;
+    }
+    .location-img {
+        position: absolute !important;
+        top: 43% !important;
+        left: 5% !important;
+    }
+    .modal .modal-dialog .modal-content .modal-body .verify a button {
+        width: 100%;
+        height: 45.56px;
+        background: #FDBE10;
+        border-radius: 6px;
+        border: none;
+    }
+    #login-section .login-image {
+        background-image: url('../img/Group 740.png');
+        width: 100%;
+        height: 575px;
+        text-align: center;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     #usersSay .commonDiv p {
         padding: 0px 16px 50px!important;
         font-family: helvari-regular;
@@ -2116,7 +2340,7 @@ button.btn.btn-success {
     #mainBanner .formDiv .inputDiv input {
         width: 100%;
         height: 59.2px;
-        padding: 0px 15px;
+        padding: 0px 15px 0px 40px;
         border-radius: 6px 6px 0px 0px;
         font-family: helvari-regular;
         font-weight: 400;
@@ -2154,7 +2378,7 @@ button.btn.btn-success {
         color: #302229;
     }
     #login-section {
-        padding: 70px 30px;
+        padding: 45px 20px;
 
     }
     .gynecologists {
@@ -2164,7 +2388,7 @@ button.btn.btn-success {
     width: 100%;
     font-size: 15px;
     height: auto;
-}
+    }
     .review-head h2{
         font-family:'Helvetica';
         font-style: normal;
@@ -2388,6 +2612,11 @@ button.btn.btn-success {
     
 }
 @media only screen and (max-width: 768px) {
+    .location-img {
+        position: absolute ;
+        top: 50px ;
+        left: 45%  !important;
+    }
     #bookAppointment .listDiv {
         display: flex !important;
         justify-content: center !important;
@@ -2453,11 +2682,41 @@ button.btn.btn-success {
     #labs .shaukat-blurb {
         text-align: left ;
     }
+    #specialist_mainBanner .formDiv .inputDiv input {
+        width: 55%;
+        height: 100%;
+        padding: 23px 10px 23px 53px;
+        border-radius: 6px 0px 0px 6px;
+        font-family: helvari-regular;
+        font-weight: 400;
+        border: none;
+        font-size: 20px;
+        font-size: 20px !important;
+}
    
    
 } 
-
 @media only screen and (max-width: 992px) {
+    
+    span.locationSpan {
+        position: absolute;
+        top: 489px;
+        left: 41%;
+    }
+    span.searchSpan {
+        position: absolute;
+        left: 3%;
+    }
+    /* .location-img {
+        position: absolute ;
+        top: 50px ;
+        left: 40% ;
+    }
+    .vector-img {
+        position: absolute;
+        left: 28px;
+        top: 48px;
+    } */
    
     .tabbable-line > .nav-tabs > li {
         margin-right: 30px;
@@ -2485,27 +2744,26 @@ button.btn.btn-success {
         font-size: 20px;
     }
     #specialist_mainBanner .formDiv .inputDiv input {
-        width: 100%;
-        height: 25%;
-        padding: 23px 70px;
-        border-radius: 6px 0px 0px 6px;
-        font-family: helvari-regular;
-        font-weight: 400;
-        border: none;
-        font-size: 20px;
+        width: 100% !important;
+        height: 25% !important;
+        padding: 23px 50px !important;
+        border-radius: 6px 0px 0px 6px !important;
+        font-family: 'helvari-regular' !important;
+        font-weight: 400 !important;
+        border: none !important;
+        font-size: 20px !important;
     }
-       
-    #specialist_mainBanner .formDiv .inputDiv .selectDiv {
+           #specialist_mainBanner .formDiv .inputDiv .selectDiv {
         width: 100%;
         height: 25%;
         border-left: 0.3px solid rgba(81, 81, 81, 1);
         background-color: #fff;
-        padding: 23px;
+        padding: 23px 23px 22px 0px;
         margin: 10px 0px;
     }
     #specialist_mainBanner .formDiv .inputDiv .selectDiv select {
         width: 100%;
-        padding: 0px 0px;
+        padding: 0px 0px 0px 65px ;
         border: none;
         font-family: helvari-regular;
         font-weight: 400;
