@@ -79,14 +79,51 @@
         
         <section id="Specialist_mainBanner">
             <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
+                <div class="row form_row">
+                    <div class="col-md-12 search_form">
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-md-7 col-ms-12 gutter address">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                            </svg>
+                                            </span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Search for doctors, hospitals, specialties and labs" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-ms-12 gutter">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend location">
+                                            <span class="input-group-text" id="basic-addon1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <select name="location" class="form-control">
+                                            <option value="Karachi">Karachi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class=" col-md-2 col-ms-12 gutter">
+                                    <button type="submit" class="btn btn-primary w-100">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                 </div>
+               <!-- <div class="row">
+                   <div class="col-md-12">
                     <div class="formDiv">
                         <form action="">
                             <div class="inputDiv d-flex alignitem">
                                 <!-- <div class="vector-img">
                                     <img src="../assets/img/search_vector.png" alt="">
-                                </div> -->
+                                </div> --
                                 <span class="searchSpan">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
@@ -97,7 +134,7 @@
                                     <span class="locationSpan">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                                             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                                        </svg>
+                                          </svg>
                                     </span>
                                     <select name="" id="">
                                         <option value="Karachi">Karachi</option>
@@ -107,31 +144,37 @@
                             </div>
                         </form>
                     </div>
-                </div>
-            </div>
+                   </div>
+               </div> -->
                 <div class="row">
-                <div class="col-md-12">
-                    <div class="selectdiv">
-                        <form action="">
-                            <div class="multiDiv">
-                                <button>Filter Result</button>
-    
-                                <select name="" id="">
-                                    <option value="appointment">Type of Appointment</option>
-                                </select>
-                                <select name="" id="">
-                                    <option value="availability">Availability</option>
-                                </select>
-                                <select name="" id="">
-                                    <option value="gender">Gender</option>
-                                </select>
-                                <select name="" id="">
-                                    <option value="feeRange">Fee Range</option>
-                                </select>
-                            </div>
-                        </form>
+                    <div class="col-md-12">
+                        <div class="selectdiv">
+                            <form action="">
+                                <div class="multiDiv d-md-flex">
+                                    <button class="">
+                                        <div class="d-flex">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+                                                <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                                            </svg>&nbsp &nbsp
+                                        </div>
+                                    Filter Result</button>
+
+                                    <select name="" id="">
+                                        <option value="appointment">Type of Appointment</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="availability">Availability</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="gender">Gender</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="feeRange">Fee Range</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         
