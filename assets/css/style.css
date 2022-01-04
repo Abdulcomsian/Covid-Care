@@ -1299,7 +1299,7 @@ p.card-text {
     border: none;
     height: 50px;
     font-weight: 600;
-    width: 279px;
+    width: 200px;
     float: right;
 }
 
@@ -1909,23 +1909,49 @@ ul.pagination{
     background: #FDBE10;
     border-radius: 6px;
     color: #000000;
-    margin-right: 20px !important;
+    /* margin-right: 20px !important; */
     border: none;
-    width: 222px;
+    width: 225px;
     cursor: pointer;
-    height: 42px;
+    /* height: 42px; */
     font-weight: 600;
 }
 .multiDiv .get-direction{
     background: #FFFFFF;
     border-radius: 6px;
     color: #000000;
-    margin-right: 20px !important;
+    /* margin-right: 20px !important; */
     cursor: pointer;
     border: none;
     font-weight: 600;
-    width: 222px;
-    height: 42px;
+    width: 225px;
+    /* height: 42px; */
+}
+.shukatMain{
+    display: flex;
+    justify-content: center;
+}
+.shaukat_inputBtn1 {
+    background: #f2c010;
+    padding: 10px 40px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+.shaukat_inputBtn1 a,
+.shaukat_inputBtn1 a:hover{
+    color: #000;
+    font-weight: 600;
+}
+.shaukat_inputBtn2 {
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 10px 40px;
+    margin-left: 10px;
+}
+.shaukat_inputBtn2 a,
+.shaukat_inputBtn2 a:hover{
+    color: #000;
+    font-weight: 600;
 }
 .gynecologists {
     padding:10px;
@@ -2142,7 +2168,7 @@ ul.pagination{
     font-weight: 500;
     font-size: 26px;
     line-height: 35px;
-    color: #482369;
+    color: rgb(33 37 41);
 }
 button.btn.btn-success {
     width: 15%;
@@ -2634,6 +2660,40 @@ button.btn.btn-success {
         max-width: 100%;
     }
     
+    .shukatMain{
+        display: block;
+        justify-content: center;
+    }
+    .shaukat_inputBtn1 {
+        background: #f2c010;
+        padding: 10px 40px;
+        border-radius: 6px;
+        margin-right: 0px;
+    }
+    .shaukat_inputBtn1 a,
+    .shaukat_inputBtn1 a:hover{
+        color: #000;
+        font-weight: 600;
+    }
+    .shaukat_inputBtn2 {
+        background: #FFFFFF;
+        border-radius: 6px;
+        padding: 10px 40px;
+        margin-left: 0px;
+    }
+    .shaukat_inputBtn2 a,
+    .shaukat_inputBtn2 a:hover{
+        color: #000;
+        font-weight: 600;
+    }
+    #Specialist_mainBanner .formDiv .Shaukat-inputDiv h2 {
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 52px;
+        color: #FFFFFF;
+    }
     
 
     
