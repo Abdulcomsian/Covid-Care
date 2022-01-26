@@ -195,15 +195,14 @@ span.home_locationSpan {
     justify-content: space-between;
 }
 #mainBanner .multiDiv{
-    position: absolute;
-    bottom: -57px;
-    left: 65px;
+    position: relative;
+    bottom: -244px;
     background-color: rgba(255, 193, 7, 1);
     padding: 12px;
-    width: 1450.19px;
-    max-width: 90%;
-    margin: auto;
-    height: 115px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
 }
 #mainBanner .multiDiv ul li h3{
     color: rgba(48, 34, 41, 1);
@@ -396,9 +395,10 @@ span.home_locationSpan {
 #usersSay h3,
 #ourPatners h3,
 #findSpecialists h3{
-    font-family: helvari-regular;
+    font-family: helvari-regular !important;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 22px;
+    line-height: 35px;
 }
 #coronaVirus .contentDiv p{
     font-family: helvari-regular;
@@ -500,6 +500,7 @@ span.home_locationSpan {
 .justifyContentSpaceAround{
     justify-content: space-around;
     display: flex;
+    align-items: center;
 }
 #moveOn .commonDiv{
     text-align: center;
@@ -515,7 +516,7 @@ span.home_locationSpan {
     color: #fff;
     font-family: helvari-regular;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 23px;
 }
 .joinDoctor{
     padding-bottom: 0px !important;
@@ -695,7 +696,7 @@ span.home_locationSpan {
 }
 #breadcrumb{
     background: #e9ecef;
-    padding: 0px 50px;
+    padding: 15px 50px 0px 50px;
 }
 #step_to_order {
     padding: 0px 50px;
@@ -953,7 +954,7 @@ input#file {
     .search_form button.btn.btn-primary.w-100 {
         background: #f2c010;
         width: 100% !important;
-        max-width: 75%;
+        max-width: 100%;
     }
 
 
@@ -2287,9 +2288,45 @@ button.btn.btn-success {
     pointer-events: none;
     color: #aaa;
   }
+  .coronaVirus-content {
+    display: flex;
+    align-items: center;
+}
+.experence-main{
+    display: flex;
+    box-sizing: border-box;
+}
+.experence-main .blurb h6{
+    font-weight: bold;
+}
+
 /* brack points */
 
 @media only screen and (max-width: 600px) {
+
+    .experence-main{
+        display: flex;
+        text-align: center;
+    }
+    .experence-main .blurb h6{
+        font-size: 12;
+        font-weight: bold;
+    }
+    .experence-main .blurb p{
+        font-size: 13;
+    }
+
+    .coronaVirus-content {
+        display: block !important;
+
+    }
+    #header .navbar-collapse .commonBtn{
+        margin: 5px 0px !important;
+        width: 100% !important;
+    }
+    ul.navbar-nav.m-auto li {
+        margin: 5px 0px;
+    }
     .vector-img {
         position: absolute !important;
         left: 28px !important;
@@ -2703,7 +2740,7 @@ button.btn.btn-success {
         background: #f2c010;
         width: 100% !important;
         max-width: 100%;
-        border-radius: 0px 0px 10px 10px;
+        border-radius: 0px 0px 6px 6px;
 
     }
     
@@ -2730,22 +2767,21 @@ button.btn.btn-success {
     }
     #mainBanner {
         background-color: rgba(72, 35, 105, 1);
-        padding: 150px 20px 350px 20px;
+        padding: 150px 20px 150px 20px;
         background-image: url(../img/Group\ 62.png);
         background-position: 100% 115%;
         background-repeat: no-repeat;
         position: relative;
     }
     #mainBanner .multiDiv {
-        position: absolute;
-        bottom: -58px;
-        left: auto;
+        position: relative;
+        bottom: -205px;
         background-color: rgba(255, 193, 7, 1);
         padding: 12px;
         width: 100%;
-        max-width: 90%;
-        margin: auto;
-        height: 329px;
+        max-width: 100%;
+        margin: 0 auto;
+        height: auto;
     }
     .tabbable-line > .nav-tabs > li {
         margin-right: 30px;
@@ -2792,6 +2828,28 @@ button.btn.btn-success {
    
 } 
 @media only screen and (max-width: 992px) {
+    .coronaVirus-content {
+        display: flex;
+        align-items: center;
+    }
+    #covidDoctor {
+        padding: 0px 5%;
+    }
+    #covidDoctor .imgleftBg img {
+        position: relative;
+        top: -53px;
+        left: 45%;
+    }
+    #footer .imgTextDiv p {
+        font-family: helvari-regular !important;
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;
+        margin-left: 15px !important;
+    }
+    ul.navbar-nav.m-auto li {
+        margin: 5px 0px;
+    }
     
     span.locationSpan {
         position: absolute;
