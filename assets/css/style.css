@@ -1024,6 +1024,7 @@ input#file {
     font-family: helvari-regular;
     font-weight: 500;
     font-size: 20px;
+
 }
 #specialist_mainBanner .multiDiv ul{
     list-style: none;
@@ -1039,6 +1040,7 @@ input#file {
     width: 100%;
     max-width: 100%;
     margin: auto;
+    display: flex;
 }
 #specialist_mainBanner .multiDiv ul li h3{
     color: rgba(48, 34, 41, 1);
@@ -2736,11 +2738,48 @@ button.btn.btn-success {
     
 }
 @media only screen and (max-width: 768px) {
+    #footer .imgTextDiv {
+        display: flex;
+        align-items: center;
+        padding: 6px 0px;
+    }
+    .multiDiv button {
+        background: #683894;
+        border-radius: 10px;
+        color: #FFFFFF;
+        margin-right: 20px !important;
+        border: none;
+        height: 50px;
+        font-weight: 500;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .multiDiv select {
+        background: #ECECEC;
+        border-radius: 10px;
+        margin-right: 20px;
+        border: none;
+        height: 50px;
+        width: 100%;
+        padding: 5px;
+        font-size: 15px;
+    }
+    #specialist_mainBanner .multiDiv {
+        bottom: -57px;
+        left: 0;
+        /* padding: 12px; */
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+        display: block !important;
+    }
     .search_form button.btn.btn-primary.w-100 {
         background: #f2c010;
         width: 100% !important;
         max-width: 100%;
-        border-radius: 0px 0px 6px 6px;
+        border-radius: 0px 6px 6px 0px;
 
     }
     
@@ -2828,6 +2867,7 @@ button.btn.btn-success {
    
 } 
 @media only screen and (max-width: 992px) {
+    
     .coronaVirus-content {
         display: flex;
         align-items: center;
