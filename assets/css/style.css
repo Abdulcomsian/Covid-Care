@@ -629,6 +629,7 @@ span.home_locationSpan {
 #footer .imgTextDiv{
     display: flex;
     align-items: center;
+    padding: 10px 0px;
 }
 #footer .imgTextDiv p{
     font-family: helvari-regular;
@@ -684,15 +685,15 @@ span.home_locationSpan {
 /* ********************** Order Medicine *****************  */
 
 #Order_mainBanner .formDiv .ordermeadicine_inputDiv button{
-    width: 8%;
     height: 47.97px;
     border-radius: 4px;
     background-color: rgba(255, 193, 7, 1);
     border: none;
     font-family: 'helvetica-regular';
     font-weight: 500;
-    position: absolute;
+    /* position: relative; */
     font-size: 20px;
+    padding: 0px 20px !important;
 }
 #breadcrumb{
     background: #e9ecef;
@@ -1934,22 +1935,23 @@ ul.pagination{
     display: flex;
     justify-content: center;
 }
-.shaukat_inputBtn1 {
+.shaukat_inputBtn1 a.btn.btn-primary.call-now{
     background: #f2c010;
-    padding: 10px 40px;
+    padding: 10px 0px !important;
     border-radius: 6px;
-    margin-right: 10px;
+    border: none;
+    display: block;
 }
 .shaukat_inputBtn1 a,
 .shaukat_inputBtn1 a:hover{
     color: #000;
     font-weight: 600;
 }
-.shaukat_inputBtn2 {
+.shaukat_inputBtn2 a.btn.btn-primary.get-direction{
     background: #FFFFFF;
     border-radius: 6px;
-    padding: 10px 40px;
-    margin-left: 10px;
+    padding: 10px 5px !important;
+    border: none;
 }
 .shaukat_inputBtn2 a,
 .shaukat_inputBtn2 a:hover{
@@ -1960,9 +1962,8 @@ ul.pagination{
     padding:10px;
     background: rgba(72, 35, 105, 0.15);
     border-radius: 6px;
-    width: 145px;
+    width: 100%;
     font-size: 15px;
-    height: 42px;
 }
 .tab-pane .ultherapy{
     width: 119px;
@@ -2305,6 +2306,12 @@ button.btn.btn-success {
 /* brack points */
 
 @media only screen and (max-width: 600px) {
+    /* .shaukat_inputBtn1 a.btn.btn-primary.call-now {
+        background: #f2c010;
+        padding: 10px 30px !important;
+        border-radius: 6px;
+        border: none;
+    } */
 
     .experence-main{
         display: flex;
@@ -2867,6 +2874,11 @@ button.btn.btn-success {
    
 } 
 @media only screen and (max-width: 992px) {
+    .serach-column {
+        background: rgba(196, 196, 196, 0.2);
+        border-radius: 6px;
+        padding: 25px 18px;
+    }
     
     .coronaVirus-content {
         display: flex;

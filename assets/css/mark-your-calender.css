@@ -166,7 +166,7 @@
     padding-top: 12%;
 }
 .verify{
-    padding-top: 24%;
+    padding-top: 31%;
 }
 .ok button{
     width: 150.13px;
@@ -182,7 +182,6 @@
     color: #FFFFFF;
 }
 .verify button{
-    width: 171.42px;
     height: 40px;
     background: #482369;
     border-radius: 6px;
@@ -193,6 +192,7 @@
     font-size: 18px;
     line-height: 35px;
     color: #FFFFFF;
+    padding: 0px 15px !important;
 }
 
 @media only screen and (max-width: 1200){
