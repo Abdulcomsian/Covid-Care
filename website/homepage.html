@@ -8,6 +8,26 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="../assets/css/slick.css">
         <link rel="stylesheet" href="../assets/css/slick-theme.css">
+        <style>
+         #mainBanner .drMain {
+            background: #f2c010;
+            width: 100%;
+            height: auto;
+        }
+        #mainBanner .drMain h2{
+            color: #000;
+            font-size: 25px;
+            font-weight: 600;
+            text-align: center;    
+        }
+        #mainBanner .drMain p {
+            font-family: helvari-regular;
+            color: #ffffff;
+            font-size: 24px;
+            line-height: 35px;
+            text-align: center;
+        }
+        </style>
     </head>
     <body>
         <section id="topHeader">
@@ -78,87 +98,118 @@
         </section>
         
         <section id="mainBanner">
-            <div class="bgImg"></div>
             <div class="container-fluid">
-                <h3>Looking for a Doctor?</h3>
-                <p>Covid care is the largest online platform for covid patient<br> 
-                    to consult with doctors, order medicine and tests.</p>
-                <div class="formDiv">
-                    <form action="">
-                        <div class="inputDiv d-flex alignitem">
-                            <input type="text" name="" id="" placeholder="Search for doctors, hospitals, specialties and labs">
-                            <div class="selectDiv">
-                                <select name="" id="">
-                                    <option value="Karachi">Karachi</option>
-                                </select>
-                            </div>
-                            <button type="submit">Search</button>
-                        </div>
-                    </form>
-                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                       <h3>Looking for a Doctor?</h3>
+                       <p>Covid care is the largest online platform for covid patient<br> 
+                          to consult with doctors, order medicine and tests.
+                       </p>
+                    </div>
+                 </div>
+                 <div class="row form_row">
+                    <div class="col-md-10 search_form">
+                       <form action="#">
+                          <div class="row">
+                             <div class="col-md-6 col-ms-12 gutter address">
+                                <div class="input-group">
+                                   <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                            </svg>
+                                        </span>
+                                   </div>
+                                   <input type="text" class="form-control" placeholder="Search for doctors, hospitals, specialties and labs" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                             </div>
+                             <div class="col-md-3 col-ms-12 gutter">
+                                <div class="input-group">
+                                   <div class="input-group-prepend location">
+                                      <span class="input-group-text" id="basic-addon1">
+                                        
+                                      </span>
+                                   </div>
+                                   <select name="location" class="form-control">
+                                     <option value="Karachi">Karachi</option>
+                                 </select>
+                                </div>
+                             </div>
+                             <div class="col-md-2 col-ms-12 gutter">
+                                <button type="submit" class="btn btn-primary w-100">Search</button>
+                             </div>
+                          </div>
+                       </form>
+                    </div>
+                 </div>
             </div>
-            <div class="multidiv">
+             <div class="multidiv">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-10 offset-md-1">
                         <div class="row">
                             <div class="col-md-3">
-                                <ul>
-                                    <li>
-                                        <h3>100,000+</h3>
-                                        <p>Doctors</p>
-                                    </li>
-                                </ul>
+                                <div class="drMain">
+                                    <h2>100,000+</h2>
+                                    <p>Doctors</p>
+                                </div>
                             </div>
                             <div class="col-md-3">
-                                <ul>
-                                    <li>
-                                        <h3>1000+</h3>
-                                        <p>Specialists</p>
-                                    </li>
-                                </ul>
+                                <div class="drMain">
+                                    <h2>1000+</h2>
+                                    <p>Specialists</p>
+                                </div>
                             </div>
                             <div class="col-md-3">
-                                <ul>
-                                    <li>
-                                        <h3>2000+</h3>
-                                        <p>Patients Served</p>
-                                    </li>
-                                </ul>
+                                <div class="drMain">
+                                    <h2>2000+</h2>
+                                    <p>Patients Served</p>
+                                </div>
                             </div>
                             <div class="col-md-3">
-                                <ul>
-                                    <li>
-                                        <h3>70,000+</h3>
-                                        <p>Patient Reviews</p>
-                                    </li>
-                                </ul>
+                                <div class="drMain">
+                                    <h2>70,000+</h2>
+                                    <p>Patient Reviews</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- <div class="multiDiv">
-                <ul>
-                    <li>
-                        <h3>100,000+</h3>
-                        <p>Doctors</p>
-                    </li>
-                    <li>
-                        <h3>1000+</h3>
-                        <p>Specialists</p>
-                    </li>
-                    <li>
-                        <h3>2000+</h3>
-                        <p>Patients Served</p>
-                    </li>
-                    <li>
-                        <h3>70,000+</h3>
-                        <p>Patient Reviews</p>
-                    </li>
-                </ul>
+            </div> 
+        
+            <!-- <div class="newmultidiv">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="doctors-main">
+                                    <h2>100,000+</h2>
+                                    <p>Doctors</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="doctors-main">
+                                    <h2>1000+</h2>
+                                    <p>Specialists</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="doctors-main">
+                                    <h2>1000+</h2>
+                                    <p>Patients Served</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="doctors-main">
+                                    <h2>70,000+</h2>
+                                    <p>Patient Reviews</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div> -->
         </section>
-        
+
         <section id="findDoctor">
             <div class="container-fluid">
                 <div class="row ">
@@ -256,16 +307,16 @@
                 </div>
             </div>
         </section>
-        
-        <section id="covidDoctor">
+
+        <!-- <section id="covidDoctor">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                         <div class="imgleftBg">
                             <img src="../assets/img/Rectangle 244.png" alt="" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-7">
                         <div class="contentLeftDiv">
                             <h3>COVID CARE</h3>
                             <p>Video Consultations with Top Specialists</p>
@@ -276,21 +327,7 @@
                     </div>
                 </div>
 
-                <!-- <div class="d-flex">
-                    <div class="imgleftBg">
-                        <img src="../assets/img/Rectangle 244.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="contentLeftDiv">
-                        <h3>COVID CARE</h3>
-                        <p>Video Consultations with Top Specialists</p>
-                        <a href="bookAppointment.html">
-                            <button>Book Appointment</button>
-                        </a>
-                    </div>
-                </div> -->
-               
-
-
+        
                 <div class="justifyContentEnd">
                     
                     <div class="contentRightDiv">
@@ -306,34 +343,36 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         
         <section id="coronaVirus">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="contentDiv">
-                            <p class="title">COVID-19</p>
-                            <h3>Corona Virus Information</h3>
-                            <p>Watch 5 minute of informative video of expert doctors and you will get <br>
-                                to know the following: </p>
-                            <div class="listDiv">
-                                <ul>
-                                    <li>What are the syptoms of covid-19?</li>
-                                    <li>What is the treatment? </li>
-                                    <li>Individual medication and side effects.</li>
-                                    <li>Information about tests (when are they needed and how often).</li>
-                                </ul>
+                    <div class="coronaVirus-content">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="contentDiv">
+                                <p class="title">COVID-19</p>
+                                <h3>Corona Virus Information</h3>
+                                <p>Watch 5 minute of informative video of expert doctors and you will get <br>
+                                    to know the following: </p>
+                                <div class="listDiv">
+                                    <ul>
+                                        <li>What are the syptoms of covid-19?</li>
+                                        <li>What is the treatment? </li>
+                                        <li>Individual medication and side effects.</li>
+                                        <li>Information about tests (when are they needed and how often).</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="../assets/img/Group 730.png" alt="" class="img-fluid">
+                        <div class="col-md-6 col-sm-12">
+                            <img src="../assets/img/Group 730.png" alt="" class="img-fluid">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <section id="bookAppointment">
             <div class="container-fluid">
                 <div class="row">
@@ -342,6 +381,7 @@
                         <p>3 Easy Steps</p>
                     </div>
                 </div>
+                <br><br>
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
                         <div class="imgLeftImg">
@@ -353,13 +393,13 @@
                             <div class="contentDiv">
                                 <ul>
                                     <li>
-                                        <img src="../assets/img/search.png" alt="" class="img-fluid"> Search for doctors by speciality, hospital, service or disease  
+                                        <img src="../assets/img/search.png" alt="" class="img-fluid"> Search for doctors by speciality, hospital, service or disease.  
                                     </li>
                                     <li>
-                                        <img src="../assets/img/calender.png" alt="" class="img-fluid"> Search for doctors by speciality, hospital, service or disease  
+                                        <img src="../assets/img/calender.png" alt="" class="img-fluid"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.  
                                     </li>
                                     <li>
-                                        <img src="../assets/img/blueCheck.png" alt="" class="img-fluid"> Search for doctors by speciality, hospital, service or disease  
+                                        <img src="../assets/img/blueCheck.png" alt="" class="img-fluid"> There are many variations of passages of Lorem Ipsum available,  
                                     </li>
                                 </ul>
                                 <a href="specialist.html">
@@ -373,7 +413,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section id="moveOn">
             <div class="container-fluid">
                 <div class=" justifyContentSpaceAround alignitem">
@@ -393,11 +433,11 @@
                 </div>
             </div>
         </section>
-        
+
         <section id="coronaVirus" class="joinDoctor">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-12">
                         <div class="contentDiv">
                             <p class="title">Join as a Doctor</p>
                             <h3>ARE YOU A DOCTOR?</h3>
@@ -413,13 +453,13 @@
                             <button class="joinBtn">Join Now</button>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-12">
                         <img src="../assets/img/phones 1.png" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <section id="usersSay">
             <div class="container-fluid">
                 <div class="row">
@@ -427,9 +467,9 @@
                         <h3>WHAT USERS SAY ABOUT US? </h3>
                     </div>
                 </div>
-                <!-- <div class="row">
-                    <div class="col-md-4">
-                        <div class="sliderDiv">
+                <div class="slider-area">
+                    <div class="container-fluid">
+                        <div class="sliders-list">
                             <div class="commonDiv">
                                 <div class="icon">
                                     <span>"</span>
@@ -448,11 +488,7 @@
                                         <i class="fa fa-star"></i>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="sliderDiv">
+                            </div> <!-- /.single-slider -->
                             <div class="commonDiv">
                                 <div class="icon">
                                     <span>"</span>
@@ -471,11 +507,7 @@
                                         <i class="fa fa-star"></i>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="sliderDiv">
+                            </div> <!-- /.single-slider -->
                             <div class="commonDiv">
                                 <div class="icon">
                                     <span>"</span>
@@ -494,114 +526,36 @@
                                         <i class="fa fa-star"></i>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="sliderDiv">
+                            </div> <!-- /.single-slider -->
                             <div class="commonDiv">
-                        <div class="icon">
-                            <span>"</span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, urna, viverra fermentum integer gravida aliquet turpis vestibulum. Nec id pharetra id phasellus egestas. In turpis risus facilisis orci est porttitor faucibus.</p>
-                        <div class="infoDiv">
-                            <div class="imgDiv">
-                                <img src="../assets/img/Ellipse 39.png" alt="" class="img-fluid">
-                            </div>
-                            <p>John Doe</p>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="sliderDiv">
-                    <div class="commonDiv">
-                        <div class="icon">
-                            <span>"</span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, urna, viverra fermentum integer gravida aliquet turpis vestibulum. Nec id pharetra id phasellus egestas. In turpis risus facilisis orci est porttitor faucibus.</p>
-                        <div class="infoDiv">
-                            <div class="imgDiv">
-                                <img src="../assets/img/Ellipse 39.png" alt="" class="img-fluid">
-                            </div>
-                            <p>John Doe</p>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="commonDiv">
-                        <div class="icon">
-                            <span>"</span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, urna, viverra fermentum integer gravida aliquet turpis vestibulum. Nec id pharetra id phasellus egestas. In turpis risus facilisis orci est porttitor faucibus.</p>
-                        <div class="infoDiv">
-                            <div class="imgDiv">
-                                <img src="../assets/img/Ellipse 39.png" alt="" class="img-fluid">
-                            </div>
-                            <p>John Doe</p>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="commonDiv">
-                        <div class="icon">
-                            <span>"</span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, urna, viverra fermentum integer gravida aliquet turpis vestibulum. Nec id pharetra id phasellus egestas. In turpis risus facilisis orci est porttitor faucibus.</p>
-                        <div class="infoDiv">
-                            <div class="imgDiv">
-                                <img src="../assets/img/Ellipse 39.png" alt="" class="img-fluid">
-                            </div>
-                            <p>John Doe</p>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="commonDiv">
-                        <div class="icon">
-                            <span>"</span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, urna, viverra fermentum integer gravida aliquet turpis vestibulum. Nec id pharetra id phasellus egestas. In turpis risus facilisis orci est porttitor faucibus.</p>
-                        <div class="infoDiv">
-                            <div class="imgDiv">
-                                <img src="../assets/img/Ellipse 39.png" alt="" class="img-fluid">
-                            </div>
-                            <p>John Doe</p>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                <div class="icon">
+                                    <span>"</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, urna, viverra fermentum integer gravida aliquet turpis vestibulum. Nec id pharetra id phasellus egestas. In turpis risus facilisis orci est porttitor faucibus.</p>
+                                <div class="infoDiv">
+                                    <div class="imgDiv">
+                                        <img src="../assets/img/Ellipse 39.png" alt="" class="img-fluid">
+                                    </div>
+                                    <p>John Doe</p>
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div> <!-- /.single-slider -->
+                        </div> <!-- /.sliders-list -->
+            
+            
+                    </div><!-- end container -->
+                </div><!-- end slider area -->
+            
+        
             </div>
         </section>
-        
+
         <section id="ourPatners">
             <div class="container-fluid">
                 <div class="row">
@@ -640,16 +594,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="logoDiv">
-                    <img src="../assets/img/Group-6.png" alt="">
-                    <img src="../assets/img/Group-3.png" alt="">
-                    <img src="../assets/img/Group-4.png" alt="">
-                    <img src="../assets/img/Group-5.png" alt="">
-                    <img src="../assets/img/Group-7.png" alt="">
-                </div> -->
             </div>
         </section>
-        
+
         <section id="findSpecialists">
             <div class="container-fluid">
                 <div class="row">
@@ -745,7 +692,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section id="footer">
             <div class="container-fluid">
                     <div class="row">
@@ -803,7 +750,7 @@
                         </div>
                         <div class="col-md-2">
                             <div class="footerContent">
-                                <span>Major CITIES</span>
+                                <span>Major Cities</span>
                                 <ul>
                                     <li>Karachi</li>
                                     <li>Islamabad</li>
@@ -827,9 +774,6 @@
                                     <li>Doctors Hospital</li>
                                     <li>Hameed Latif Hospital</li>
                                     <li>National Hospital</li>
-                                    <li>Fatima Memorial Hospital</li>
-                                    <li>Omar Hospital & Cardic Centre</li>
-                                    <li>Omar Hospital & Cardic Centre</li>
                                     <li>Ali Medical Centre</li>
                                     <li>Shifa International Hospital</li>
                                     <li>Quaid-eAzam International Hospital</li>
@@ -889,12 +833,42 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="../assets/js/slick.min.js"></script>
         <script>
-            $('.sliderDiv').slick({
-                arrows: true,
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 3
-            });
+            // $('.sliderDiv').slick({
+            //     arrows: true,
+            //     infinite: true,
+            //     slidesToShow: 3,
+            //     slidesToScroll: 3
+            // });
+
+            $(document).ready(function(){
+	  $('.sliders-list').slick({
+		  slidesToShow: 3,
+		  slidesToScroll: 1,
+		  autoplay: true,
+		  arrows: true,
+		  autoplaySpeed: 2000,
+		  responsive: [
+		    {
+		      breakpoint: 991,
+		      settings: {
+		        slidesToShow: 2,
+		      }
+		    },
+		    {
+		      breakpoint: 767,
+		      settings: {
+		        slidesToShow: 2,
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        slidesToShow: 1,
+		      }
+		    },
+		    ]
+	  });
+	});
         </script>
     </body>
 </html>

@@ -34,7 +34,7 @@ a:hover,a{
     text-decoration: none !important;
 }
 body,p,h1,h2,h3,h4,h5,h6,span,a,button{
-    font-family: helvetica-regular;
+    font-family: 'helvetica-regular' !important;
     margin: 0px !important;
     padding: 0px !important;
 }
@@ -90,7 +90,7 @@ ul.navbar-nav.m-auto li {
     margin: 0px 4px !important;
 }
 #header{
-    padding: 18px 30px;
+    padding: 10px 30px;
 }
 #header .navbar-collapse .commonBtn{
     margin: 0px 5px !important;
@@ -112,7 +112,7 @@ ul.navbar-nav.m-auto li {
 }
 #mainBanner{
     background-color: rgba(72, 35, 105, 1);
-    padding: 150px 50px;
+    padding: 100px 50px 190px 50px;
     background-image: url("../img/Group\ 62.png");
     background-position: 100% 115%;
     background-repeat: no-repeat;
@@ -136,10 +136,15 @@ ul.navbar-nav.m-auto li {
     max-width: 60%;
     margin-top: 20px;
 }
+span.home_searchSpan {
+    position: absolute;
+    left: 5%;
+}
 #mainBanner .formDiv .inputDiv input{
-    width: 801px;
+    width: 60%;
     height: 59.2px;
-    padding: 0px 15px;
+    /* padding: 0px 15px; */
+    padding: 0px 15px 0px 50px;
     border-radius: 6px 0px 0px 6px;
     font-family: helvari-regular;
     font-weight: 400;
@@ -150,16 +155,21 @@ ul.navbar-nav.m-auto li {
     color: rgba(81, 81, 81, 1);
 }
 #mainBanner .formDiv .inputDiv .selectDiv{
-    width: 30%;
+    width: 25%;
     height: 100%;
     border-left: 0.3px solid rgba(81, 81, 81, 1);
     background-color: #fff;
     /* padding: 25px; */
 }
+span.home_locationSpan {
+    position: absolute;
+    left: 37.7%;
+}
 #mainBanner .formDiv .inputDiv .selectDiv select{
-    width: 100%;
+    width: 95%;
     height: 59.2px;
-    padding: 0px 15px;
+    /* padding: 0px 15px; */
+    padding: 0px 15px 0px 35px;
     border: none;
     font-family: helvari-regular;
     font-weight: 400;
@@ -185,15 +195,14 @@ ul.navbar-nav.m-auto li {
     justify-content: space-between;
 }
 #mainBanner .multiDiv{
-    position: absolute;
-    bottom: -57px;
-    left: 65px;
+    position: relative;
+    bottom: -244px;
     background-color: rgba(255, 193, 7, 1);
     padding: 12px;
-    width: 1450.19px;
-    max-width: 90%;
-    margin: auto;
-    height: 115px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
 }
 #mainBanner .multiDiv ul li h3{
     color: rgba(48, 34, 41, 1);
@@ -386,9 +395,10 @@ ul.navbar-nav.m-auto li {
 #usersSay h3,
 #ourPatners h3,
 #findSpecialists h3{
-    font-family: helvari-regular;
+    font-family: helvari-regular !important;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 22px;
+    line-height: 35px;
 }
 #coronaVirus .contentDiv p{
     font-family: helvari-regular;
@@ -403,7 +413,16 @@ ul.navbar-nav.m-auto li {
 }
 
 @media only screen and (max-width: 600px){
-    
+    span.locationSpan {
+        position: absolute !important;
+        top: 43% !important;
+        left: 7% !important; 
+    }
+    span.searchSpan {
+        position: absolute !important;
+        left: 7% !important;
+        top: 37px !important;
+    }
 }
 
 
@@ -425,7 +444,7 @@ ul.navbar-nav.m-auto li {
     background-size: cover;
 }
 #bookAppointment{
-    padding: 100px 0px;
+    padding: 60px 0px;
 }
 #bookAppointment .imgLeftImg{
     background-image: url("../img/Group 731.png");
@@ -453,7 +472,7 @@ ul.navbar-nav.m-auto li {
     padding: 10px 0px;
     font-family: helvari-regular;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: rgba(16, 32, 71, 1);
 }
 #bookAppointment .listDiv ul li img{
@@ -463,7 +482,7 @@ ul.navbar-nav.m-auto li {
 .joinBtn{
     background-color: rgba(255, 193, 7, 1);
     color: rgba(48, 34, 41, 1);
-    padding: 15px 49px !important;
+    padding: 15px 40px !important;
     font-size: 18px;
     border: none;
     cursor: pointer;
@@ -481,6 +500,7 @@ ul.navbar-nav.m-auto li {
 .justifyContentSpaceAround{
     justify-content: space-around;
     display: flex;
+    align-items: center;
 }
 #moveOn .commonDiv{
     text-align: center;
@@ -496,7 +516,7 @@ ul.navbar-nav.m-auto li {
     color: #fff;
     font-family: helvari-regular;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 23px;
 }
 .joinDoctor{
     padding-bottom: 0px !important;
@@ -511,10 +531,10 @@ ul.navbar-nav.m-auto li {
 }
 #usersSay,
 #findSpecialists{
-    padding: 100px 50px;
+    padding: 60px 50px;
 }
 #usersSay .sliderDiv{
-    margin-top: 70px;
+    margin-top: 30px;
 }
 #usersSay .commonDiv{
     width: 500px;
@@ -566,13 +586,13 @@ ul.navbar-nav.m-auto li {
     height: auto !important;
 }
 #ourPatners{
-    padding: 100px 50px;
+    padding: 60px 50px;
     background-color: #E5E5E5;
 }
 #ourPatners .logoDiv{
     display: flex;
     justify-content: space-around;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 #findSpecialists .listDiv{
     margin-top: 50px;
@@ -604,7 +624,7 @@ ul.navbar-nav.m-auto li {
 }
 #footer{
     background-color: rgba(34, 34, 34, 1);
-    padding: 100px 50px;
+    padding: 50px 50px;
 }
 #footer .imgTextDiv{
     display: flex;
@@ -669,14 +689,14 @@ ul.navbar-nav.m-auto li {
     border-radius: 4px;
     background-color: rgba(255, 193, 7, 1);
     border: none;
-    font-family: helvari;
+    font-family: 'helvetica-regular';
     font-weight: 500;
     position: absolute;
     font-size: 20px;
 }
 #breadcrumb{
     background: #e9ecef;
-    padding: 0px 50px;
+    padding: 15px 50px 0px 50px;
 }
 #step_to_order {
     padding: 0px 50px;
@@ -712,7 +732,7 @@ ul.navbar-nav.m-auto li {
 #Order_mainBanner p{
     font-family: helvari-regular;
     color: #ffffff;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 52.5px;
     font-weight: 500;
 
@@ -845,8 +865,8 @@ input#file {
     border-radius: 4px;
     background-color: rgba(255, 193, 7, 1);
     border: none;
-    font-family: helvari;
-    font-weight: 700;
+    font-family: 'helvari-regular';
+    font-weight: 500;
     position: absolute;
     font-size: 20px;
     padding-bottom: 20%;
@@ -872,6 +892,72 @@ input#file {
 
 /* ****************  Specialist ********************* */
 
+.search_form .input-group-text{
+    padding:15px !important;
+    background: white !important;
+    }
+    .fa-map-marker:before {
+       content: "\f041";
+       font-size: 27px;
+   }
+   .fa-search:before {
+       content: "\f002";
+       font-size: 25px;
+   }
+    .search_form .location .input-group-text{
+    border-radius: 0px !important;
+    background: white !important;
+    }
+
+    .form_row{
+        padding: 0px 15px !important;
+    }
+    .search_form input{
+    /* width: 801px;
+    height: 59.2px; */
+    padding: 15px 15px;
+    border-radius: 6px 0px 0px 6px;
+    font-family: helvari-regular;
+    font-weight: 400;
+    border: none;
+    font-size: 20px;
+    width: 100%;
+    }
+
+    .search_form select{
+    /* width: 801px;
+    height: 59.2px; */
+    /* / padding: 15px 15px; / */
+    height: 60px !important;
+    border-radius: 6px 0px 0px 6px;
+    font-family: helvari-regular;
+    font-weight: 400;
+    border: none;
+    font-size: 20px;
+    width: 100%;
+    }
+
+
+    .search_form .btn{
+    padding: 15px 15px !important;
+    border-radius: 0px 6px 6px 0px;
+    background-color: rgba(255, 193, 7, 1);
+    border: none;
+    font-family: helvari-regular;
+    font-weight: 500;
+    font-size: 20px;
+    }
+
+    .search_form .gutter{
+        padding: 0px !important;
+    }
+    .search_form button.btn.btn-primary.w-100 {
+        background: #f2c010;
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+
 
 #specialist_mainBanner{
     background-color: rgba(72, 35, 105, 1);
@@ -883,12 +969,12 @@ input#file {
 #specialist_mainBanner h3{
     color: rgba(255, 193, 7, 1);
     font-size: 60px;
-    font-weight: 700;
-    font-family: helvari-regular;
+    font-weight: 500;
+    font-family: 'helvari-regular';
     margin-bottom: 15px !important;
 }
 #specialist_mainBanner p{
-    font-family: helvari-regular;
+    font-family: 'helvari-regular';
     color: #ffffff;
     font-size: 28px;
     line-height: 35px;
@@ -901,7 +987,7 @@ input#file {
 #specialist_mainBanner .formDiv .inputDiv input{
     width: 55%;
     height: 100%;
-    padding: 23px 70px;
+    padding: 18px 20px 18px 70px;
     border-radius: 6px 0px 0px 6px;
     font-family: helvari-regular;
     font-weight: 400;
@@ -921,7 +1007,7 @@ input#file {
 #specialist_mainBanner .formDiv .inputDiv .selectDiv select{
     width: 100%;
     height: 100%;
-    padding: 23px 50px;
+    padding: 17.5px 0px 17.5px 60px;
     border: none;
     font-family: helvari-regular;
     font-weight: 400;
@@ -931,13 +1017,14 @@ input#file {
 #specialist_mainBanner .formDiv .inputDiv button{
     width: 15%;
     height: 100%;
-    padding: 21px 0px !important;
+    padding: 16px 0px !important;
     border-radius: 0px 6px 6px 0px;
     background-color: rgba(255, 193, 7, 1);
     border: none;
     font-family: helvari-regular;
     font-weight: 500;
     font-size: 20px;
+
 }
 #specialist_mainBanner .multiDiv ul{
     list-style: none;
@@ -949,10 +1036,11 @@ input#file {
 #specialist_mainBanner .multiDiv{
     bottom: -57px;
     left: 0;
-    padding: 12px;
+    /* padding: 12px; */
     width: 100%;
-    max-width: 90%;
+    max-width: 100%;
     margin: auto;
+    display: flex;
 }
 #specialist_mainBanner .multiDiv ul li h3{
     color: rgba(48, 34, 41, 1);
@@ -967,15 +1055,34 @@ input#file {
     font-size: 20px;
     color: rgba(48, 34, 41, 1);
 }
+.fa-center0icon{
+    position: absolute;
+    font-size: 20px;
+    top: 30%;
+    left: 4%;
+    color: white;
+}
 .multiDiv button{
+    /* background: #683894;
+    border-radius: 10px;
+    color: #FFFFFF;
+    margin-right: 20px !important;
+    border: none;
+    height: 50px;
+    font-weight: 500;
+    width: 17%; */
+
     background: #683894;
     border-radius: 10px;
     color: #FFFFFF;
     margin-right: 20px !important;
     border: none;
     height: 50px;
-    font-weight: 600;
+    font-weight: 500;
     width: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .multiDiv select{
     background: #ECECEC;
@@ -983,12 +1090,21 @@ input#file {
     margin-right: 20px;
     border: none;
     height: 50px;
-    width: 15%;
-    padding: 10px;
+    width: 16%;
+    padding: 5px;
+    font-size: 15px;
 }
 
 /* section 2 */
-
+span.searchSpan {
+    position: absolute;
+    left: 2%;
+}
+span.locationSpan {
+    position: absolute;
+    top: 32px;
+    left: 56%;
+}
 #specialist_mainBanner .formDiv .inputDivv input{
     width: 55%;
     height: 100%;
@@ -1048,9 +1164,9 @@ ol.breadcrumb {
 h2.Professor_name {
     font-family: 'helvetica-bold';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 26px;
-    line-height: 35px;
+    line-height: 45px;
     color: #482369;
 }
 /* ************ list of specialists ************ */
@@ -1186,7 +1302,7 @@ p.card-text {
     border: none;
     height: 50px;
     font-weight: 600;
-    width: 279px;
+    width: 200px;
     float: right;
 }
 
@@ -1420,7 +1536,7 @@ ul.pagination{
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 42px;
+    line-height: 45px;
     color: #6B6B6B;
 }
 #labs .shaukat-blurb {
@@ -1661,18 +1777,28 @@ ul.pagination{
     color: #555555;
 }
 .jhondiv h3 {
-    font-family: 'helvetica-regular';
+    font-family: 'helvetica-regular' !important;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     line-height: 33px;
     color: #000000;
-}   
+}  
 .ratings {
     color: #f2c010;
 }
 .jhondiv .rating {
     color: #f2c010;
+}
+.vector-img {
+    position: absolute;
+    left: 28px;
+    top: 35px;
+}
+.location-img {
+    position: absolute;
+    top: 35px;
+    left: 56%;
 }
 
 #main {
@@ -1750,7 +1876,7 @@ ul.pagination{
     font-family: helvetica;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 22px;
     color: #000000;
     
@@ -1786,23 +1912,49 @@ ul.pagination{
     background: #FDBE10;
     border-radius: 6px;
     color: #000000;
-    margin-right: 20px !important;
+    /* margin-right: 20px !important; */
     border: none;
-    width: 222px;
+    width: 225px;
     cursor: pointer;
-    height: 42px;
+    /* height: 42px; */
     font-weight: 600;
 }
 .multiDiv .get-direction{
     background: #FFFFFF;
     border-radius: 6px;
     color: #000000;
-    margin-right: 20px !important;
+    /* margin-right: 20px !important; */
     cursor: pointer;
     border: none;
     font-weight: 600;
-    width: 222px;
-    height: 42px;
+    width: 225px;
+    /* height: 42px; */
+}
+.shukatMain{
+    display: flex;
+    justify-content: center;
+}
+.shaukat_inputBtn1 {
+    background: #f2c010;
+    padding: 10px 40px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+.shaukat_inputBtn1 a,
+.shaukat_inputBtn1 a:hover{
+    color: #000;
+    font-weight: 600;
+}
+.shaukat_inputBtn2 {
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 10px 40px;
+    margin-left: 10px;
+}
+.shaukat_inputBtn2 a,
+.shaukat_inputBtn2 a:hover{
+    color: #000;
+    font-weight: 600;
 }
 .gynecologists {
     padding:10px;
@@ -1961,7 +2113,7 @@ ul.pagination{
     font-family: 'helvetica';
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 82px;
     color: #000000;
 }
@@ -1969,10 +2121,10 @@ ul.pagination{
     width: 166;
     float: right;
     border: none;
-    height: 64px;
+    height: 55px;
     background: #FFC107;
     border-radius: 6px;
-    font-family: Inter;
+    font-family: inter;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -1980,16 +2132,69 @@ ul.pagination{
     letter-spacing: -0.33px;
     color: #302229;
 }
+#login-section .login-image {
+    background-image: url('../img/Group 740.png');
+    width: 100%;
+    height: 550px;
+    text-align: center;
+    background-position: center center;
+    background-size: cover;
+}
+#login-section .login-image h5{
+    font-family: 'helvari-regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 15px;
+    color: #FFFFFF;    
+}
+#login-section .login-image h2{
+    font-family: 'helvetica';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 75px;
+    color: #FFFFFF;
+}
 
+#login-section .login-image h2 span {
+    font-family: 'helvetica';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 52px;
+    color: #FFC107;
+}
 .icons-title.d-flex {
     font-family: 'helvetica-bold';
     font-style: normal;
     font-weight: 500;
     font-size: 26px;
     line-height: 35px;
-    color: #482369;
+    color: rgb(33 37 41);
 }
-
+button.btn.btn-success {
+    width: 15%;
+    height: 34px;
+}
+#exampleModal .modal-dialog .modal-content .modal-body .modal-title-sub-head {
+    text-align: center;
+    font-family: 'helvetica-regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 34px;
+    color: #000000;
+}
+#exampleModal .modal-dialog .modal-content .modal-body .modal-title-head  {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 50px;
+    color: #482369;
+    text-align: center;
+}
 /* Progress bar */
 
   #progress {
@@ -1998,9 +2203,167 @@ ul.pagination{
 
   }
 
+  #otp-verification .bgWhite{
+    background:white;
+    box-shadow:0px 3px 6px 0px #cacaca;
+  }
+  
+  #otp-verification .title{
+    font-weight:600;
+    margin-top:20px;
+    font-size:24px
+  }
+  
+  #otp-verification .customBtn{
+    border-radius:0px;
+    padding:10px;
+  }
+  
+  #otp-verification input{
+    display:inline-block;
+    width:50px;
+    height:50px;
+    text-align:center;
+  }
+
+  button.btn.btn-outline-secondary {
+    width: 35%;
+    height: 40px;
+}
+.modal .modal-dialog .modal-content .modal-body h3{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 30px;
+    color: #482369;
+}
+.optinput input{
+    display: inline-block;
+    width: 50px;
+    height: 60px;
+    text-align: center;
+    background: #F0F0F0;
+    border: 1px solid #9E9E9E;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 10px;
+  }
+.modal .modal-dialog .modal-content .modal-body p{
+   
+    font-family: 'helvetica-regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 60px;
+    color: #000000;
+
+}
+
+.modal .modal-dialog .modal-content .modal-body h5{
+    font-family: 'helvetica-regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 45px;
+    color: #000000;
+}
+.modal .modal-dialog .modal-content .modal-body .verify a button {
+    width: 330.95px;
+    height: 45.56px;
+    background: #FDBE10;
+    border-radius: 6px;
+    border: none;
+}
+.has-search .form-control {
+    padding-left: 2.375rem;
+  }
+  
+  .has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+  }
+  .coronaVirus-content {
+    display: flex;
+    align-items: center;
+}
+.experence-main{
+    display: flex;
+    box-sizing: border-box;
+}
+.experence-main .blurb h6{
+    font-weight: bold;
+}
+
 /* brack points */
 
 @media only screen and (max-width: 600px) {
+
+    .experence-main{
+        display: flex;
+        text-align: center;
+    }
+    .experence-main .blurb h6{
+        font-size: 12;
+        font-weight: bold;
+    }
+    .experence-main .blurb p{
+        font-size: 13;
+    }
+
+    .coronaVirus-content {
+        display: block !important;
+
+    }
+    #header .navbar-collapse .commonBtn{
+        margin: 5px 0px !important;
+        width: 100% !important;
+    }
+    ul.navbar-nav.m-auto li {
+        margin: 5px 0px;
+    }
+    .vector-img {
+        position: absolute !important;
+        left: 28px !important;
+        top: 35px !important;
+    }
+    .location-img {
+        position: absolute !important;
+        top: 43% !important;
+        left: 5% !important;
+    }
+    .modal .modal-dialog .modal-content .modal-body .verify a button {
+        width: 100%;
+        height: 45.56px;
+        background: #FDBE10;
+        border-radius: 6px;
+        border: none;
+    }
+    #login-section .login-image {
+        background-image: url('../img/Group 740.png');
+        width: 100%;
+        height: 575px;
+        text-align: center;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #usersSay .commonDiv p {
+        padding: 0px 16px 50px!important;
+        font-family: helvari-regular;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    #usersSay, #findSpecialists {
+        padding: 60px 0px !important;
+    }
     .justifyContentEnd{
         justify-content: end !important;
         display: block !important;
@@ -2064,7 +2427,7 @@ ul.pagination{
     #mainBanner .formDiv .inputDiv input {
         width: 100%;
         height: 59.2px;
-        padding: 0px 15px;
+        padding: 0px 15px 0px 40px;
         border-radius: 6px 6px 0px 0px;
         font-family: helvari-regular;
         font-weight: 400;
@@ -2102,7 +2465,7 @@ ul.pagination{
         color: #302229;
     }
     #login-section {
-        padding: 70px 30px;
+        padding: 45px 20px;
 
     }
     .gynecologists {
@@ -2112,7 +2475,7 @@ ul.pagination{
     width: 100%;
     font-size: 15px;
     height: auto;
-}
+    }
     .review-head h2{
         font-family:'Helvetica';
         font-style: normal;
@@ -2330,12 +2693,101 @@ ul.pagination{
     #bookAppointment .contentDiv {
         padding-top: 81px;
     }
+    .search_form button.btn.btn-primary.w-100 {
+        background: #f2c010;
+        width: 100% !important;
+        max-width: 100%;
+    }
     
+    .shukatMain{
+        display: block;
+        justify-content: center;
+    }
+    .shaukat_inputBtn1 {
+        background: #f2c010;
+        padding: 10px 40px;
+        border-radius: 6px;
+        margin-right: 0px;
+    }
+    .shaukat_inputBtn1 a,
+    .shaukat_inputBtn1 a:hover{
+        color: #000;
+        font-weight: 600;
+    }
+    .shaukat_inputBtn2 {
+        background: #FFFFFF;
+        border-radius: 6px;
+        padding: 10px 40px;
+        margin-left: 0px;
+    }
+    .shaukat_inputBtn2 a,
+    .shaukat_inputBtn2 a:hover{
+        color: #000;
+        font-weight: 600;
+    }
+    #Specialist_mainBanner .formDiv .Shaukat-inputDiv h2 {
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 52px;
+        color: #FFFFFF;
+    }
     
 
     
 }
 @media only screen and (max-width: 768px) {
+    #footer .imgTextDiv {
+        display: flex;
+        align-items: center;
+        padding: 6px 0px;
+    }
+    .multiDiv button {
+        background: #683894;
+        border-radius: 10px;
+        color: #FFFFFF;
+        margin-right: 20px !important;
+        border: none;
+        height: 50px;
+        font-weight: 500;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .multiDiv select {
+        background: #ECECEC;
+        border-radius: 10px;
+        margin-right: 20px;
+        border: none;
+        height: 50px;
+        width: 100%;
+        padding: 5px;
+        font-size: 15px;
+    }
+    #specialist_mainBanner .multiDiv {
+        bottom: -57px;
+        left: 0;
+        /* padding: 12px; */
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+        display: block !important;
+    }
+    .search_form button.btn.btn-primary.w-100 {
+        background: #f2c010;
+        width: 100% !important;
+        max-width: 100%;
+        border-radius: 0px 6px 6px 0px;
+
+    }
+    
+    .location-img {
+        position: absolute ;
+        top: 50px ;
+        left: 45%  !important;
+    }
     #bookAppointment .listDiv {
         display: flex !important;
         justify-content: center !important;
@@ -2354,22 +2806,21 @@ ul.pagination{
     }
     #mainBanner {
         background-color: rgba(72, 35, 105, 1);
-        padding: 150px 20px 350px 20px;
+        padding: 150px 20px 150px 20px;
         background-image: url(../img/Group\ 62.png);
         background-position: 100% 115%;
         background-repeat: no-repeat;
         position: relative;
     }
     #mainBanner .multiDiv {
-        position: absolute;
-        bottom: -58px;
-        left: auto;
+        position: relative;
+        bottom: -205px;
         background-color: rgba(255, 193, 7, 1);
         padding: 12px;
         width: 100%;
-        max-width: 90%;
-        margin: auto;
-        height: 329px;
+        max-width: 100%;
+        margin: 0 auto;
+        height: auto;
     }
     .tabbable-line > .nav-tabs > li {
         margin-right: 30px;
@@ -2401,11 +2852,64 @@ ul.pagination{
     #labs .shaukat-blurb {
         text-align: left ;
     }
+    #specialist_mainBanner .formDiv .inputDiv input {
+        width: 55%;
+        height: 100%;
+        padding: 23px 10px 23px 53px;
+        border-radius: 6px 0px 0px 6px;
+        font-family: helvari-regular;
+        font-weight: 400;
+        border: none;
+        font-size: 20px;
+        font-size: 20px !important;
+}
    
    
 } 
-
 @media only screen and (max-width: 992px) {
+    
+    .coronaVirus-content {
+        display: flex;
+        align-items: center;
+    }
+    #covidDoctor {
+        padding: 0px 5%;
+    }
+    #covidDoctor .imgleftBg img {
+        position: relative;
+        top: -53px;
+        left: 45%;
+    }
+    #footer .imgTextDiv p {
+        font-family: helvari-regular !important;
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;
+        margin-left: 15px !important;
+    }
+    ul.navbar-nav.m-auto li {
+        margin: 5px 0px;
+    }
+    
+    span.locationSpan {
+        position: absolute;
+        top: 489px;
+        left: 41%;
+    }
+    span.searchSpan {
+        position: absolute;
+        left: 3%;
+    }
+    /* .location-img {
+        position: absolute ;
+        top: 50px ;
+        left: 40% ;
+    }
+    .vector-img {
+        position: absolute;
+        left: 28px;
+        top: 48px;
+    } */
    
     .tabbable-line > .nav-tabs > li {
         margin-right: 30px;
@@ -2433,27 +2937,26 @@ ul.pagination{
         font-size: 20px;
     }
     #specialist_mainBanner .formDiv .inputDiv input {
-        width: 100%;
-        height: 25%;
-        padding: 23px 70px;
-        border-radius: 6px 0px 0px 6px;
-        font-family: helvari-regular;
-        font-weight: 400;
-        border: none;
-        font-size: 20px;
+        width: 100% !important;
+        height: 25% !important;
+        padding: 23px 50px !important;
+        border-radius: 6px 0px 0px 6px !important;
+        font-family: 'helvari-regular' !important;
+        font-weight: 400 !important;
+        border: none !important;
+        font-size: 20px !important;
     }
-       
-    #specialist_mainBanner .formDiv .inputDiv .selectDiv {
+           #specialist_mainBanner .formDiv .inputDiv .selectDiv {
         width: 100%;
         height: 25%;
         border-left: 0.3px solid rgba(81, 81, 81, 1);
         background-color: #fff;
-        padding: 23px;
+        padding: 23px 23px 22px 0px;
         margin: 10px 0px;
     }
     #specialist_mainBanner .formDiv .inputDiv .selectDiv select {
         width: 100%;
-        padding: 0px 0px;
+        padding: 0px 0px 0px 65px ;
         border: none;
         font-family: helvari-regular;
         font-weight: 400;
