@@ -344,7 +344,7 @@ span.home_locationSpan {
 }
 .contentRightDiv{
     margin-right: 200px;
-    margin-top: 200px;
+    /* margin-top: 200px; */
 }
 #covidDoctor .contentLeftDiv h3,
 #covidDoctor .contentRightDiv h3{
@@ -1524,6 +1524,34 @@ ul.pagination{
 /* Labs */
 #labs {
     padding: 50px 50px;
+}
+h2.sp_name {
+    font-size: 25px;
+    font-weight: 600;
+}
+#tabs{
+	background: #007b5e;
+    color: #eee;
+}
+#tabs h6.section-title{
+    color: #eee;
+}
+
+#tabs .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #f3f3f3;
+    /* background-color: transparent; */
+    /* border-color: transparent transparent #f3f3f3; */
+    border-bottom: 2px solid !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+#tabs .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #eee;
+    font-size: 20px;
 }
 #labs h2.sp_name {
     font-family: 'helvari-regular';
@@ -2890,7 +2918,7 @@ button.btn.btn-success {
     #covidDoctor .imgleftBg img {
         position: relative;
         top: -53px;
-        left: 45%;
+        left: 0%;
     }
     #footer .imgTextDiv p {
         font-family: helvari-regular !important;
