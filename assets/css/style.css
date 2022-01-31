@@ -413,6 +413,17 @@ span.home_locationSpan {
 }
 
 @media only screen and (max-width: 600px){
+#main #faq .card .card-header .btn-header-link {
+    display: block;
+    text-align: left;
+    background: #F6F6F6;
+    color: #000;
+    padding: 14px !important;
+    font-weight: 600;
+    border-left: 3px solid #000000;
+    border-radius: 0px;
+    font-size: 11px;
+}
     span.locationSpan {
         position: absolute !important;
         top: 43% !important;
@@ -1211,63 +1222,109 @@ p.card-text {
 
 
 /* Doctor Profile page */
-
-.tabbable-panel {
-    padding: 10px;
-  }
-  
-  .tabbable-line > .nav-tabs {
-    border: none;
-    margin: 0px;
-  }
-  .tabbable-line > .nav-tabs > li {
-    margin-right: 50px;
-    font-size: 20px;
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem !important;
 }
-  .tabbable-line > .nav-tabs > li > a {
-    border: 0;
-    margin-right: 0;
-    color: #737373;
-  }
-  .tabbable-line > .nav-tabs > li > a > i {
-    color: #a6a6a6;
-  }
-  
-  .tabbable-line > .nav-tabs > li.open > a,
-  .tabbable-line > .nav-tabs > li:hover > a {
-    border: 0;
-    background: none !important;
-    color: #333333;
-  }
-  .tabbable-line > .nav-tabs > li.open > a > i,
-  .tabbable-line > .nav-tabs > li:hover > a > i {
-    color: #a6a6a6;
-  }
-  .tabbable-line > .nav-tabs > li.open .dropdown-menu,
-  .tabbable-line > .nav-tabs > li:hover .dropdown-menu {
-    margin-top: 0px;
-  }
-  .tabbable-line > .nav-tabs > li.active {
-    border-bottom: 2px solid #32465B;
-    position: relative;
-  }
-  .tabbable-line > .nav-tabs > li.active > a {
-    border: 0;
-    color: #333333;
-  }
-  .tabbable-line > .nav-tabs > li.active > a > i {
-    color: #404040;
-  }
-  .tabbable-line > .tab-content {
-    margin-top: 10px;
-    background-color: #fff;
-    border: 0;
-    border-top: 1px solid #eee;
-    padding: 15px 0;
-  }
-  .portlet .tabbable-line > .tab-content {
-    padding-bottom: 0;
-  }
+.nav-tabs {
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+	border: none;
+}
+.nav-tabs .nav-link{
+	border: none;
+	border-radius: 0;
+	transition: color .2s ease-out;
+}
+.tabs-dark .nav-link {
+	color: #fff;
+}
+.tabs-light .nav-link {
+	color: rgba(0,0,0,.5);
+}
+.tabs-dark .nav-link:not(.active):hover {
+	color: #aeb0b3;
+}
+.tabs-light .nav-link:not(.active):hover {
+	color: #495057;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0px !important;
+    color: #000;
+    transition: color .2s ease-out, box-shadow .2s;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* .nav-pills .nav-link:hover{
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+	
+} */
+.nav-pills .nav-item {
+    margin: 0px 4%;
+}
+
+/* .nav-pills.pills-dark .nav-link.active {
+	background-color: #343a40!important;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+} */
+.nav-pills.pills-dark .nav-link.active {
+    background-color: #fff !important;
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+    border-bottom: 3px solid #482369;
+    border-radius: 0px !important;
+}
+.nav-pills.pills-dark .nav-link:not(.active):hover {
+	color: #1d1e22;
+}
+.tabs-marker .nav-link {
+	position: relative;
+}
+.tabs-marker .nav-link.active .marker {
+	height: 30px;
+	width: 30px;
+	left: 50%;
+	bottom: -30px;
+	transform: translatex(-50%);
+	position: absolute;
+	overflow: hidden;
+}
+.tabs-marker .nav-link.active .marker:after {
+	content: "";
+	height: 15px;
+	width: 15px;
+	top: -8px;
+	left: 50%;
+	transform: rotate(45deg) translatex(-50%);
+	transform-origin: left;
+	background-color: #fff;
+ 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+	position: absolute;
+}
+
+.services-content li.Profile1{
+    list-style: none;
+    background: rgba(196, 196, 196, 0.2);
+    width: 100%;
+    max-width: fit-content;
+    padding: 11px;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+.services-content li.Profile2{
+    list-style: none;
+    background: rgba(196, 196, 196, 0.2);
+    width: 100%;
+    max-width: fit-content;
+    padding: 8px;
+    border-radius: 6px;
+    margin-right: 35px;
+}
+.services-content ul.uldrProfile{
+    display: flex;
+    
+}
   .summary h2,
   .education h2,
   .specialization h2,
@@ -1697,83 +1754,6 @@ h2.sp_name {
     border-radius: 6px;
     padding: 10px 10px;
 }
-.tab-pane .covid {
-    padding: 9px;
-    background: rgba(196, 196, 196, 0.2);
-    border-radius: 6px;
-    width: 157.93px;
-    height: 38.44px;
-}
-.tab-pane  .color-vision{
-    padding: 9px;
-    width: 157.93px;
-    height: 38.44px;
-    background: rgba(196, 196, 196, 0.2);
-    border-radius: 6px;
-
-}
-.tab-pane .dexa-scan {
-    padding: 9px;
-    width: 151.95px;
-    height: 38.44px;
-    background: rgba(196, 196, 196, 0.2);
-    border-radius: 6px;
-
-}
-.tab-pane .doppler {
-    padding: 9px;
-    width: 93.47px;
-    height: 38.44px;
-    background: rgba(196, 196, 196, 0.2);
-    border-radius: 6px;
-}
-.tab-pane .cardiac {
-    padding: 9px;
-    width: 187.76px;
-    height: 38.44px;
-    background: rgba(196, 196, 196, 0.2);
-    border-radius: 6px;
-}
-.tab-pane .ambulatory {
-    padding: 9px;
-    width: 416px;
-    height: 38.44px;
-    background: rgba(196, 196, 196, 0.2);
-    border-radius: 6px;
-
-}
-.tab-pane .ct-scan {
-    padding: 9px;
-    width: 119px;
-    height: 38.44px;
-    background: rgba(196, 196, 196, 0.2);
-    border-radius: 6px;
-    
-}
-.tab-pane .dental {
-    padding: 9px;
-    width: 222.48px;
-    height: 38.44px;
-    background: rgba(196, 196, 196, 0.2);
-    border-radius: 6px;
-    
-}
-.tab-pane .covid p,
-.tab-pane  .color-vision p,
-.tab-pane .dexa-scan p,
-.tab-pane  .doppler p,
-.tab-pane .cardiac p,
-.tab-pane .ambulatory p,
-.tab-pane .ct-scan p,
-.tab-pane .dental p{
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-    color: #000000;
-}
-
 .review-head h2{
     font-family:'Helvetica';
     font-style: normal;
@@ -1848,32 +1828,41 @@ h2.sp_name {
   }
   
   #main #faq .card .card-header .btn-header-link {
-    color: #fff;
     display: block;
     text-align: left;
-    background: #FFE472;
-    color: #222;
-    padding: 20px;
-  }
+    background: #F6F6F6;
+    color: #000;
+    padding: 14px !important;
+    font-weight: 700;
+    border-left: 3px solid #000000;
+    border-radius: 0px;
+    }
   
   #main #faq .card .card-header .btn-header-link:after {
-    content: "\f107";
+    /* content: "\f078"; */
+    content: "\e080" !important;
     font-family: 'Font Awesome 5 Free';
+    
     font-weight: 900;
     float: right;
   }
   
-  #main #faq .card .card-header .btn-header-link.collapsed {
-    background: #A541BB;
-    color: #fff;
-  }
+
+#main #faq .card .card-header .btn-header-link.collapsed {
+    background: #F6F6F6;
+    color: #000000;
+    font-weight: 700;
+    border-left: 3px solid #000000;
+    padding: 14px !important;
+    border-radius: 0;
+}
   
   #main #faq .card .card-header .btn-header-link.collapsed:after {
     content: "\f106";
   }
   
   #main #faq .card .collapsing {
-    background: #FFE472;
+    background: #fff;
     line-height: 30px;
   }
   
@@ -1882,9 +1871,10 @@ h2.sp_name {
   }
   
   #main #faq .card .collapse.show {
-    background: #FFE472;
+    background: #fff;
     line-height: 30px;
-    color: #222;
+    color: #000000;
+    font-weight: 400;
   }
 
   .card-header {
@@ -2340,6 +2330,38 @@ button.btn.btn-success {
         border-radius: 6px;
         border: none;
     } */
+
+    .services-content li.Profile1 {
+        list-style: none;
+        background: rgba(241, 126, 126, 0.2);
+        width: 100%;
+        max-width: inherit;
+        padding: 11px;
+        border-radius: 6px;
+        margin-top: 13px;
+    }
+    .services-content ul.uldrProfile {
+        display: block;
+    }
+
+    .nav-pills.pills-dark .nav-link.active {
+        background-color: #fff !important;
+        color: #000;
+        font-weight: 600;
+        font-size: 15px;
+        border-bottom: 3px solid #482369;
+        border-radius: 0px !important;
+    }
+    .nav-pills .nav-link {
+        border-radius: 0px !important;
+        color: #000;
+        transition: color .2s ease-out, box-shadow .2s;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .nav-pills .nav-item {
+        margin: 0 -1px;
+    }
 
     .experence-main{
         display: flex;
@@ -2902,6 +2924,7 @@ button.btn.btn-success {
    
 } 
 @media only screen and (max-width: 992px) {
+    
     .serach-column {
         background: rgba(196, 196, 196, 0.2);
         border-radius: 6px;
