@@ -56,9 +56,9 @@ select:focus{
 .navbar-expand-lg .navbar-nav .dropdown-menu{
     padding: 5px;
 }
-ul.navbar-nav.m-auto li {
+/* ul.navbar-nav.m-auto li {
     margin: 0px 20px;
-}
+} */
 .navbar-light .navbar-nav .nav-link,
 .navbar-expand-lg .navbar-nav .dropdown-menu a{
     color: rgba(39, 45, 78, 1) !important;
@@ -411,32 +411,6 @@ span.home_locationSpan {
     list-style: none;
     margin-top: 30px !important;
 }
-
-@media only screen and (max-width: 600px){
-#main #faq .card .card-header .btn-header-link {
-    display: block;
-    text-align: left;
-    background: #F6F6F6;
-    color: #000;
-    padding: 14px !important;
-    font-weight: 600;
-    border-left: 3px solid #000000;
-    border-radius: 0px;
-    font-size: 11px;
-}
-    span.locationSpan {
-        position: absolute !important;
-        top: 43% !important;
-        left: 7% !important; 
-    }
-    span.searchSpan {
-        position: absolute !important;
-        left: 7% !important;
-        top: 37px !important;
-    }
-}
-
-
 
 #coronaVirus .contentDiv .listDiv ul li{
     padding: 10px 30px !important;
@@ -2324,6 +2298,100 @@ button.btn.btn-success {
 /* brack points */
 
 @media only screen and (max-width: 600px) {
+    #coronaVirus .contentDiv h3, #usersSay h3, #ourPatners h3, #findSpecialists h3 {
+        font-family: helvari-regular !important;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 35px;
+    }
+    #moveOn h3 {
+        color: #fff;
+        font-family: helvari-regular !important;
+        font-weight: 700;
+        font-size: 23px;
+        text-align: center;
+    }
+    #coronaVirus .contentDiv p {
+        font-family: helvari-regular !important;
+        font-weight: 400;
+        font-size: 17px;
+    }
+    #coronaVirus .contentDiv .title {
+        color: rgba(255, 193, 7, 1);
+        font-family: helvari-regular !important;
+        font-weight: 700;
+        font-size: 24px;
+    }    
+    #covidDoctor .contentLeftDiv h3, #covidDoctor .contentRightDiv h3 {
+        font-weight: 700;
+        font-family: helvari-regular !important;
+        font-size: 30px;
+        margin-bottom: 10px !important;
+    }
+    #covidDoctor .imgrightBg {
+        background-image: url('../img/Group 729.png');
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #mainBanner .drMain {
+        background: #f2c010;
+        width: 100%;
+        height: auto;
+        padding: 10px 0px;
+    }
+    #mainBanner h3 {
+        color: rgba(255, 193, 7, 1);
+        font-size: 30px;
+        font-weight: 700;
+        font-family: helvari-regular !important;
+        margin-bottom: 15px !important;
+    }
+    #mainBanner p {
+        font-family: helvari-regular !important;
+        color: #ffffff;
+        font-size: 23px;
+        line-height: 35px;
+    }
+    #findDoctor h3,
+    #bookAppointment h3 {
+        font-family: helvari-regular !important;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    #main #faq .card .card-header .btn-header-link {
+        display: block;
+        text-align: left;
+        background: #F6F6F6;
+        color: #000;
+        padding: 14px !important;
+        font-weight: 600;
+        border-left: 3px solid #000000;
+        border-radius: 0px;
+        font-size: 11px;
+    }
+        span.locationSpan {
+            position: absolute !important;
+            top: 43% !important;
+            left: 7% !important; 
+        }
+        span.searchSpan {
+            position: absolute !important;
+            left: 7% !important;
+            top: 37px !important;
+        }
+
+  
+    #mainBanner {
+        background-color: rgb(72, 35, 105) !important;
+        background-image: url('/assets/img/Group 62.png') !important;
+        background-position: 100% 115% !important;
+        background-repeat: no-repeat !important;
+        position: relative !important;
+        padding: 50px 20px 150px 20px !important;
+
+        
+    }
     /* .shaukat_inputBtn1 a.btn.btn-primary.call-now {
         background: #f2c010;
         padding: 10px 30px !important;
@@ -2452,14 +2520,7 @@ button.btn.btn-success {
         border: none;
         width: 100%;
     }
-    #mainBanner {
-        background-color: rgba(72, 35, 105, 1);
-        padding: 150px 20px 300px 20px;
-        background-image: url(../img/Group\ 62.png);
-        background-position: 100% 115%;
-        background-repeat: no-repeat;
-        position: relative;
-    }
+   
     #mainBanner .multiDiv {
         position: absolute;
         bottom: -57px;
@@ -2861,13 +2922,13 @@ button.btn.btn-success {
         margin: 0px 50px;
         text-align: left;
     }
-    #mainBanner {
+    /* #mainBanner {
         background-color: rgba(72, 35, 105, 1);
         padding: 150px 20px 150px 20px;
         background-image: url(../img/Group\ 62.png);
         background-position: 100% 115%;
         background-repeat: no-repeat;
-        position: relative;
+        position: relative; */
     }
     #mainBanner .multiDiv {
         position: relative;
