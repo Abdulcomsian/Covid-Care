@@ -113,7 +113,7 @@ select:focus{
 #mainBanner{
     background-color: rgba(72, 35, 105, 1);
     padding: 100px 50px 190px 50px;
-    background-image: url("../img/Group\ 62.png");
+    background-image: url("../img/Group-62.png");
     background-position: 100% 115%;
     background-repeat: no-repeat;
     position: relative;
@@ -2297,7 +2297,17 @@ button.btn.btn-success {
 
 /* brack points */
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
+    #mainBanner .multiDiv {
+        position: relative;
+        bottom: -150px;
+        background-color: rgba(255, 193, 7, 1);
+        padding: 12px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        height: auto;
+    }
     #coronaVirus .contentDiv h3, #usersSay h3, #ourPatners h3, #findSpecialists h3 {
         font-family: helvari-regular !important;
         font-weight: 700;
@@ -2353,8 +2363,7 @@ button.btn.btn-success {
         font-size: 23px;
         line-height: 35px;
     }
-    #findDoctor h3,
-    #bookAppointment h3 {
+    #findDoctor h3,#bookAppointment h3 {
         font-family: helvari-regular !important;
         font-weight: bold;
         font-size: 20px;
@@ -2370,27 +2379,23 @@ button.btn.btn-success {
         border-radius: 0px;
         font-size: 11px;
     }
-        span.locationSpan {
-            position: absolute !important;
-            top: 43% !important;
-            left: 7% !important; 
-        }
-        span.searchSpan {
-            position: absolute !important;
-            left: 7% !important;
-            top: 37px !important;
-        }
-
-  
+    span.locationSpan {
+        position: absolute !important;
+        top: 43% !important;
+        left: 7% !important; 
+    }
+    span.searchSpan {
+        position: absolute !important;
+        left: 7% !important;
+        top: 37px !important;
+    }
     #mainBanner {
         background-color: rgb(72, 35, 105) !important;
-        background-image: url('/assets/img/Group 62.png') !important;
-        background-position: 100% 115% !important;
+        background-image: url('../img/Group-62.png') !important;
+        background-position: center 100% !important;
         background-repeat: no-repeat !important;
         position: relative !important;
-        padding: 50px 20px 150px 20px !important;
-
-        
+        padding: 50px 20px 65px 20px !important;
     }
     /* .shaukat_inputBtn1 a.btn.btn-primary.call-now {
         background: #f2c010;
@@ -2564,9 +2569,6 @@ button.btn.btn-success {
         max-width: 100%;
         margin-top: 20px;
     }
- 
-
-
     #login-section .sign-in button {
         width: 100%;
         float: right;
@@ -2852,10 +2854,8 @@ button.btn.btn-success {
         color: #FFFFFF;
     }
     
-
-    
 }
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     #footer .imgTextDiv {
         display: flex;
         align-items: center;
@@ -2922,17 +2922,9 @@ button.btn.btn-success {
         margin: 0px 50px;
         text-align: left;
     }
-    /* #mainBanner {
-        background-color: rgba(72, 35, 105, 1);
-        padding: 150px 20px 150px 20px;
-        background-image: url(../img/Group\ 62.png);
-        background-position: 100% 115%;
-        background-repeat: no-repeat;
-        position: relative; */
-    }
     #mainBanner .multiDiv {
         position: relative;
-        bottom: -205px;
+        bottom: -170px;
         background-color: rgba(255, 193, 7, 1);
         padding: 12px;
         width: 100%;
@@ -2970,7 +2962,7 @@ button.btn.btn-success {
     #labs .shaukat-blurb {
         text-align: left ;
     }
-    #specialist_mainBanner .formDiv .inputDiv input {
+    #specialist_mainBanner .formDiv .inputDiv input {   
         width: 55%;
         height: 100%;
         padding: 23px 10px 23px 53px;
@@ -2980,11 +2972,11 @@ button.btn.btn-success {
         border: none;
         font-size: 20px;
         font-size: 20px !important;
-}
+    }
    
    
 } 
-@media only screen and (max-width: 992px) {
+@media (max-width: 992px) {
     
     .serach-column {
         background: rgba(196, 196, 196, 0.2);
