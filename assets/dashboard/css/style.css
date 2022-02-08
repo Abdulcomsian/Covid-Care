@@ -81,12 +81,14 @@ ul {
   display: flex;
 }
 
+
 #mainDashboard .contentDiv .sideBar {
   width: 20%;
   background: rgba(72, 35, 105, 1);
   position: relative;
-  transition: all 0.5s ease;
-  height: 100vh;
+  visibility: visible;
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
 }
 
 #mainDashboard .contentDiv .sideBar .logoDiv {
@@ -100,7 +102,7 @@ ul {
 }
 
 #mainDashboard .contentDiv .sideBar ul li {
-  padding: 20px 40px;
+  padding: 20px 24px;
   display: flex;
   align-items: center;
 }
@@ -124,7 +126,6 @@ ul {
 
 #mainDashboard .contentDiv .sideBar .authdiv {
   position: fixed;
-  width: 100%;
   bottom: 0px;
 }
 
@@ -161,7 +162,11 @@ ul {
 #mainDashboard .contentDiv .viewDiv .topBar {
   padding: 17px;
 }
-
+#mainDashboard .contentDiv .viewDiv .topBar .dashboardTitle{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 #mainDashboard .contentDiv .viewDiv .topBar .topRight .inputDiv {
   position: relative;
 }
@@ -179,6 +184,7 @@ ul {
   box-sizing: border-box;
   border-radius: 6px;
   padding: 10px;
+  width: 100%;
 }
 
 #mainDashboard .contentDiv .viewDiv .topBar .topRight .iconDiv {
@@ -200,6 +206,7 @@ ul {
 #mainDashboard .contentDiv .viewDiv .contentViewDiv {
   padding: 25px;
   background-color: #e5e5e5;
+  height: 100vh;
 }
 
 #mainDashboard .contentDiv .viewDiv .contentViewDiv .badgeDiv .badgeBox {
@@ -568,7 +575,7 @@ td a:hover {
 .labTestView .contentDiv {
   justify-content: center;
   align-items: center;
-  height: 150px;
+  height: 150px !important;
 }
 
 .ordersView .contentDiv p,
@@ -813,6 +820,7 @@ td a:hover {
 
 .contentViewDiv .orderView .orders .orderBar ul {
   display: flex;
+  margin: 0px;
 }
 
 .contentViewDiv .orderView .orders .orderBar ul li {
@@ -837,7 +845,7 @@ td a:hover {
 .contentViewDiv .orderView .tableView table thead th,
 .contentViewDiv .orderView .tableView table tbody td {
   text-align: left;
-  padding: 20px 0px;
+  padding: 20px 10px;
   font-family: helvari-regular;
 }
 
@@ -1040,10 +1048,12 @@ span.tag {
   position: absolute;
   font-size: 10px;
   top: 3px;
-  left: 6;
+  left: 22px;
   color: #fff;
 }
-
+input:checked+span+span.tag{
+  left: 6px;
+}
 input:checked+.slider:before {
   left: 10px;
 }
@@ -1179,4 +1189,265 @@ p.description {
   border-radius: 100%;
   left: -8px;
   top: 5px;
+}
+.slick-slide{
+  height: auto !important;
+}
+.openMenu{
+  padding: 10px 15px !important;
+  font-size: 25px;
+  background: transparent;
+  border: 1px solid #0000003d;
+  border-radius: 4px;
+  color: #0000003d;
+}
+.desktopHide{
+  display: none;
+}
+.openSideBar{
+  display: block !important;
+  position: absolute !important;
+  width: 80% !important;
+  z-index: 999;
+  min-height: 120vh;
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+}
+.blurMe{
+  filter: blur(10px);
+}
+.table-responsive{
+  display: table !important;
+}
+/*******************************************/
+/*******************************************/
+/************* Media Query *****************/
+/*******************************************/
+/*******************************************/
+@media screen and (max-width: 1200px) {
+  .doctorProfile h2{
+    font-size: 22px;
+  }
+  .contentViewDiv .hopitalProfile .doctorProfile{
+    margin-left: 10px;
+  }
+  .profileBar .userDiv .contentDiv .initailText{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+  }
+  .profileBar .userDiv .contentDiv .infoDiv{
+    margin-left: 10px;
+  }
+  .profileBar .userMultiDiv .commonBox{
+    width: 130px;
+  }
+  .profileBar .userMultiDiv .commonBox p,
+  .doctorProfile .rating span,
+  .doctorProfile .rating i,
+  p.description{
+    font-size: 12px;
+  }
+  .doctorProfile .verified img{
+    width: 18px;
+  }
+  .profileBar .userMultiDiv .commonBox p br{
+    display: none;
+  }
+  .profileBar .userMultiDiv .commonBox .totalText{
+    font-size: 20px;
+  }
+  #mainDashboard .contentDiv .viewDiv .contentViewDiv .patientTable .tableBar .sortingDiv .multiSort button{
+    margin-right: 10px !important;
+    width: 83px;
+    height: 30px;
+  }
+  td a{
+    padding: 4px !important;
+  }
+  .tableDiv table tbody td{
+    padding: 20px 0px;
+  }
+  .doctorProfile .verified span{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .contentViewDiv .orderView .orderStatistics{
+    margin-top: 20px;
+  }
+  #mainDashboard .contentDiv .viewDiv .topBar .dashboardTitle h3{
+    font-size: 18px;
+  }
+  #mainDashboard .contentDiv .viewDiv .contentViewDiv .profileBar .userDiv .contentDiv{
+    display: flex;
+  }
+  .tableDiv table thead th{
+    padding: 20px 5px;
+    font-size: 12px;
+  }
+  .tableDiv table tbody td{
+    font-size: 12px;
+  }
+  #mainDashboard .contentDiv .viewDiv .contentViewDiv{
+    height: auto;
+  }
+  .desktopHide{
+    display: block;
+  }
+  #mainDashboard .contentDiv .sideBar ul li{
+    padding: 20px 15px;
+  }
+  #mainDashboard .contentDiv .sideBar ul li img{
+    margin-right: 15px;
+  }
+  #mainDashboard .contentDiv .sideBar{
+    display: none;
+  }
+  #mainDashboard .contentDiv .viewDiv{
+    width: auto !important;
+  }
+  #mainDashboard .contentDiv{
+    display: block;
+  }
+  .doctorProfile .multiDiv .detailDiv p:nth-child(2){
+    font-size: 10px;
+  }
+  .doctorProfile .multiDiv .detailDiv p{
+    font-size: 12px;
+  }
+  .listOfSpecilist{
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .visited,
+  .pending,
+  .confirm{
+    border-radius: 12px;
+    padding: 5px !important;
+  }
+  .topDoctor .contentDiv .ratingDiv p{
+    text-align: left;
+  }
+  .contentViewDiv .hopitalProfile .imgDiv p{
+    font-size: 22px;
+  }
+  .specialistTable td{
+    padding: 10px 10px !important;
+  }
+  .profileBar .userMultiDiv .commonBox{
+    width: 100px;
+  }
+  .profileBar .userDiv .contentDiv .infoDiv .userName{
+    font-size: 14px;
+  }
+  .profileBar .userDiv .contentDiv .infoDiv p{
+    font-size: 10px;
+  }
+  .tableDiv table thead th{
+    padding: 15px !important;
+  }
+  #mainDashboard .contentDiv .viewDiv .contentViewDiv .patientTable .tableBar .sortingDiv .multiSort button {
+    margin-right: 0px !important;
+    width: 65px;
+    height: 28px;
+    font-size: 10px;
+}
+  #mainDashboard .contentDiv .viewDiv .contentViewDiv .patientTable .tableBar,
+  .contentViewDiv .hopitalProfile .imgDiv{
+    display: block;
+  }
+  .contentViewDiv .hopitalProfile .imgDiv{
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .contentViewDiv .hopitalProfile .editProfile .multiDiv .commonDiv{
+    width: 100%;
+  }
+  .contentViewDiv .hopitalProfile{
+    display: block;
+    text-align: center;
+  }
+  .dataTables_length,
+  .mobileHide,
+  .contentViewDiv .hopitalProfile .editProfile .multiDiv .commonDiv p br{
+    display: none;
+  }
+  #patientTable_filter,
+  .addPatients{
+    text-align: right;
+  }
+  .table-responsive{
+    display: block !important;
+  }
+  #mainDashboard .contentDiv .viewDiv .topBar{
+    padding: 17px 0px;
+  }
+  .lineChart canvas{
+    width: 200px;
+  }
+  #mainDashboard .contentDiv .viewDiv .contentViewDiv .badgeDiv .badgeBox{
+    margin-bottom: 10px;
+  }
+  #mainDashboard .contentDiv .viewDiv .contentViewDiv .badgeDiv .badgeBox .imageDiv img{
+    max-width: 35px;
+  }
+  #mainDashboard .contentDiv .viewDiv .contentViewDiv{
+    padding: 25px 15px;
+  }
+  .topRight .inputDiv{
+    display: none;
+  }
+  #mainDashboard .contentDiv .viewDiv .topBar .dashboardTitle h3{
+    padding: 0px 40px !important;
+    font-size: 16px;
+  }
+  .openMenu,
+  .listOfSpecilist .header h3,
+  .profileDoctor ul li h2{
+    font-size: 16px;
+  }
+  #mainDashboard .contentDiv .viewDiv .topBar .topRight .iconDiv{
+    justify-content: flex-end;
+  }
+  #mainDashboard .contentDiv .viewDiv .topBar .topRight .iconDiv p{
+    padding: 0px 10px !important;
+  }
+}
+@media screen and (max-width: 567px) {
+  .contentViewDiv .hopitalProfile .editProfile .multiDiv .commonDiv{
+    padding: 10px;
+  }
+  .contentViewDiv .hopitalProfile .editProfile .multiDiv .commonDiv p:nth-child(2){
+    top: 0px;
+  }
+  .contentViewDiv .hopitalProfile .editProfile .multiDiv .commonDiv p{
+    font-size: 12px;
+  }
+  #mainDashboard .contentDiv .viewDiv .topBar .dashboardTitle h3 {
+    padding: 0px 0px !important;
+    font-size: 14px;
+}
+#mainDashboard .contentDiv .viewDiv .contentViewDiv .profileBar{
+  display: block;
+}
+#mainDashboard .contentDiv .viewDiv .contentViewDiv .profileBar .userMultiDiv{
+  margin-top: 20px;
+}
+.profileBar .userMultiDiv .commonBox {
+  width: 100%;
+}
+.nav-pills li a{
+  font-size: 8px;
+}
+.nav-pills li {
+  padding: 0px 2px !important;
+}
+.appoinmentBox h3, .labTestView h3, .ordersView h3{
+  font-size: 14px;
+}
+.profileBar, .appoinmentBox{
+  padding: 20px 10px;
+}
 }
