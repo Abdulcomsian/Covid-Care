@@ -670,15 +670,13 @@ span.home_locationSpan {
 /* ********************** Order Medicine *****************  */
 
 #Order_mainBanner .formDiv .ordermeadicine_inputDiv button{
-    height: 47.97px;
     border-radius: 4px;
     background-color: rgba(255, 193, 7, 1);
     border: none;
     font-family: 'helvetica-regular';
     font-weight: 500;
-    /* position: relative; */
     font-size: 20px;
-    padding: 0px 20px !important;
+    padding: 10px !important;
 }
 #breadcrumb{
     background: #e9ecef;
@@ -846,16 +844,15 @@ input#file {
 }
 
 #orderMedicines .formDiv .ordermeadicine_inputDiv button{
-    width: 140px;
-    height: 51px;
     border-radius: 4px;
     background-color: rgba(255, 193, 7, 1);
     border: none;
-    font-family: 'helvari-regular';
+    font-family: 'helvetica-regular' !important;
     font-weight: 500;
     position: absolute;
     font-size: 20px;
-    padding-bottom: 20%;
+    color: #fff;
+    padding: 10px !important;
 }
 
 #Reviews {
@@ -1742,7 +1739,12 @@ h2.sp_name {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 52px;
+    
+}
+.write-review button{
+    border: none;
+    background: none;
+    font-family: Helvetica;
     color: #38B4B9;
 }
 
